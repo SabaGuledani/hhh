@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpffo46tu4h3h"]
+
+[ext_resource type="Script" path="res://GameChoose.gd" id="1_fjdyd"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_fjdyd")
+
+[node name="NatsarqeqiaGame" type="Button" parent="."]
+offset_left = 48.0
+offset_top = 37.0
+offset_right = 274.0
+offset_bottom = 162.0
+text = "nacarqeqia"
+
+[connection signal="pressed" from="NatsarqeqiaGame" to="." method="_on_natsarqeqia_game_pressed"]
