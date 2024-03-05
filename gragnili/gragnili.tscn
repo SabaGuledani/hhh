@@ -1,0 +1,180 @@
+[gd_scene load_steps=6 format=3 uid="uid://bfkrvdk2lbdm6"]
+
+[ext_resource type="Script" path="res://gragnili/gragnili.gd" id="1_e0yly"]
+[ext_resource type="Theme" uid="uid://bqvgi2cn1b3f4" path="res://assets/themedef.tres" id="1_paqhw"]
+[ext_resource type="FontFile" uid="uid://c3dqb46s0gcvc" path="res://geopixel.ttf" id="2_qn6le"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_q4afv"]
+line_spacing = 10.0
+font = ExtResource("2_qn6le")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_xjsey"]
+font = ExtResource("2_qn6le")
+font_size = 20
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = -6.0
+offset_right = -4.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+script = ExtResource("1_e0yly")
+
+[node name="Panel" type="Panel" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.524
+anchor_bottom = 0.5
+offset_left = -72.0
+offset_top = -137.0
+offset_right = 248.352
+offset_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_paqhw")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+texture_filter = 1
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 4.0
+offset_right = -11.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="boxBtns" type="VBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/boxBtns"]
+texture_filter = 1
+layout_mode = 2
+text = "wignebi"
+label_settings = SubResource("LabelSettings_q4afv")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="rei" type="Button" parent="Panel/VBoxContainer/boxBtns"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_qn6le")
+theme_override_font_sizes/font_size = 20
+text = "legenda eqskaliburze 
+avtori: rei Landrumi
+"
+alignment = 0
+icon_alignment = 1
+
+[node name="higinsi" type="Button" parent="Panel/VBoxContainer/boxBtns"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_qn6le")
+theme_override_font_sizes/font_size = 20
+text = "eqskaliburi:miTi Tu realoba?
+avtori: robert higinsi"
+alignment = 0
+icon_alignment = 1
+
+[node name="Label2" type="Label" parent="Panel/VBoxContainer/boxBtns"]
+texture_filter = 1
+layout_mode = 2
+text = "avtorebi"
+label_settings = SubResource("LabelSettings_q4afv")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="rayBtn" type="Button" parent="Panel/VBoxContainer/boxBtns"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "rei Landrumi
+"
+alignment = 0
+icon_alignment = 1
+
+[node name="robertBtn" type="Button" parent="Panel/VBoxContainer/boxBtns"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "robert higinsi"
+alignment = 0
+icon_alignment = 1
+
+[node name="Label3" type="Label" parent="Panel/VBoxContainer/boxBtns"]
+texture_filter = 1
+layout_mode = 2
+text = "
+romels vendoT?"
+label_settings = SubResource("LabelSettings_q4afv")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="scroll" type="ScrollContainer" parent="Panel/VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+
+[node name="insidescroll" type="VBoxContainer" parent="Panel/VBoxContainer/scroll"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="articleLabel" type="Label" parent="Panel/VBoxContainer/scroll/insidescroll"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0.054902, 0.0431373, 0.0588235, 1)
+text = "eqskaliburi aris legendaruli xmlis saxeli, romelic ekuTvnoda mefe arturs, kamelotis gmirs. es iyo didi Zalisa da silamazis xmali,
+ romelic RmerTebma Seqmnes da arturs tbis qalRmerTma gadasca. eqskaliburs hqonda Zala
+ris meSveobiTac icavda Tavis patrons zianisgan. mas aseve hqonda amotvifruli saxeli \"eqskaliburi\".
+
+arturi iyenebda orive xmals Tavis brZolebSi da TavgadasavalSi, magram upiratesobas aniWebda eqskaliburs. is aseve ibrZoda mravali monstris winaaRmdeg, rogoricaa drakonebi, gigantebi da jadoqrebi. mas exmarebodnen misi erTguli raindebi. isini iyvnen mamaci da keTilSobili meomrebi,
+ romlebic icavdnen raindobisa da Rirsebis kodeqss."
+label_settings = SubResource("LabelSettings_xjsey")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="backbtn" type="Button" parent="Panel/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "ukan dabruneba"
+
+[node name="boxChoice" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="trustRay" type="Button" parent="Panel/VBoxContainer/boxChoice"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_qn6le")
+theme_override_font_sizes/font_size = 10
+text = "legenda eqskaliburze 
+avtori: rei Landrumi
+"
+alignment = 0
+icon_alignment = 1
+
+[node name="trustRobert" type="Button" parent="Panel/VBoxContainer/boxChoice"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_qn6le")
+theme_override_font_sizes/font_size = 10
+text = "eqskaliburi:miTi Tu realoba?
+avtori: robert higinsi
+"
+alignment = 0
+icon_alignment = 1
+
+[connection signal="pressed" from="Panel/VBoxContainer/boxBtns/rayBtn" to="." method="_on_ray_btn_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/boxBtns/robertBtn" to="." method="_on_robert_btn_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/backbtn" to="." method="_on_backbtn_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/boxChoice/trustRay" to="." method="_on_trust_ray_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/boxChoice/trustRobert" to="." method="_on_trust_robert_pressed"]

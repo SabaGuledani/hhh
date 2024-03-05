@@ -1,0 +1,1576 @@
+[gd_scene load_steps=57 format=3 uid="uid://t51hbct52fav"]
+
+[ext_resource type="Texture2D" uid="uid://fg182tv5mbxl" path="res://assets/tundra_ [version 1.0]/tundra_.png" id="1_7hfwf"]
+[ext_resource type="Script" path="res://Scripts/courier_encounter.gd" id="1_vbrmj"]
+[ext_resource type="Texture2D" uid="uid://cai0ausdvi3x6" path="res://assets/tundra_ [version 1.0]/tundra_ [resources].png" id="2_hxnrp"]
+[ext_resource type="Texture2D" uid="uid://ep4x0clnse58" path="res://assets/tundra_ [version 1.0]/tundraPath_.png" id="3_jc0m3"]
+[ext_resource type="Texture2D" uid="uid://diiig38c0n4gg" path="res://assets/forestSprites_ v1.2/satyr_.png" id="4_fr760"]
+[ext_resource type="Texture2D" uid="uid://c3a3we7ly0m7r" path="res://assets/forestSprites_ v1.2/mHero_ [elf].png" id="5_8acua"]
+[ext_resource type="Texture2D" uid="uid://cin16iyeqhx7d" path="res://assets/forestSprites_ v1.2/thief_.png" id="6_3btcq"]
+[ext_resource type="Texture2D" uid="uid://dctnwas6sfw6a" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Lock_01a2.png" id="7_4smgb"]
+[ext_resource type="FontFile" uid="uid://boq5tvqbl1lbg" path="res://assets/geopixel.ttf" id="8_lm225"]
+[ext_resource type="Texture2D" uid="uid://bckf2xodbek70" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Banner_02_Downward.png" id="9_r637f"]
+[ext_resource type="Texture2D" uid="uid://cmlkfmipsbu6o" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a1.png" id="10_oq12q"]
+[ext_resource type="Texture2D" uid="uid://cwxipthyndc4k" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a3.png" id="11_b43cq"]
+[ext_resource type="Texture2D" uid="uid://cly1w1k0tfgd8" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a2.png" id="12_h1tpm"]
+[ext_resource type="Texture2D" uid="uid://mcwvkdam4rro" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Checkmark_Small.png" id="13_jvsk7"]
+[ext_resource type="AudioStream" uid="uid://blebjkldipdgs" path="res://assets/music/correct.mp3" id="14_mvy67"]
+[ext_resource type="Texture2D" uid="uid://d2r0knwiyk0we" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Lock_01a1.png" id="16_wv6mt"]
+[ext_resource type="AudioStream" uid="uid://dx0cheukvrlsl" path="res://assets/music/courier_encounter_theme.mp3" id="17_23kaw"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d285w"]
+texture = ExtResource("1_7hfwf")
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+20:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+16:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+20:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+16:3/0 = 0
+17:3/0 = 0
+18:3/0 = 0
+19:3/0 = 0
+20:3/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+16:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+16:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+20:6/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+16:7/0 = 0
+17:7/0 = 0
+18:7/0 = 0
+19:7/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_22u7p"]
+texture = ExtResource("2_hxnrp")
+margins = Vector2i(0, 14)
+7:7/animation_frame_0/duration = 0.2
+7:7/animation_frame_1/duration = 0.2
+7:7/animation_frame_2/duration = 0.2
+7:7/animation_frame_3/duration = 0.2
+7:7/0 = 0
+1:1/0 = 0
+1:0/0 = 0
+2:1/0 = 0
+2:0/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+3:3/0 = 0
+2:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+7:2/0 = 0
+6:2/0 = 0
+5:2/0 = 0
+4:2/0 = 0
+10:4/0 = 0
+10:5/0 = 0
+9:5/0 = 0
+9:4/0 = 0
+8:4/0 = 0
+8:5/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uavtm"]
+texture = ExtResource("3_jc0m3")
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_w1bjy"]
+sources/0 = SubResource("TileSetAtlasSource_d285w")
+sources/1 = SubResource("TileSetAtlasSource_22u7p")
+sources/2 = SubResource("TileSetAtlasSource_uavtm")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aj56a"]
+atlas = ExtResource("4_fr760")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l6qjp"]
+atlas = ExtResource("4_fr760")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k7wwl"]
+atlas = ExtResource("4_fr760")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cyob6"]
+atlas = ExtResource("4_fr760")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pdbfg"]
+atlas = ExtResource("4_fr760")
+region = Rect2(0, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t6h6q"]
+atlas = ExtResource("4_fr760")
+region = Rect2(24, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vw85m"]
+atlas = ExtResource("4_fr760")
+region = Rect2(48, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2m1ft"]
+atlas = ExtResource("4_fr760")
+region = Rect2(72, 48, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vk77k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aj56a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l6qjp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k7wwl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cyob6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pdbfg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t6h6q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vw85m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2m1ft")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h6esl"]
+atlas = ExtResource("6_3btcq")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vjs7"]
+atlas = ExtResource("6_3btcq")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y563i"]
+atlas = ExtResource("6_3btcq")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nwekp"]
+atlas = ExtResource("6_3btcq")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mh284"]
+atlas = ExtResource("6_3btcq")
+region = Rect2(0, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q8q25"]
+atlas = ExtResource("6_3btcq")
+region = Rect2(24, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nmh1f"]
+atlas = ExtResource("6_3btcq")
+region = Rect2(48, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_utb7x"]
+atlas = ExtResource("6_3btcq")
+region = Rect2(72, 48, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8qtmf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h6esl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vjs7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y563i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nwekp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mh284")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q8q25")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nmh1f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_utb7x")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sawcs"]
+atlas = ExtResource("5_8acua")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3iape"]
+atlas = ExtResource("5_8acua")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p7h5d"]
+atlas = ExtResource("5_8acua")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_38ofi"]
+atlas = ExtResource("5_8acua")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s6001"]
+atlas = ExtResource("5_8acua")
+region = Rect2(0, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4o6y"]
+atlas = ExtResource("5_8acua")
+region = Rect2(24, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mqnkg"]
+atlas = ExtResource("5_8acua")
+region = Rect2(48, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_co40l"]
+atlas = ExtResource("5_8acua")
+region = Rect2(72, 48, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b24np"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sawcs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3iape")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p7h5d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_38ofi")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6001")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t4o6y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mqnkg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_co40l")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_v8bkr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerAnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"walk"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PlayerAnimatedSprite2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-101, 335)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("WizardTextBox:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("WizardTextBox/RichTextLabel:text")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["rogorc iqna, moxvedi!
+Cqara, momeci werili,
+Zalian saCqaroa!"]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("WizardTextBox/RichTextLabel:visible_ratio")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("PlayerTextBox:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("PlayerTextBox/RichTextLabel:visible_ratio")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("PlayerTextBox/RichTextLabel:text")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["raTqmaunda!
+axlave!"]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CourierTextBox:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CourierTextBox/RichTextLabel:text")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["SeCerdi!!!
+ar misce werili!!!"]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("CourierTextBox/RichTextLabel:visible_ratio")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("CourierAnimatedSprite2D2:animation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"walk"]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CourierAnimatedSprite2D2:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(609, 711)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CourierTextBox:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(366, 450)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("WizardAnimatedSprite2D:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(686, 331)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("WizardAnimatedSprite2D:animation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"walk"]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("CourierAnimatedSprite2D2:flip_h")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("SpellTextureRect:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("SpellTextureRect/TextEdit:editable")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("SpellTextureRect/TextureButton:disabled")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("PlayerTextBox:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(350, 117)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("MusicAudioStreamPlayer:playing")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_i5ytr"]
+resource_name = "cutscene_1"
+length = 70.0
+step = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerAnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"walk", &"default"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PlayerAnimatedSprite2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-68, 346), Vector2(473, 335)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("WizardTextBox:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(2, 3, 7, 7.5, 41, 41.5, 53.5, 54),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("WizardTextBox/RichTextLabel:text")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(3, 41.5, 45.5, 49.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": ["rogorc iqna, moxvedi!
+Cqara, momeci werili,
+Zalian saCqaroa!", "amjerad gagimarTla, magram Tu igive Secdomas dauSveb, saidumlo Cemi iqneba!", "daucveli saidumlo frazis gareSe, Zalian martivia Seni saidumlos moparva!", "amjerad damamarcxeT, magram arasdros davnebdebi!"]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("WizardTextBox/RichTextLabel:visible_ratio")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(3, 3.5, 6.5, 7, 41.5, 42, 45, 45.5, 46, 49, 49.5, 50, 53, 53.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("PlayerTextBox:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 7.5, 8, 11, 11.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("PlayerTextBox/RichTextLabel:visible_ratio")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(8, 8.5, 10.5, 11),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("PlayerTextBox/RichTextLabel:text")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(8),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["raTqmaunda!
+axlave!"]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CourierTextBox:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(12, 12.5, 16.5, 17, 20, 20.5, 40.5, 41, 56, 56.5, 65, 65.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CourierTextBox/RichTextLabel:text")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(12.5, 20.5, 24.5, 28.5, 32.5, 36.5, 56.5, 61),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": ["SeCerdi!!!
+ar misce werili!!!
+is araa namdvili Sikriki!", "ar endo! es is boroti grZneulia, romlis Sesaxebac mefe gafrTxilebda!", "kidev kargi, mogiswari! Seni saidumlo sityva arasworad SearCie!", "saidumlo sityva aucileblad unda Seicavdes minimum erT simbolos, erT cifrs...", "aseve minimum erT did da erT patara asos. aucilebelia, rom misi sigrZe iyos 8-ze meti", "Seni daucveli usafrTxo sityvis gamo, SeiZleba, Cveni saidumlo gamxeliliyo!", "daucveli saidumlo frazis arCevas SeiZleba saxifaTo Sedegebi mohyves", "raTa momavalSi igive Secdoma aRar dauSva, Tavidan gaswavli sworad SerCevas"]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("CourierTextBox/RichTextLabel:visible_ratio")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(12.5, 13, 16, 16.5, 20.5, 21, 24, 24.5, 25, 28, 28.5, 29, 32, 32.5, 33, 36, 36.5, 37, 40, 40.5, 56.5, 57, 60.5, 61, 61.5, 64.5, 65),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("CourierAnimatedSprite2D2:animation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(18, 20),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"walk", &"default"]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CourierAnimatedSprite2D2:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(18, 20),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(609, 711), Vector2(571, 249)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CourierTextBox:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(17, 20),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(366, 450), Vector2(356, 27)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("WizardAnimatedSprite2D:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(54, 56),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(686, 331), Vector2(532, 711)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("WizardAnimatedSprite2D:animation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(54),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"walk"]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("CourierAnimatedSprite2D2:flip_h")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 56),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("SpellTextureRect:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 65.5, 66),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("SpellTextureRect/TextEdit:editable")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 66),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("SpellTextureRect/TextureButton:disabled")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 66),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("MusicAudioStreamPlayer:playing")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_wpsqi"]
+resource_name = "cutscene_2"
+length = 18.0
+step = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpellTextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SpellTextureRect/TextEdit:editable")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SpellTextureRect/TextureButton:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CourierTextBox:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1, 1.5, 12.5, 13),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CourierTextBox/RichTextLabel:visible_ratio")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.5, 2, 6.5, 7, 7.5, 12, 12.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CourierTextBox/RichTextLabel:text")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(1.5, 7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": ["imedia, axali codniT, momavalSi aRar dauSveb igive Secdomas", "axla unda gaviqce da werili mivitano, naxvamdis, nacarqeqia!"]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CourierAnimatedSprite2D2:flip_h")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(13),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CourierAnimatedSprite2D2:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(13, 15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(571, 249), Vector2(1200, 260)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CourierAnimatedSprite2D2:animation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(13),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"walk"]
+}
+
+[sub_resource type="Animation" id="Animation_dfihq"]
+resource_name = "cutscene_alternative"
+length = 80.0
+step = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerAnimatedSprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-68, 346), Vector2(549, 329)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PlayerAnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(3.1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("WizardTextBox:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(3.1, 3.5, 9, 9.5, 16, 16.5, 33, 33.5, 67, 67.5, 73, 73.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("WizardTextBox/RichTextLabel:text")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(3.5, 16.5, 22, 27.5, 67.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": ["rogorc iqna, moxvedi!
+Cqara, momeci werili,
+Zalian saCqaroa!", "ahahaaa!
+me mogatyue!
+me is grZneuli var, romelsac mefe emaleba", "axla wavikiTxav werils, da zustad gavigeb sad imaleba mefe", "moicade... es ra aris? am werils Zlieri jadosnuri fraza adevs da ver vkiTxulob!", "amjerad damamarcxe, nacarqeqia! magram icode, ar davnebdebi!"]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("WizardTextBox/RichTextLabel:visible_ratio")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(3.5, 4, 8.5, 9, 16.5, 17, 21.5, 22, 22.5, 27, 27.5, 28, 32.5, 33, 67.5, 68, 72.5, 73),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("PlayerTextBox:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(350, 117)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("PlayerTextBox:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(9.5, 10, 15.5, 16),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("PlayerTextBox/RichTextLabel:visible_ratio")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(10, 10.5, 15, 15.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("PlayerTextBox/RichTextLabel:text")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(10),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["raTqmaunda!
+axlave! inebeT!"]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CourierTextBox:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(33.5, 34, 39.5, 40, 42, 42.5, 64.5, 65),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("CourierTextBox/RichTextLabel:visible_ratio")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(34, 34.5, 39, 39.5, 42.5, 43, 47.5, 48, 48.5, 53, 53.5, 54, 58.5, 59, 59.5, 64, 64.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("CourierTextBox/RichTextLabel:text")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(34, 42.5, 48, 53.5, 59),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": ["rogorc iqna! gipove!
+me var namdvili Sikriki!", "imis gamo, rom daculi jadosnuri fraza SearCie, Cveni mefe usafrTxodaa!", "yoCaR! daculi jadosnuri frazebis damsaxurebiT, Cvens informacias ver moiparaven!", "axla gaviqcevi, da mefis informacias mivitan Tavis adgilze.", "madloba da naxvamdis, nacarqeqia!"]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CourierAnimatedSprite2D2:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(40, 42, 65, 67),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(609, 711), Vector2(607, 249), Vector2(607, 249), Vector2(1300, 249)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CourierAnimatedSprite2D2:animation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(42, 65),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"default", &"walk"]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("CourierAnimatedSprite2D2:flip_h")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(42),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("CourierTextBox:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(40, 42),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(366, 450), Vector2(400, 30)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("WizardAnimatedSprite2D:animation")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(73.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"walk"]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("WizardAnimatedSprite2D:position")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(73.5, 76.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(686, 331), Vector2(590, 700)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("MusicAudioStreamPlayer:playing")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3j464"]
+_data = {
+"RESET": SubResource("Animation_v8bkr"),
+"cutscene_1": SubResource("Animation_i5ytr"),
+"cutscene_2": SubResource("Animation_wpsqi"),
+"cutscene_alternative": SubResource("Animation_dfihq")
+}
+
+[sub_resource type="Animation" id="Animation_50guy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TipsRichTextLabel:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_vp28g"]
+resource_name = "fade"
+length = 2.5
+step = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TipsRichTextLabel:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_44gj0"]
+_data = {
+"RESET": SubResource("Animation_50guy"),
+"fade": SubResource("Animation_vp28g")
+}
+
+[node name="Node" type="Node"]
+script = ExtResource("1_vbrmj")
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
+scale = Vector2(5, 5)
+tile_set = SubResource("TileSet_w1bjy")
+format = 2
+layer_0/tile_data = PackedInt32Array(327680, 131074, 1, 327681, 131074, 1, 327682, 131074, 1, 327683, 131074, 1, 327684, 131074, 1, 327685, 131074, 1, 327686, 131074, 1, 327687, 131074, 1, 327688, 131074, 1, 327689, 131074, 1, 327690, 131074, 1, 327691, 131074, 1, 327692, 131074, 1, 327693, 131074, 1, 327694, 131074, 1, 196608, 131074, 3, 196609, 131074, 3, 196610, 131074, 3, 196611, 131074, 3, 196612, 131074, 3, 196613, 131074, 3, 196614, 131074, 3, 196615, 131074, 3, 196616, 131074, 3, 196617, 131074, 3, 196618, 131074, 3, 196619, 131074, 3, 196620, 131074, 3, 196621, 131074, 3, 196622, 131074, 3, 262144, 393218, 2, 262146, 393218, 1, 262147, 393218, 1, 262148, 327682, 3, 262149, 393218, 2, 262150, 393218, 1, 262151, 327682, 3, 262152, 393218, 2, 262154, 393218, 2, 262156, 327682, 3, 262158, 393218, 3, 262145, 262146, 3, 262153, 262146, 3, 262155, 262146, 3, 262157, 262146, 3, 131072, 131072, 6, 65536, 720896, 4, 0, 655360, 2, 1, 131072, 6, 2, 720896, 2, 3, 131072, 6, 4, 131072, 6, 5, 720896, 2, 6, 131072, 6, 7, 131072, 6, 8, 131072, 6, 9, 524288, 1, 10, 524288, 2, 11, 131072, 6, 12, 131072, 6, 13, 131072, 6, 14, 131072, 6, 65549, 720896, 4, 65550, 720896, 2, 131086, 131072, 6, 131085, 655360, 3, 131084, 131072, 6, 131083, 655360, 4, 131082, 131072, 6, 131081, 131072, 6, 131080, 131072, 6, 131079, 720896, 1, 131078, 655360, 3, 131077, 131072, 6, 131076, 131072, 6, 131075, 131072, 6, 131074, 524288, 2, 131073, 131072, 6, 65537, 131072, 6, 65538, 131072, 6, 65539, 720896, 1, 65540, 131072, 6, 65541, 524288, 2, 65542, 131072, 6, 65543, 720896, 3, 65544, 720896, 4, 65545, 131072, 6, 65546, 655360, 1, 65547, 131072, 6, 65548, 720896, 4, 393230, 720896, 2, 458766, 131072, 6, 458765, 131072, 6, 458764, 131072, 6, 458763, 720896, 3, 458762, 655360, 1, 458761, 720896, 1, 458760, 589824, 1, 458759, 655360, 3, 458758, 524288, 1, 458757, 589824, 1, 458756, 655360, 1, 458755, 655360, 1, 458754, 524288, 1, 458753, 131072, 6, 458752, 524288, 1, 393216, 720896, 4, 393217, 655360, 3, 393218, 131072, 6, 393219, 655360, 1, 393220, 720896, 1, 393221, 655360, 4, 393222, 131072, 6, 393223, 720896, 2, 393224, 524288, 1, 393225, 655360, 3, 393226, 131072, 6, 393227, 720896, 4, 393228, 131072, 6, 393229, 655360, 2, 524302, 131072, 6, 524301, 131072, 6, 524300, 131072, 6, 524299, 131072, 6, 524298, 655360, 1, 524297, 131072, 6, 524296, 131072, 6, 524295, 131072, 6, 524294, 131072, 6, 524293, 131072, 6, 524292, 131072, 6, 524291, 131072, 6, 524290, 131072, 6, 524289, 131072, 6, 524288, 131072, 6)
+layer_1/name = ""
+layer_1/enabled = true
+layer_1/modulate = Color(1, 1, 1, 1)
+layer_1/y_sort_enabled = false
+layer_1/y_sort_origin = 0
+layer_1/z_index = 0
+layer_1/tile_data = PackedInt32Array(-65536, 65537, 0, 0, 65537, 1, 1, 65537, 0, 65537, 65537, 1, 2, 65537, 1, -65534, 65537, 0, 3, 65537, 0, 65539, 65537, 1, 4, 65537, 1, -65532, 65537, 0, 5, 65537, 0, 65541, 65537, 1, -65530, 65537, 0, 6, 65537, 1, 7, 65537, 0, 65543, 65537, 1, -65528, 65537, 0, 8, 65537, 1, 9, 65537, 0, 65545, 65537, 1, -65526, 65537, 0, 10, 65537, 1, 11, 65537, 0, 65547, 65537, 1, -65524, 65537, 0, 12, 65537, 1, 13, 65537, 0, 65549, 65537, 1, -65522, 65537, 0, 14, 65537, 1, 393216, 65537, 0, 458752, 65537, 1, 393218, 65537, 0, 458754, 65537, 1, 393220, 65537, 0, 458756, 65537, 1, 393222, 65537, 0, 458758, 65537, 1, 393224, 65537, 0, 458760, 65537, 1, 393226, 65537, 0, 458762, 65537, 1, 393228, 65537, 0, 458764, 65537, 1, 393230, 65537, 0, 458766, 65537, 1)
+
+[node name="PlayerAnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-101, 335)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_vk77k")
+animation = &"walk"
+autoplay = "walk"
+
+[node name="WizardAnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(686, 331)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_8qtmf")
+animation = &"walk"
+autoplay = "default"
+flip_h = true
+
+[node name="CourierAnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(609, 711)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_b24np")
+animation = &"walk"
+autoplay = "walk"
+flip_h = true
+
+[node name="PlayerTextBox" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+offset_left = 350.0
+offset_top = 117.0
+offset_right = 783.0
+offset_bottom = 297.0
+texture = ExtResource("7_4smgb")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PlayerTextBox"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 32.0
+offset_right = 418.0
+offset_bottom = 146.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("8_lm225")
+theme_override_font_sizes/normal_font_size = 30
+text = "raTqmaunda!
+axlave!"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="WizardTextBox" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+offset_left = 469.0
+offset_top = 98.0
+offset_right = 902.0
+offset_bottom = 278.0
+texture = ExtResource("7_4smgb")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="WizardTextBox"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 32.0
+offset_right = 418.0
+offset_bottom = 146.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("8_lm225")
+theme_override_font_sizes/normal_font_size = 30
+text = "rogorc iqna, moxvedi!
+Cqara, momeci werili,
+Zalian saCqaroa!"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="CourierTextBox" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+offset_left = 366.0
+offset_top = 450.0
+offset_right = 799.005
+offset_bottom = 630.002
+texture = ExtResource("7_4smgb")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CourierTextBox"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 32.0
+offset_right = 418.0
+offset_bottom = 146.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("8_lm225")
+theme_override_font_sizes/normal_font_size = 30
+text = "SeCerdi!!!
+ar misce werili!!!"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="CutsceneAnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_3j464")
+}
+
+[node name="SpellTextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+offset_left = 26.0
+offset_top = 36.0
+offset_right = 1110.0
+offset_bottom = 598.0
+texture = ExtResource("9_r637f")
+
+[node name="TextEdit" type="TextEdit" parent="SpellTextureRect"]
+layout_mode = 0
+offset_left = 225.0
+offset_top = 213.0
+offset_right = 863.0
+offset_bottom = 270.0
+theme_override_colors/font_color = Color(1, 0.772549, 0.47451, 1)
+theme_override_fonts/font = ExtResource("8_lm225")
+theme_override_font_sizes/font_size = 50
+placeholder_text = "..............................................................
+"
+editable = false
+
+[node name="Label" type="Label" parent="SpellTextureRect"]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 165.0
+offset_right = 728.0
+offset_bottom = 252.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_lm225")
+theme_override_font_sizes/font_size = 40
+text = "Cawere jadosnuri fraza aq:"
+
+[node name="TextureButton" type="TextureButton" parent="SpellTextureRect"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 297.0
+offset_right = 687.0
+offset_bottom = 375.0
+disabled = true
+texture_normal = ExtResource("10_oq12q")
+texture_pressed = ExtResource("11_b43cq")
+texture_hover = ExtResource("12_h1tpm")
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="SpellTextureRect/TextureButton"]
+layout_mode = 0
+offset_left = -55.0
+offset_top = -46.0
+offset_right = 120.0
+offset_bottom = 129.0
+mouse_filter = 2
+texture = ExtResource("13_jvsk7")
+stretch_mode = 4
+
+[node name="Label2" type="Label" parent="SpellTextureRect/TextureButton"]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 19.0
+offset_right = 574.0
+offset_bottom = 106.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_lm225")
+theme_override_font_sizes/font_size = 40
+text = "dasruleba"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="SpellTextureRect/TextureButton"]
+stream = ExtResource("14_mvy67")
+
+[node name="TipsTextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+offset_left = 205.0
+offset_top = 498.0
+offset_right = 968.0
+offset_bottom = 627.0
+texture = ExtResource("16_wv6mt")
+
+[node name="TipsRichTextLabel" type="RichTextLabel" parent="TipsTextureRect"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 13.0
+offset_right = 761.0
+offset_bottom = 97.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("8_lm225")
+theme_override_font_sizes/normal_font_size = 30
+text = "yoCaR!"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="TipsAnimationPlayer" type="AnimationPlayer" parent="TipsTextureRect"]
+libraries = {
+"": SubResource("AnimationLibrary_44gj0")
+}
+
+[node name="MusicAudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_23kaw")
+volume_db = -10.0
+
+[connection signal="pressed" from="SpellTextureRect/TextureButton" to="." method="_on_texture_button_pressed"]

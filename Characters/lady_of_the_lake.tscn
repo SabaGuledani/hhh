@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://cavi6sn1youft"]
+
+[ext_resource type="Texture2D" uid="uid://bxmnvrg1brar3" path="res://assets/camelot_ [version 1.0]/camelot_ [version 1.0]/ladyOfTheLake_.png" id="1_gywsn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xvh50"]
+radius = 7.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yh085"]
+atlas = ExtResource("1_gywsn")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vw1wn"]
+atlas = ExtResource("1_gywsn")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iseu4"]
+atlas = ExtResource("1_gywsn")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57ggd"]
+atlas = ExtResource("1_gywsn")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_axahq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yh085")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vw1wn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iseu4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_57ggd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_xvh50")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -5)
+sprite_frames = SubResource("SpriteFrames_axahq")
+autoplay = "default"

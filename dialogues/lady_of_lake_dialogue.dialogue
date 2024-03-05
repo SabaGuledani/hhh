@@ -1,0 +1,57 @@
+~ start
+
+ტბის ფერია: gamarjoba nacarqeqia.
+ნაცარქექია: gamarjoba.
+ტბის ფერია: mipasuxe kiTxvebze sworad da jadosnuri gragniliT dagajildoveb.
+ნაცარქექია: mzad var.
+ტბის ფერია: pirveli SekiTxva:
+~ pirveli
+ტბის ფერია: nacarqeqia, molaparake Citisgan iReb idumal gzavnils, romelic gawvdis siaxleebsa da mosazrebebs msoflios Sesaxeb. rogor gaigeb aris Tu ara es Citi sando?   
+- Seafaseb mis mier mowodebul mtkicebulebebs da daadastureb sxva wayraoebidan. 
+	ტბის ფერია: pasuxi sworia! 
+- endobi molaparake Cits, radgan molaparake Citis sityvebs sibrZne unda hqondes.
+	ტბის ფერია: samwuxarod pasuxi arasworia! 
+	Cven ar unda vivaraudoT, rom vinme aris mcodne an sando, maTi SesaZleblobebis safuZvelze da ara realuri mtkicebulebebiT. xolo molaparake frinvelebi sulac ar aris informaciis sando wyaro.
+	axla ki Tavidan mipasuxe kiTxvaze.
+	=> pirveli
+- ugulebelyob Citis Setyobinebas gadamowmebis gareSe. 
+	ტბის ფერია: samwuxarod pasuxi arasworia!
+	pasuxi uaryofs molaparake frinvelis gzavnilis kritikuli Sefasebis gareSe. mniSvnelovania maTi pretenziis Sefaseba Sinaarsisa da konteqstidan gamomdinare, araTu varaudebis gakeTeba.
+	axla ki Tavidan mipasuxe kiTxvaze.
+	=> pirveli
+	
+ტბის ფერია: meore SekiTxva:
+~ meore
+ტბის ფერია: nacarqeqia, Sen waawyedebi arsebas, romelic formas icvlis sxvebis mosatyueblad. rogor gamoicnob mis realur bunebas?
+- endobi Sens grZnobebs da daeTanxmebi nebismier formas, romelsac arseba miiRebs.
+	ტბის ფერია: pasuxi arasworia!
+	formis cvladi arseba SeiZleba iyos matyuara da maTi garegnoba yovelTvis sando araa. mxolod grZnobebze dayrdnobiT msjelobam SeiZleba SecdomaSi SegiyvanoT.
+	scade xelaxla.
+	=> meore
+- daakvirdebi mis qcevas da qmedebebs, ramac SeiZleba gamoavlinos misi realuri saxe.
+	ტბის ფერია: pasuxi sworia!
+- SegeSindeba am arsebis, radgan es unari mas saxifaTos xdis.
+	ტბის ფერია: pasuxi arasworia!
+	arsebis Tavidan acileba ar dagexmarebaT misi realuri saxis gamovlenaSi. aman SeiZleba xeli SeuSalos Rirebuli informaciis aRmoCenas, an Tundac mixvdes rom arseba saSiSi sulac araa.
+	scade xelaxla
+	=> meore
+ტბის ფერია: mesame SekiTxva:
+~ mesame
+ტბის ფერია: nacarqeqia, aRmoCndi molaparake xeebis tyeSi, sadac TiToeuli saidumloebs CurCulebs da istoriebs aziarebs. rogor gaarkvev romelia zRapari da romeli ubralod qaris CurCuli?
+- daijerebs yvelafers, radgan xeebi brZeni da uZvelesi arsebebi arian.
+	ტბის ფერია: pasuxi arasworia!
+	brZeni arsebebis ki SeiZleba Secdne, mikerZoebulebi an sakuTari gavlenis qveS imyofebodnen. yvelaferi ar unda daijero rasac isini amboben.
+	scade xelaxla.
+	=> mesame
+- Seafaseb istoriebis Tanmimdevrobasa da konteqsts, daadastureb sxva wyaroebidanac.
+	ტბის ფერია: pasuxi sworia!
+- daaignoreb xeebis CurCuls da koncentrirdebi sakuTar gzaze.
+	ტბის ფერია: pasuxi arasworia!
+	xeebis sruliad uaryofam SeiZleba wagarTvas potenciurad Rirebuli informacia. maSinac ki Tu zogierTi CurCuli mcdaria, maT SeiZleba hqondeT simarTlis niSnebi.
+	scade xelaxla.
+	=> mesame
+ტბის ფერია: es codna da gragnili momavalSi aucileblad dagexmareba.
+
+set feria_ended = true
+
+=> END

@@ -1,0 +1,90 @@
+[gd_scene load_steps=13 format=3 uid="uid://c8l6p3xdq26wr"]
+
+[ext_resource type="Texture2D" uid="uid://foka7bnbwd00" path="res://assets/caveSprites_-20231201T131619Z-001/caveSprites_/goblin_.png" id="1_fa7pu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xar2p"]
+radius = 11.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sot6c"]
+atlas = ExtResource("1_fa7pu")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_30arq"]
+atlas = ExtResource("1_fa7pu")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_asfq5"]
+atlas = ExtResource("1_fa7pu")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0q7p5"]
+atlas = ExtResource("1_fa7pu")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ngl6"]
+atlas = ExtResource("1_fa7pu")
+region = Rect2(32, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5whk3"]
+atlas = ExtResource("1_fa7pu")
+region = Rect2(32, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hv0si"]
+atlas = ExtResource("1_fa7pu")
+region = Rect2(96, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ny0mk"]
+atlas = ExtResource("1_fa7pu")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ljd2"]
+atlas = ExtResource("1_fa7pu")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ka5xh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sot6c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_30arq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_asfq5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0q7p5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ngl6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5whk3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hv0si")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ny0mk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ljd2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="goblin1" type="CharacterBody2D"]
+texture_filter = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_xar2p")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1, -5)
+scale = Vector2(0.9375, 0.90625)
+sprite_frames = SubResource("SpriteFrames_ka5xh")
+autoplay = "default"

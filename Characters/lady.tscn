@@ -1,0 +1,113 @@
+[gd_scene load_steps=11 format=3 uid="uid://bfpkfvgkmir65"]
+
+[ext_resource type="Texture2D" uid="uid://bxmnvrg1brar3" path="res://assets/camelot_ [version 1.0]/camelot_ [version 1.0]/ladyOfTheLake_.png" id="1_lyc3l"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s0mpw"]
+atlas = ExtResource("1_lyc3l")
+region = Rect2(0, 0, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lljjm"]
+atlas = ExtResource("1_lyc3l")
+region = Rect2(32, 0, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57o8f"]
+atlas = ExtResource("1_lyc3l")
+region = Rect2(64, 0, 32, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b2i4n"]
+atlas = ExtResource("1_lyc3l")
+region = Rect2(96, 0, 32, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a5ne5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0mpw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lljjm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_57o8f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b2i4n")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 7.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lq5qf"]
+radius = 13.0
+
+[sub_resource type="Animation" id="Animation_jfib7"]
+resource_name = "Idle"
+length = 0.3215
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_qwbqe"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mtpb2"]
+_data = {
+"Idle": SubResource("Animation_jfib7"),
+"RESET": SubResource("Animation_qwbqe")
+}
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+texture_filter = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -8)
+sprite_frames = SubResource("SpriteFrames_a5ne5")
+animation = &"Idle"
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(1, -1)
+shape = SubResource("CircleShape2D_lq5qf")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Idle"
+libraries = {
+"": SubResource("AnimationLibrary_mtpb2")
+}

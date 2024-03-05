@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://cg4ppwmjrqt4h"
+path="res://.godot/imported/bias_game_end.dialogue-2f431a35d948ca97a708b5f0a22153eb.tres"
+
+[deps]
+
+source_file="res://dialog/bias_game_end.dialogue"
+dest_files=["res://.godot/imported/bias_game_end.dialogue-2f431a35d948ca97a708b5f0a22153eb.tres"]
+
+[params]
+
+defaults=true

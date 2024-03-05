@@ -1,0 +1,83 @@
+~ start
+
+ტყის ფერია: gamarjoba nacarqeqia.
+ნაცარქექია: gamarjoba.
+ტყის ფერია: mipasuxe kiTxvaze sworad da Sen SeZleb erT-erT saxlSi Sesvlas.
+ნაცარქექია: mzad var.
+~ next
+ტყის ფერია: Sen kiTxulob axal statias samecniero aRmoCenis Sesaxeb, ra aris yvelaze mniSvnelovani, rac unda gaakeTo imis dasadgenad, aris Tu ara statia sando?
+- Seamowmo avtoris sandooba da gamocdileba.
+	ტყის ფერია: pasuxi sworia! 
+- yuradReba miaqcio mimzidvel saTaursa da saintereso fotoebs.
+	ტყის ფერია: samwuxarod pasuxi arasworia! 
+	axali ambebis statiis Sefasebisas gadamwyveti mniSvneloba aqvs avotiris sandoobis da gamocdicdilebis Sefasebas. sando statias, rogorc wesi, dawers avtori, romelsac aqvs Sesabamisi kvalifikacia da gamocdileba am sferoSi. avotis rwmunebaTa sigelebis Sefaseba dagexmarebat daadginot aqvs Tu ara mas codna da uflebamosileba zusti da sando informaciis miwodebisTvis.
+	Tavidan dawyeba.
+	=> next 
+- gauziaro statia megobrebs yuradRebiT wakiTxvis gareSe.
+	ტყის ფერია: samwuxarod pasuxi arasworia!
+	axali ambebis statiis Sefasebisas gadamwyveti mniSvneloba aqvs avotiris sandoobis da gamocdicdilebis Sefasebas. sando statias, rogorc wesi, dawers avtori, romelsac aqvs Sesabamisi kvalifikacia da gamocdileba am sferoSi. avotis rwmunebaTa sigelebis Sefaseba dagexmarebat daadginot aqvs Tu ara mas codna da uflebamosileba zusti da sando informaciis miwodebisTvis.
+	Tavidan dawyeba.
+	=> next 
+ტყის ფერია: es codna momavalSi aucileblad dagexmareba.
+
+=> END
+
+~ goblinStart
+nacarqeqia:  gamarjoba, megobrebo. ras akeTebT aq, tyeSi?
+goblinebi: Cven veZebT eqskaliburs, WeSmariti mefis maxvils! 
+nacarqeqia:  eqskaliburi? saidan iciT mis Sesaxeb?
+goblinebi: masze Cveni liderisgan, gobosgan gavigeT. man Tqva, rom man ipova eqskaliburi da is axla mefea. gviTxra, misi msgavsi xmlebi kidev vipovoT da mivitanoT.
+nacarqeqia:  hm, saeWvod JRers. saidan iciT, rom simarTles ambobs?
+goblinebi: man gvaCvena Tavisi xmali. brwyinavda da saxeli erqva. ewera "eqskaliburi".
+nacarqeqia:  kargiT mgoni is gatyuebT. SesaZloa man ubralod ipova xmali saxelwodebiT da Tqva, rom es iyo eqskaliburi. iciT rame eqskaliburis istoriis an warmoSobis Sesaxeb?
+goblinebi: ara, Cven ara. Cven ubralod gvjera gobbos naTqvamis. bolos da bolos, igi aris mefe.
+nacarqeqia:  gasagebia... me maqvs jadosnuri gragnili, romelic dagvexmareba eqskaliburis-is Sesaxeb metis garkvevaSi. is Seicavs realur droSi informacias zogierTi sxva wignidan. gsurT damexmaroT amis SemowmebaSi?
+nacarqeqia:  kargi, vnaxoT ras ambobs jadosnuri gragnili eqskaliburze-ze. naxeT, bevri wignia, sadaC naxsenebia eqskaliburi. magram yvela maTgani ar aris sando. Cven unda gamoviyenoT deduqCiisa da statiebis analizis unarebi, raTa vipovoT yvelaze sando.
+goblinebi: rogor gavakeToT es?
+nacarqeqia:  kargad, Cven unda gadavxedoT TiToeuli wignis saTaurs, avtors, TariRs, wyaros da Sinaarss. 
+set goblinstart_end = true
+=> END
+
+~ GoblinAuthortCheck
+nacarqeqia:  erTi maTgani gamoqveynebulia rei landrumis-is mier, xolo meore robert hihins-is mier
+nacarqeqia:  modiT SevamowmoT am wignebis yvela avtori!
+=> END
+
+~ takingExcalibur
+nacarqeqia: es wigni yvelaze sandoa maT Soris, rac aqamde gvinaxavs. mas saxelic hqonda amotvifruli, magram es ar iyo "eqskaliburi". es iyo "kaliburnusi", romeliC aris eqskaliburis laTinuri saxeli.
+goblinebi: vaa, es saovaria. ase rom, gobos xmali ar aris eqskaliburi. es aris yalbi. man mogvatyua. is ar aris mefe.
+nacarqeqia: asea. man mogvatyua. magram ar inerviuloT, Cven SegviZlia vipovoT namdvili eqskaliburi da gamovavlinoT misi tyuili.
+nacarqeqia: Sexede, aq aris. es aris Zalauflebis xmali. es aris eqskaliburi.
+goblinebi: saidan ici? is ar hgavs xmals. joxs hgavs.
+nacarqeqia: merwmuneT, es maxvilia. vcdi amoRebas.
+set excalibur_end = true
+=> END
+
+~ take
+
+goblinebi: Sen es SeZeli!
+=> END
+
+~ exposeGobbo
+nacarqeqia:  Cven davbrundiT. raRac mniSvnelovani gvaqvs saTqmeli. moismineT yvelam.
+goblinebi: ra aris es? ra unda gviTxraT?
+nacarqeqia:  Cven unda giTxraT simarTle eqskaliburisa da gobos Sesaxeb. gobo ar aris mefe. is aris matyuara da TaRliTi. yalbi xmliT mogatyuaT. mas ar aqvs eqskaliburi. mas aqvs xmali saxelwodebiT, magram es ar aris eqskaliburi.
+nacarqeqia:  Cven is vipoveT sando wignis miniSnebebis miyolebiT, romeliC mogviTxrobs eqskaliburis namdvil istoriasa da warmoSobaze. ai, neba momeciT gaCvenoT.
+goblinebi: vaa, es saoCaria. es Zalian keTilia Sengan. gmadlobT, rom simarTle gviTxariT.
+nacarqeqia:  is iq aris.man icis, rom mxilebulia.
+gobbo: ki megobrebo, Zalian vwuxvar, rom mogatyueT. mindoda SegyvarebodiT da gedidebineT.
+goblinebi: ar aris sachiro motyueba rom SegiyvaroT. Cven yovelTvis gveyvarebi, rac ar unda iyos. dagvpirdi, rom ar mogvatyueb.
+gobbo: gpirdebiT
+nacarqeqia:  me gavagrZeleb mogzaurobas, naxvamdis megobrebo!
+goblinebi: naxvamdis!
+set goblin_scene_final = true
+=> END
+
+~ tyeStart
+ნაცარქექია: ai Turme sad yofila realuri eqskaliburi! goblinebi namdvilad mcdar informacias avrceleben!
+=> END
+
+~ reiChosen
+ნაცარქექია: mgoni jobia kidev erTxel gadavamowmo. reis naSromi da warsuli ar iwvevs did ndobas
+ნაცარქექია: robertis naSromi ki bevrad ufro damajerebelia, wyaroebze dayrdnobiTaa dawerili
+=> END

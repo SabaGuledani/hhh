@@ -1,0 +1,108 @@
+[gd_scene load_steps=11 format=3 uid="uid://b3eubpx76ylgw"]
+
+[ext_resource type="Texture2D" uid="uid://dgwoqboqsrk2m" path="res://assets/camelot_ [version 1.0]/camelot_ [version 1.0]/morganLeFay_.png" id="1_lqhd8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dgppo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_remhb"]
+atlas = ExtResource("1_lqhd8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1gl1"]
+atlas = ExtResource("1_lqhd8")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_55lt3"]
+atlas = ExtResource("1_lqhd8")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ut8ma"]
+atlas = ExtResource("1_lqhd8")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wpakl"]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_remhb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o1gl1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_55lt3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ut8ma")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 3.0
+}]
+
+[sub_resource type="Animation" id="Animation_g0b2i"]
+resource_name = "Idle"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_mrd7o"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_elwif"]
+_data = {
+"Idle": SubResource("Animation_g0b2i"),
+"RESET": SubResource("Animation_mrd7o")
+}
+
+[node name="dzma" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_dgppo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_wpakl")
+animation = &"Idle"
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Idle"
+libraries = {
+"": SubResource("AnimationLibrary_elwif")
+}

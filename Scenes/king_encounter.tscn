@@ -1,0 +1,842 @@
+[gd_scene load_steps=36 format=3 uid="uid://dsx8btyh1ed5j"]
+
+[ext_resource type="Script" path="res://Scripts/king_encounter.gd" id="1_5g8ke"]
+[ext_resource type="Texture2D" uid="uid://bq7s6kqjm25h7" path="res://assets/taiga_ [version 1.0]/taiga_.png" id="1_o66xq"]
+[ext_resource type="AudioStream" uid="uid://bu126ssfh1vja" path="res://assets/music/king_encounter_theme.mp3" id="2_2onoh"]
+[ext_resource type="Texture2D" uid="uid://bykijlqd3q64h" path="res://assets/swamp_ [version 1.0]/swampObjects_.png" id="2_oelmt"]
+[ext_resource type="Texture2D" uid="uid://bjsrbhi7mtbwl" path="res://assets/camelot_ [version 1.0]/camelot_ [version 1.0]/arthurPendragon_.png" id="3_eqq7s"]
+[ext_resource type="Texture2D" uid="uid://diiig38c0n4gg" path="res://assets/forestSprites_ v1.2/satyr_.png" id="4_xjc06"]
+[ext_resource type="Texture2D" uid="uid://dctnwas6sfw6a" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Lock_01a2.png" id="5_bhrwy"]
+[ext_resource type="FontFile" uid="uid://boq5tvqbl1lbg" path="res://assets/geopixel.ttf" id="6_v6qmo"]
+[ext_resource type="Texture2D" uid="uid://bckf2xodbek70" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Banner_02_Downward.png" id="8_158cs"]
+[ext_resource type="Texture2D" uid="uid://cmlkfmipsbu6o" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a1.png" id="9_i6jvk"]
+[ext_resource type="Texture2D" uid="uid://cwxipthyndc4k" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a3.png" id="10_iv0bb"]
+[ext_resource type="Texture2D" uid="uid://cly1w1k0tfgd8" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a2.png" id="11_tv75b"]
+[ext_resource type="Texture2D" uid="uid://mcwvkdam4rro" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Checkmark_Small.png" id="12_7qrd0"]
+[ext_resource type="AudioStream" uid="uid://blebjkldipdgs" path="res://assets/music/correct.mp3" id="14_5ald4"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_klsj3"]
+texture = ExtResource("1_o66xq")
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+20:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+16:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+20:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+16:3/0 = 0
+17:3/0 = 0
+18:3/0 = 0
+19:3/0 = 0
+20:3/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+16:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+16:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+20:6/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+16:7/0 = 0
+17:7/0 = 0
+18:7/0 = 0
+19:7/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ipqlm"]
+texture = ExtResource("2_oelmt")
+margins = Vector2i(0, 14)
+2:9/animation_frame_0/duration = 0.2
+2:9/animation_frame_1/duration = 0.2
+2:9/animation_frame_2/duration = 0.2
+2:9/animation_frame_3/duration = 0.2
+2:9/0 = 0
+4:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_xhu32"]
+sources/0 = SubResource("TileSetAtlasSource_klsj3")
+sources/2 = SubResource("TileSetAtlasSource_ipqlm")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p44r8"]
+atlas = ExtResource("3_eqq7s")
+region = Rect2(0, 0, 32, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1eb4e"]
+atlas = ExtResource("3_eqq7s")
+region = Rect2(32, 0, 32, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w007f"]
+atlas = ExtResource("3_eqq7s")
+region = Rect2(64, 0, 32, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hnd4e"]
+atlas = ExtResource("3_eqq7s")
+region = Rect2(96, 0, 32, 42)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_daflg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p44r8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1eb4e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w007f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hnd4e")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qwvu0"]
+atlas = ExtResource("4_xjc06")
+region = Rect2(96, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nsh2h"]
+atlas = ExtResource("4_xjc06")
+region = Rect2(120, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vcnxm"]
+atlas = ExtResource("4_xjc06")
+region = Rect2(144, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iidmo"]
+atlas = ExtResource("4_xjc06")
+region = Rect2(168, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fehul"]
+atlas = ExtResource("4_xjc06")
+region = Rect2(0, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1kpd5"]
+atlas = ExtResource("4_xjc06")
+region = Rect2(24, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tv3hu"]
+atlas = ExtResource("4_xjc06")
+region = Rect2(48, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b4nb5"]
+atlas = ExtResource("4_xjc06")
+region = Rect2(72, 48, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q20au"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qwvu0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nsh2h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vcnxm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iidmo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fehul")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1kpd5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tv3hu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b4nb5")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_6mrc7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerAnimatedSprite2D:flip_h")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PlayerAnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"walk"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PlayerAnimatedSprite2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1257, 340)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PlayerTextBox/RichTextLabel:visible_ratio")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("PlayerTextBox:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("KingTextBox:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("KingTextBox:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("PlayerTextBox/RichTextLabel:text")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": ["
+"]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("KingTextBox/RichTextLabel:visible_ratio")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("KingTextBox/RichTextLabel:text")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Seni daxmareba mwirdeba!"]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("MusicAudioStreamPlayer:playing")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("SpellTextureRect:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("SpellTextureRect/TextureButton:disabled")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("SpellTextureRect/TextEdit:editable")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_spq68"]
+resource_name = "cutscene"
+length = 46.0
+step = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerAnimatedSprite2D:flip_h")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PlayerAnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"walk", &"default"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PlayerAnimatedSprite2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1257, 340), Vector2(690, 338)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PlayerTextBox/RichTextLabel:visible_ratio")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(2.5, 3, 4.5, 5, 30.5, 31, 33, 33.5, 34, 37.5, 38, 38.5, 40.5, 41, 41.5, 43.5, 44),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("PlayerTextBox:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(2, 2.5, 5, 5.5, 30, 30.5, 44, 44.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("KingTextBox:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("KingTextBox:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(5, 5.5, 29.5, 30),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("PlayerTextBox/RichTextLabel:text")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(2.5, 30.5, 33.5, 38, 41),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": ["mogesalmebiT, mefeo!", "raTqmaunda, dagexmarebi!", "oRond jer maqsimalurad daculi jadosnuri fraza unda davado werils!", "Semdeg ki egreve Sikrikisken gavemarTebi!", "naxvamdis, mefeo!"]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("KingTextBox/RichTextLabel:visible_ratio")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(5.5, 6, 8, 8.5, 9, 11, 11.5, 12, 15, 15.5, 16, 19, 19.5, 20, 23, 23.5, 24, 26, 26.5, 27, 29, 29.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("KingTextBox/RichTextLabel:text")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 8.5, 11.5, 15.5, 19.5, 23.5, 26.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": ["mogesalmebi, nacarqeqia!", "Seni daxmareba mWirdeba!", "gasaWirSi var!", "borot grZneuls vemalebi, Cems Sikriks unda gadasce werili.", "oRond aucilebelia, rom es werili boroti grZneulis xelSi ar Cavardes! ", "Seni jadosnuri fraza gamoiyene, raTa ver SeZlos wakiTxva.", "damexmarebi?"]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("MusicAudioStreamPlayer:playing")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("SpellTextureRect:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 44.5, 45.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("SpellTextureRect/TextureButton:disabled")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 45.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("SpellTextureRect/TextEdit:editable")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 45.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_n7ryd"]
+resource_name = "cutscene_2"
+length = 10.0
+step = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpellTextureRect/TextEdit:editable")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SpellTextureRect/TextureButton:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SpellTextureRect:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PlayerAnimatedSprite2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1, 2, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(690, 338), Vector2(690, 338), Vector2(690, 338), Vector2(1300, 338)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("PlayerAnimatedSprite2D:flip_h")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [false, true, true, false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("PlayerAnimatedSprite2D:animation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [&"default", &"default", &"walk"]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_28psk"]
+_data = {
+"RESET": SubResource("Animation_6mrc7"),
+"cutscene": SubResource("Animation_spq68"),
+"cutscene_2": SubResource("Animation_n7ryd")
+}
+
+[node name="Node" type="Node"]
+script = ExtResource("1_5g8ke")
+
+[node name="MusicAudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_2onoh")
+volume_db = -10.0
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
+scale = Vector2(10, 10)
+tile_set = SubResource("TileSet_xhu32")
+format = 2
+layer_0/tile_data = PackedInt32Array(1, 393216, 3, 65537, 393216, 4, 2, 458752, 3, 65538, 458752, 4, 3, 524288, 3, 65539, 524288, 4, 4, 589824, 3, 65540, 589824, 4, 131073, 655360, 2, 131072, 720896, 1, 65536, 589824, 1, 0, 655360, 3, 196608, 655360, 3, 262144, 131072, 6, 196609, 524288, 2, 196610, 720896, 1, 262146, 131072, 6, 262147, 131072, 6, 262148, 131072, 6, 262149, 131072, 6, 262150, 131072, 6, 262151, 131072, 6, 196615, 131072, 6, 131079, 131072, 6, 65543, 131072, 6, 7, 131072, 6, 6, 131072, 6, 5, 720896, 1, 65541, 131072, 6, 131077, 720896, 1, 131078, 589824, 1, 196614, 655360, 1, 196613, 655360, 1, 196612, 655360, 4, 131074, 131072, 6, 131075, 655360, 1, 131076, 524288, 1, 196611, 458752, 6, 65542, 720896, 2, 262145, 131072, 6)
+layer_1/name = ""
+layer_1/enabled = true
+layer_1/modulate = Color(1, 1, 1, 1)
+layer_1/y_sort_enabled = false
+layer_1/y_sort_origin = 0
+layer_1/z_index = 0
+layer_1/tile_data = PackedInt32Array(196613, 131074, 9, 196614, 262146, 3)
+
+[node name="KingAnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(295, 392)
+scale = Vector2(10, 10)
+sprite_frames = SubResource("SpriteFrames_daflg")
+autoplay = "default"
+frame_progress = 0.712066
+
+[node name="PlayerAnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1257, 340)
+scale = Vector2(10, 10)
+sprite_frames = SubResource("SpriteFrames_q20au")
+animation = &"walk"
+autoplay = "walk"
+flip_h = true
+
+[node name="PlayerTextBox" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+offset_left = 481.0
+offset_top = 108.0
+offset_right = 914.0
+offset_bottom = 288.0
+texture = ExtResource("5_bhrwy")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PlayerTextBox"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 32.0
+offset_right = 418.0
+offset_bottom = 146.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("6_v6qmo")
+theme_override_font_sizes/normal_font_size = 30
+text = "
+"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="KingTextBox" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+offset_left = 93.0
+offset_top = 108.0
+offset_right = 526.0
+offset_bottom = 288.0
+texture = ExtResource("5_bhrwy")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="KingTextBox"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 32.0
+offset_right = 418.0
+offset_bottom = 146.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("6_v6qmo")
+theme_override_font_sizes/normal_font_size = 30
+text = "Seni daxmareba mwirdeba!"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="SpellTextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+offset_left = 3.0
+offset_top = 65.0
+offset_right = 1087.0
+offset_bottom = 627.0
+texture = ExtResource("8_158cs")
+
+[node name="TextEdit" type="TextEdit" parent="SpellTextureRect"]
+layout_mode = 0
+offset_left = 225.0
+offset_top = 213.0
+offset_right = 863.0
+offset_bottom = 270.0
+theme_override_colors/font_color = Color(1, 0.772549, 0.47451, 1)
+theme_override_fonts/font = ExtResource("6_v6qmo")
+theme_override_font_sizes/font_size = 50
+placeholder_text = "..............................................................
+"
+editable = false
+
+[node name="Label" type="Label" parent="SpellTextureRect"]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 165.0
+offset_right = 728.0
+offset_bottom = 252.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_v6qmo")
+theme_override_font_sizes/font_size = 40
+text = "Cawere jadosnuri fraza aq:"
+
+[node name="TextureButton" type="TextureButton" parent="SpellTextureRect"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 297.0
+offset_right = 687.0
+offset_bottom = 375.0
+disabled = true
+texture_normal = ExtResource("9_i6jvk")
+texture_pressed = ExtResource("10_iv0bb")
+texture_hover = ExtResource("11_tv75b")
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="SpellTextureRect/TextureButton"]
+layout_mode = 0
+offset_left = -55.0
+offset_top = -46.0
+offset_right = 120.0
+offset_bottom = 129.0
+mouse_filter = 2
+texture = ExtResource("12_7qrd0")
+stretch_mode = 4
+
+[node name="Label2" type="Label" parent="SpellTextureRect/TextureButton"]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 19.0
+offset_right = 574.0
+offset_bottom = 106.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_v6qmo")
+theme_override_font_sizes/font_size = 40
+text = "dasruleba"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="SpellTextureRect/TextureButton"]
+stream = ExtResource("14_5ald4")
+
+[node name="CutsceneAnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "cutscene"
+libraries = {
+"": SubResource("AnimationLibrary_28psk")
+}
+
+[connection signal="pressed" from="SpellTextureRect/TextureButton" to="." method="_on_texture_button_pressed"]

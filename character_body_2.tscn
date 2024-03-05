@@ -1,0 +1,53 @@
+[gd_scene load_steps=9 format=3 uid="uid://p4ttchfqtily"]
+
+[ext_resource type="Script" path="res://character_body_2.gd" id="1_r6cpq"]
+[ext_resource type="Texture2D" uid="uid://vsibtkthmprr" path="res://assets/camelot_ [version 1.0]/camelot_ [version 1.0]/lancelot_.png" id="2_rrxhk"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gptm3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w85om"]
+atlas = ExtResource("2_rrxhk")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gt1vv"]
+atlas = ExtResource("2_rrxhk")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h04eg"]
+atlas = ExtResource("2_rrxhk")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jicbd"]
+atlas = ExtResource("2_rrxhk")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sp16o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w85om")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gt1vv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h04eg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jicbd")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_r6cpq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_gptm3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D"]
+sprite_frames = SubResource("SpriteFrames_sp16o")
+animation = &"Idle"
+frame_progress = 0.878808

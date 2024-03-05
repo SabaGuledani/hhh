@@ -1,0 +1,53 @@
+[gd_scene load_steps=9 format=3 uid="uid://ddaw2p08gkceu"]
+
+[ext_resource type="Script" path="res://character_king.gd" id="1_y4wct"]
+[ext_resource type="Texture2D" uid="uid://bjsrbhi7mtbwl" path="res://assets/camelot_ [version 1.0]/camelot_ [version 1.0]/arthurPendragon_.png" id="2_ywtn3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_57bq0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ur2f3"]
+atlas = ExtResource("2_ywtn3")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_srfvb"]
+atlas = ExtResource("2_ywtn3")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jbqdd"]
+atlas = ExtResource("2_ywtn3")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1rom"]
+atlas = ExtResource("2_ywtn3")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5rgti"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ur2f3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_srfvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jbqdd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o1rom")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_y4wct")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_57bq0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5rgti")
+animation = &"Idle"
+frame_progress = 0.927474
