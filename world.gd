@@ -1,5 +1,5 @@
 extends TileMap
-
+#komentari
 
 @onready var  global = get_node("/root/Global")
 @onready var  state = get_node("/root/State")
