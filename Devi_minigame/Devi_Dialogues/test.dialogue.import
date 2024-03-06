@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dp88i7txl4tyb"
+path="res://.godot/imported/test.dialogue-ebd286313c124737f651ac416701c25c.tres"
+
+[deps]
+
+source_file="res://Devi_minigame/Devi_Dialogues/test.dialogue"
+dest_files=["res://.godot/imported/test.dialogue-ebd286313c124737f651ac416701c25c.tres"]
+
+[params]
+
+defaults=true
