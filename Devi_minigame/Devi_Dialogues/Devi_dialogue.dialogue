@@ -8,7 +8,7 @@ nacarqeqia: me mival devTan da vcdi mogvarebas. xom gagigiaT „gvelsa xvreliT a
 meomrebi:  kargi mogzauro, oRond Tavs gaufrTxildi.
 => END
 
-~ devi_meet
+~ devi_encounter
 nacarqeqia: ras Seuwuxebixar devo?
 devi: Zalian gabrazebuli var!
 nacarqeqia: vize an raze?
@@ -110,6 +110,8 @@ devi: meomrebi sul damviwyebia! rogor moviqceT, megobaro?
 	devi: Tavs cudad vigrZnob. me maT bodiSi unda movuxado. 
 	=> finish
 -mgoni unda mivideT da vuTxraT yvelaferi.
+do emit("finish_campfire_dialogue")
+
 => END 
 
 ~ meomrebtan_dabruneba

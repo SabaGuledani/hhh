@@ -17,10 +17,11 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Globalscene="*res://Global.tscn"
-Global="*res://Global.gd"
+Globalscene="*res://Global_variables/Global.tscn"
+Global="*res://Global_variables/Global.gd"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
-State="*res://Scripts/State.gd"
+State="*res://Global_variables/State.gd"
+Signals="*res://Global_variables/Signals.gd"
 
 [dialogue_manager]
 

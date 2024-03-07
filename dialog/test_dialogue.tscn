@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dyg2v8u3p3f0u"]
-
-[ext_resource type="Script" path="res://TestDialogue.gd" id="1_so1d8"]
-
-[node name="TestDialogue" type="Node2D"]
-position = Vector2(0, 100)
-script = ExtResource("1_so1d8")

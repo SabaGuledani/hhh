@@ -12,7 +12,8 @@ func _ready():
 		state.goblin_scene_final  = false
 	if State.gamogdebuli == false:
 		DialogueManager.show_example_dialogue_balloon(load("res://dialogues/main.dialogue"),"gamestart")
-
+	if global.i == 1:
+		print("true")
 func load_state():
 	if typeof(global.state) == TYPE_DICTIONARY:
 		var player = get_node("Natsarqeqia")
