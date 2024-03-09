@@ -110,7 +110,7 @@ devi: meomrebi sul damviwyebia! rogor moviqceT, megobaro?
 	devi: Tavs cudad vigrZnob. me maT bodiSi unda movuxado. 
 	=> finish
 -mgoni unda mivideT da vuTxraT yvelaferi.
-do emit("finish_campfire_dialogue")
+do emit("finish_campfire_dialogue", "true")
 
 => END 
 
@@ -135,6 +135,8 @@ nacarqeqia: TqveniT manipulireben gazeTebi, rodesac gadaumowmebel informacias ga
 devi: me Zalian megobruli var da damajeres, rom Tqvenc borotebi iyaviT. me mxolod megobroba minda. sufra maqvs axla ZmebTan erTad da gpatiJebT Tqvenc!
 meomrebi: Cven Zalian bevrni varT, rogor daveteviT?
 devi: me kidev Zalian didi saxli maqvs. wamodiT!
+
+do emit("finish_sherigeba", "true")
 => END  
 
 
