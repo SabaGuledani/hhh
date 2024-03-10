@@ -17,4 +17,10 @@ func _process(delta):
 
 
 func on_question_image_show(questionNumber):
-	print("signal_emitted" + str(questionNumber))
+	var newTextureStr1 = "res://NewspaperGame/Images/quest_%s_1.jpg" % questionNumber
+	var newTextureStr2 = "res://NewspaperGame/Images/quest_%s_2.jpg" % questionNumber
+	var newTexture1 = load(newTextureStr1)
+	var newTexture2 = load(newTextureStr2)
+	$ImageContainer/TextureRect.set_texture(newTexture1)
+	$ImageContainer/TextureRect2.set_texture(newTexture2)
+	$ImageContainer.visible = true
