@@ -1,19 +1,20 @@
-[gd_scene load_steps=11 format=3 uid="uid://bbab5da2dohrl"]
+[gd_scene load_steps=12 format=3 uid="uid://bbab5da2dohrl"]
 
 [ext_resource type="TileSet" uid="uid://57rtsefdx6lu" path="res://main_world_tileset.tres" id="1_04cgq"]
 [ext_resource type="Script" path="res://NewspaperGame/newspaperGame.gd" id="1_tffyi"]
+[ext_resource type="Texture2D" uid="uid://cab3iwvk4cdpx" path="res://NewspaperGame/Images/quest_1_1.png" id="2_kriam"]
 [ext_resource type="PackedScene" uid="uid://wbsso4waqvoc" path="res://NewspaperGame/SecondaryScenes/natsarqeqia_scene.tscn" id="2_nhdko"]
 [ext_resource type="PackedScene" uid="uid://bkrxu1uosc8y4" path="res://NewspaperGame/SecondaryScenes/newsguy_scene.tscn" id="3_atmp5"]
+[ext_resource type="Texture2D" uid="uid://dhieo2oira6ew" path="res://NewspaperGame/Images/quest_1_2.png" id="3_lrwyy"]
 [ext_resource type="Script" path="res://NewspaperGame/natsarqeqia_scene.gd" id="5_k11aw"]
 [ext_resource type="Resource" uid="uid://dfrdgkngj8gx5" path="res://NewspaperGame/Dialogue/newspaperDialogue.dialogue" id="6_d6jth"]
-[ext_resource type="Texture2D" uid="uid://dvccfpoxcr18r" path="res://NewspaperGame/Images/quest_1_1.jpg" id="7_wvh68"]
-[ext_resource type="Texture2D" uid="uid://0oyybkojuqyk" path="res://NewspaperGame/Images/quest_1_2.jpg" id="8_j5lbu"]
+[ext_resource type="AudioStream" uid="uid://bb4418r8a2hqi" path="res://NewspaperGame/Audio/Newspaper Music (Horsemen Approach).mp3" id="7_0cdak"]
 
 [sub_resource type="Curve2D" id="Curve2D_eenkk"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -256, 586, -2.82843, 1.41421, 2.82843, -1.41421, 367, 577, -11.3137, 11.3137, 11.3137, -11.3137, 621, 564, -41.0122, 73.5391, 41.0122, -73.5391, 747, 465)
+"points": PackedVector2Array(0, 0, 0, 0, -256, 586, -2.82843, 1.41421, 2.82843, -1.41421, 367, 577, -11.3137, 11.3137, 11.3137, -11.3137, 621, 564, -41.0122, 73.5391, 41.0122, -73.5391, 722, 429, -92.0693, -49.2094, 92.0693, 49.2094, 821, 576, 0, 0, 0, 0, 986, 607, 0, 0, 0, 0, 1345, 605)
 }
-point_count = 4
+point_count = 7
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0b7fw"]
 radius = 181.099
@@ -32,7 +33,7 @@ offset_top = 35.0
 offset_right = 1134.0
 offset_bottom = 1059.0
 scale = Vector2(0.4, 0.4)
-texture = ExtResource("7_wvh68")
+texture = ExtResource("2_kriam")
 expand_mode = 1
 
 [node name="TextureRect2" type="TextureRect" parent="ImageContainer"]
@@ -42,7 +43,8 @@ offset_top = 35.0
 offset_right = 1674.0
 offset_bottom = 1059.0
 scale = Vector2(0.4, 0.4)
-texture = ExtResource("8_j5lbu")
+texture = ExtResource("3_lrwyy")
+expand_mode = 1
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -60,7 +62,7 @@ layer_1/z_index = 0
 layer_1/tile_data = PackedInt32Array(0, 655368, 8, 131077, 65544, 3, 65548, 65553, 1)
 
 [node name="NewsGuy" parent="." instance=ExtResource("3_atmp5")]
-position = Vector2(902, 419)
+position = Vector2(913, 344)
 
 [node name="Path2D" type="Path2D" parent="."]
 position = Vector2(3, 3)
@@ -82,7 +84,13 @@ dialogue_resource = ExtResource("6_d6jth")
 position = Vector2(904, 439)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(11, -75)
 shape = SubResource("CircleShape2D_0b7fw")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_0cdak")
+volume_db = -15.0
+autoplay = true
 
 [connection signal="body_entered" from="Area2D" to="Path2D/PathFollow2D/Natsarqeqia" method="_on_area_2d_body_entered"]
 

@@ -1,4 +1,5 @@
 ~ start
+set NewspaperState.moveSpeed = 0
 nacarqeqia: salami!
 gazeTebis mbeWdavi: gamarjoba, mogzauro! vin brZandebiT?
 nacarqeqia: me nacarqeqias meZaxian, Tavad? ras saqmianobT?
@@ -54,4 +55,5 @@ do NewspaperState.showQuestionImages.emit(0)
 gazeTebis mbeWdavi: nacarqeqia, rogorc dRes Cvens mier ganxiluli situaciebidan viswavleT, yoveldRiur cxovrebaSi mniSvnelovania gavarCioT marTali tyuilisgan. amisTvis aucilebelia gamoviyenoT logika da Cvens mier ukve SeZenili codna, romlis simarTleSic ukve darwmunebulebi varT. sasurvelia informaciis sxva, alternatiuli wyaroebis gadamowmebac. mTavaria, rom brmad araferi davijeroT.
 gazeTebis mbeWdavi: madloba, nacarqeqiav, rom damexmare. Sen marTlac didi saqme gaakeTe, radgan sazogadoeba daicavi dezinformaciisgan. naxvamdis da warmatebebs gisurveb!
 nacarqeqia: naxvamdis!
+set NewspaperState.moveSpeed = 0.25
 => END
