@@ -23,6 +23,7 @@ DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 State="*res://Global_variables/State.gd"
 Signals="*res://Global_variables/Signals.gd"
 NewspaperState="*res://NewspaperGame/Dialogue/newspaperState.gd"
+GnomeState="*res://GnomeGame/Dialogue/gnomeState.gd"
 
 [dialogue_manager]
 
