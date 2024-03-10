@@ -59,7 +59,7 @@ speed_decrease={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogues/main.dialogue", "res://main.dialogue", "res://Dialogue/main.dialogue", "res://dialogues/lady_of_lake_dialogue.dialogue", "res://dialog/bias_game_end.dialogue", "res://dialog/bias_dialog.dialogue", "res://Devi_minigame/Devi_Dialogues/Devi_dialogue.dialogue", "res://Devi_minigame/Devi_Dialogues/test.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogues/main.dialogue", "res://main.dialogue", "res://Dialogue/main.dialogue", "res://dialogues/lady_of_lake_dialogue.dialogue", "res://dialog/bias_game_end.dialogue", "res://dialog/bias_dialog.dialogue", "res://Devi_minigame/Devi_Dialogues/Devi_dialogue.dialogue", "res://Devi_minigame/Devi_Dialogues/test.dialogue", "res://NewspaperGame/newspaperDialogue.dialogue", "res://NewspaperGame/test.dialogue")
 
 [layer_names]
 
