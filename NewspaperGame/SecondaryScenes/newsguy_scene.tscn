@@ -43,5 +43,5 @@ texture_filter = 1
 scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_4fn8g")
 autoplay = "default"
-frame_progress = 0.764311
+frame_progress = 0.536533
 flip_h = true

@@ -2,10 +2,10 @@
 
 [ext_resource type="TileSet" uid="uid://57rtsefdx6lu" path="res://main_world_tileset.tres" id="1_04cgq"]
 [ext_resource type="Script" path="res://NewspaperGame/newspaperGame.gd" id="1_tffyi"]
-[ext_resource type="PackedScene" uid="uid://wbsso4waqvoc" path="res://NewspaperGame/natsarqeqia_scene.tscn" id="2_nhdko"]
-[ext_resource type="PackedScene" uid="uid://bkrxu1uosc8y4" path="res://NewspaperGame/newsguy_scene.tscn" id="3_atmp5"]
-[ext_resource type="Script" path="res://NewspaperGame/natsarqeqia_scene.gd" id="5_6031h"]
-[ext_resource type="Resource" uid="uid://dfrdgkngj8gx5" path="res://NewspaperGame/newspaperDialogue.dialogue" id="6_d6jth"]
+[ext_resource type="PackedScene" uid="uid://wbsso4waqvoc" path="res://NewspaperGame/SecondaryScenes/natsarqeqia_scene.tscn" id="2_nhdko"]
+[ext_resource type="PackedScene" uid="uid://bkrxu1uosc8y4" path="res://NewspaperGame/SecondaryScenes/newsguy_scene.tscn" id="3_atmp5"]
+[ext_resource type="Script" path="res://NewspaperGame/natsarqeqia_scene.gd" id="5_k11aw"]
+[ext_resource type="Resource" uid="uid://dfrdgkngj8gx5" path="res://NewspaperGame/Dialogue/newspaperDialogue.dialogue" id="6_d6jth"]
 
 [sub_resource type="Curve2D" id="Curve2D_eenkk"]
 _data = {
@@ -51,7 +51,7 @@ loop = false
 [node name="Natsarqeqia" parent="Path2D/PathFollow2D" instance=ExtResource("2_nhdko")]
 position = Vector2(-31.2292, -46.1923)
 rotation = -0.0263791
-script = ExtResource("5_6031h")
+script = ExtResource("5_k11aw")
 dialogue_resource = ExtResource("6_d6jth")
 
 [node name="Area2D" type="Area2D" parent="."]
