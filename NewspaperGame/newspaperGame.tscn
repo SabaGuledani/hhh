@@ -1,11 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://bbab5da2dohrl"]
+[gd_scene load_steps=9 format=3 uid="uid://bbab5da2dohrl"]
 
 [ext_resource type="TileSet" uid="uid://57rtsefdx6lu" path="res://main_world_tileset.tres" id="1_04cgq"]
+[ext_resource type="Script" path="res://NewspaperGame/newspaperGame.gd" id="1_tffyi"]
+[ext_resource type="PackedScene" uid="uid://wbsso4waqvoc" path="res://NewspaperGame/natsarqeqia_scene.tscn" id="2_nhdko"]
+[ext_resource type="PackedScene" uid="uid://bkrxu1uosc8y4" path="res://NewspaperGame/newsguy_scene.tscn" id="3_atmp5"]
+[ext_resource type="Script" path="res://NewspaperGame/natsarqeqia_scene.gd" id="5_6031h"]
+[ext_resource type="Resource" uid="uid://dfrdgkngj8gx5" path="res://NewspaperGame/newspaperDialogue.dialogue" id="6_d6jth"]
+
+[sub_resource type="Curve2D" id="Curve2D_eenkk"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -256, 586, -2.82843, 1.41421, 2.82843, -1.41421, 367, 577, -11.3137, 11.3137, 11.3137, -11.3137, 621, 564, -41.0122, 73.5391, 41.0122, -73.5391, 747, 465)
+}
+point_count = 4
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0b7fw"]
+radius = 181.099
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_tffyi")
 metadata/_edit_vertical_guides_ = [-1111.0]
 
 [node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
 scale = Vector2(5, 5)
 tile_set = ExtResource("1_04cgq")
 format = 2
@@ -18,3 +34,33 @@ layer_1/y_sort_enabled = false
 layer_1/y_sort_origin = 0
 layer_1/z_index = 0
 layer_1/tile_data = PackedInt32Array(0, 655368, 8, 131077, 65544, 3, 65548, 65553, 1)
+
+[node name="NewsGuy" parent="." instance=ExtResource("3_atmp5")]
+position = Vector2(902, 419)
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2(3, 3)
+curve = SubResource("Curve2D_eenkk")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(-256, 586)
+rotation = 0.025582
+rotates = false
+loop = false
+
+[node name="Natsarqeqia" parent="Path2D/PathFollow2D" instance=ExtResource("2_nhdko")]
+position = Vector2(-31.2292, -46.1923)
+rotation = -0.0263791
+script = ExtResource("5_6031h")
+dialogue_resource = ExtResource("6_d6jth")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(904, 439)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_0b7fw")
+
+[connection signal="body_entered" from="Area2D" to="Path2D/PathFollow2D/Natsarqeqia" method="_on_area_2d_body_entered"]
+
+[editable path="NewsGuy"]
+[editable path="Path2D/PathFollow2D/Natsarqeqia"]
