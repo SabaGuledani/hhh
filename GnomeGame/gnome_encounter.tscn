@@ -1,6 +1,6 @@
 [gd_scene load_steps=60 format=3 uid="uid://de1vekc22ev3c"]
 
-[ext_resource type="Script" path="res://Scripts/goblin_encounter.gd" id="1_1fc7y"]
+[ext_resource type="Script" path="res://GnomeGame/goblin_encounter.gd" id="1_1fc7y"]
 [ext_resource type="AudioStream" uid="uid://pnba8apc2ek" path="res://assets/music/gnome_quiz.mp3" id="2_6dhxj"]
 [ext_resource type="AudioStream" uid="uid://blebjkldipdgs" path="res://assets/music/correct.mp3" id="3_8haj6"]
 [ext_resource type="Texture2D" uid="uid://bq7s6kqjm25h7" path="res://assets/taiga_ [version 1.0]/taiga_.png" id="3_ln4wv"]
@@ -12,13 +12,13 @@
 [ext_resource type="Texture2D" uid="uid://diiig38c0n4gg" path="res://assets/forestSprites_ v1.2/satyr_.png" id="8_3iclv"]
 [ext_resource type="Texture2D" uid="uid://dk5lnrcryte87" path="res://assets/forestSprites_ v1.2/gnome_.png" id="9_kqq1p"]
 [ext_resource type="Texture2D" uid="uid://pprtk834bss0" path="res://assets/tiny-speech-indicators/exclamation-7x8.png" id="10_y1jnf"]
-[ext_resource type="PackedScene" uid="uid://bmtafcl851lip" path="res://Scenes/textbox.tscn" id="11_540nq"]
+[ext_resource type="PackedScene" uid="uid://bmtafcl851lip" path="res://GnomeGame/textbox.tscn" id="11_540nq"]
 [ext_resource type="Texture2D" uid="uid://cmlkfmipsbu6o" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a1.png" id="13_bchsd"]
 [ext_resource type="Texture2D" uid="uid://cyjh8y87qxir8" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a4.png" id="14_nmlku"]
 [ext_resource type="FontFile" uid="uid://boq5tvqbl1lbg" path="res://assets/geopixel.ttf" id="15_ia5lw"]
 [ext_resource type="Texture2D" uid="uid://cly1w1k0tfgd8" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a2.png" id="15_mxj34"]
 [ext_resource type="Texture2D" uid="uid://mcwvkdam4rro" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Checkmark_Small.png" id="16_rc3eo"]
-[ext_resource type="PackedScene" uid="uid://brmqxsfspgvsm" path="res://Scenes/choice_button.tscn" id="20_vfikx"]
+[ext_resource type="PackedScene" uid="uid://brmqxsfspgvsm" path="res://GnomeGame/choice_button.tscn" id="20_vfikx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3ycdu"]
 texture = ExtResource("3_ln4wv")
@@ -977,7 +977,7 @@ _data = {
 
 [node name="Node" type="Node"]
 script = ExtResource("1_1fc7y")
-dialogue_file = "res://Dialogue/gnome_dialogue.json"
+dialogue_file = "res://GnomeGame/gnome_dialogue.json"
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://bjd8vjuhinxpl"
+path="res://.godot/imported/gnomeDialogue.dialogue-aac7c7481de43d375e8eb32a6614afeb.tres"
+
+[deps]
+
+source_file="res://GnomeGame/Dialogue/gnomeDialogue.dialogue"
+dest_files=["res://.godot/imported/gnomeDialogue.dialogue-aac7c7481de43d375e8eb32a6614afeb.tres"]
+
+[params]
+
+defaults=true

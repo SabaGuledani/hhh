@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cmlkfmipsbu6o" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a1.png" id="1_mm34c"]
 [ext_resource type="Texture2D" uid="uid://cyjh8y87qxir8" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a4.png" id="2_2gcjf"]
 [ext_resource type="Texture2D" uid="uid://cly1w1k0tfgd8" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a2.png" id="3_xwayv"]
-[ext_resource type="FontFile" uid="uid://faiqr2slmrnr" path="res://assets/geopixel.ttf" id="4_r6c1a"]
+[ext_resource type="FontFile" uid="uid://boq5tvqbl1lbg" path="res://assets/geopixel.ttf" id="4_r6c1a"]
 
 [node name="ChoiceButton" type="TextureButton"]
 texture_filter = 1
