@@ -1,32 +1,46 @@
 extends Node2D
 
-
+@onready var speed = 0.25
+@onready var anim = get_node("Path2D/PathFollow2D/Natsarqeqia/AnimationPlayer")
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
+	Signals.meomrebi_encountered.connect(_on_meomrebi_encountered)
+	Signals.devi_sign_noticed.connect(_on_devi_sign_noticed)
+	Signals.devi_encountered.connect(_on_devi_encountered)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	$Path2D/PathFollow2D.progress_ratio += delta * speed
+	if speed == 0:
+		anim.play("Idle")
+	else:
+		anim.play("Run")
+	if $Path2D/PathFollow2D.progress_ratio == 1:
+		get_tree().quit()
 
-func _on_changePath(pathID, char):
-	var newPath: Path2D = get_node("Path_" + String(pathID))
-	var newOffset = newPath.curve.get_closest_offset(char.global_position-newPath.global_position)
-	char.get_parent().remove_child(char)
-	newPath.add_child(char)
-	char.offset = newOffset 
 
 
 func _on_dialogi_meomrebtan_body_entered(body):
-	if body.name == "Natsarqeqia" and Global.meomrebi_encountered == "false":
+	if body.name == "Natsarqeqia":
+		speed = 0
 		DialogueManager.show_example_dialogue_balloon(load("res://Devi_minigame/Devi_Dialogues/Devi_dialogue.dialogue"),"meomrebi_encounter")
-		Global.meomrebi_encountered = true
 		
 
 
 func _on_dialogi_devtan_body_entered(body):
-	if body.name == "Natsarqeqia" and Global.devi_encountered == "false":
+	if body.name == "Natsarqeqia":
 		DialogueManager.show_example_dialogue_balloon(load("res://Devi_minigame/Devi_Dialogues/Devi_dialogue.dialogue"),"devi_encounter")
-		Global.devi_encountered = true
 		
+		
+func _on_meomrebi_encountered(_b):
+	speed = 0.25
+	
+func _on_devi_sign_noticed(_b):
+	speed = 0.15
+func _on_devi_encountered(_b):
+	get_tree().change_scene_to_file("res://Devi_minigame/Devi_scenes/Devi_campfire_scene.tscn")
+
+func _on_devi_table_body_entered(body):
+	if body.name == "Natsarqeqia":
+		speed = 0
+		DialogueManager.show_example_dialogue_balloon(load("res://Devi_minigame/Devi_Dialogues/Devi_dialogue.dialogue"),"meomrebi_encounter")

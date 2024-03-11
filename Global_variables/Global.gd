@@ -15,9 +15,7 @@ var bias_met = false
 var lady_met = false
 
 
-#Devi variables
-var meomrebi_encountered = false
-var devi_encountered = false
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

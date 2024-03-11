@@ -6,18 +6,24 @@ nacarqeqia: ra iciT, ra gasWirvebia devs da ratomaa gaborotebuli?! vinmem scada 
 meomrebi:  vis gaugia devTan adamianurad SeTanxmeba?
 nacarqeqia: me mival devTan da vcdi mogvarebas. xom gagigiaT „gvelsa xvreliT amoiyvans ena tkbilad moubari“.
 meomrebi:  kargi mogzauro, oRond Tavs gaufrTxildi.
+do Signals.meomrebi_encountered.emit("true")
 => END
-
+~ devi_sign
+nacarqeqia: rogorc Cans devi aq cxovrobs.
+do Signals.devi_sign_noticed.emit("true")
+=> END
 ~ devi_encounter
 nacarqeqia: ras Seuwuxebixar devo?
 devi: Zalian gabrazebuli var!
 nacarqeqia: vize an raze?
 devi: yvelaze! Zalian mabrazeben da aRar vici rogor moviqce!
 nacarqeqia: modi davsxdeT da moyevi Seni gasaWiri TanmimdevrobiT da dagexmarebi gadaWraSi.
- 
+do Signals.devi_encountered.emit("true")
 => END
 
 ~ devi_campfire
+devi: riTi daviwyo moyola arc ki vici.
+
 ~ letter
 devi: ramdeni xania ukve momdis werilebi da yvela boroti Sinaarsisaa, Zalian mwyins, adamianebi aseT werilebs rom mweren. 
 
@@ -68,10 +74,10 @@ nacarqeqia: mainc?
 
 ~ newspaper
 devi: ki! gazeTSi ewera, rom adamianebi Cven dagvcinian da borotad mogvixsenieben, sulelebi vgonivarT? devebi ukeTesebi varT! rogor bedaven?
--adamianebs devebi sZulT da magitom dagcinian.
+- adamianebs devebi sZulT da magitom dagcinian.
 	devi: Sen xom ar gZulvar da sxvebs ratom unda vZuldeT?
 	=> newspaper
--sadme darTulia mtkicebuleba, rom adamianebi marTla dagcinian? da ratomaa erTi rasa meoreze ukeTesi? 
+- sadme darTulia mtkicebuleba, rom adamianebi marTla dagcinian? da ratomaa erTi rasa meoreze ukeTesi? 
 	devi: mtkicebuleba araa da me sulac ar vfiqrob rom ukeTesebi varT, ubralod aq ase ewera.
 nacarqeqia:  imitom, rom es boroti da cru informaciiT gaJRenTili gazeTia da Sens emociebze TamaSoben, maT SenSi brazis gamowveviT undaT, rom dagapirispiron devebi adamianebTan.
 devi: ra martivad wamovege emociebis ankesze!
@@ -83,10 +89,10 @@ nacarqeqia: ra blanki?
 ~ blanki
 devi: werili movida da iq ewera SeavseT Tqveni monacemebiTo da Sevavse yvelaferi, rom gavugzavno, cudi xom araa?
 
--ara, gaugzavne Tu ginda.
+- ara, gaugzavne Tu ginda.
 	devi: zustad ici rom araferi daSavdeba?
 	=> blanki
--ra unda daSavdes?
+- ra unda daSavdes?
 	devi: gamocdili xar Sen da Sen ufro gecodineba. 
 	=> blanki	
 -cudia, es Seni personaluri monacemebia da ucxos ar unda uziarebde.
@@ -110,7 +116,8 @@ devi: meomrebi sul damviwyebia! rogor moviqceT, megobaro?
 	devi: Tavs cudad vigrZnob. me maT bodiSi unda movuxado. 
 	=> finish
 -mgoni unda mivideT da vuTxraT yvelaferi.
-do emit("finish_campfire_dialogue", "true")
+
+do Signals.finish_campfire_dialogue.emit("true")
 
 => END 
 
@@ -136,7 +143,7 @@ devi: me Zalian megobruli var da damajeres, rom Tqvenc borotebi iyaviT. me mxolo
 meomrebi: Cven Zalian bevrni varT, rogor daveteviT?
 devi: me kidev Zalian didi saxli maqvs. wamodiT!
 
-do emit("finish_sherigeba", "true")
+do Signals.finish_sherigeba.emit("true")
 => END  
 
 
