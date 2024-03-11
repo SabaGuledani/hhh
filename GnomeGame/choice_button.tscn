@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://brmqxsfspgvsm"]
+
+[ext_resource type="Texture2D" uid="uid://cmlkfmipsbu6o" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a1.png" id="1_mm34c"]
+[ext_resource type="Texture2D" uid="uid://cyjh8y87qxir8" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a4.png" id="2_2gcjf"]
+[ext_resource type="Texture2D" uid="uid://cly1w1k0tfgd8" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a2.png" id="3_xwayv"]
+[ext_resource type="FontFile" uid="uid://boq5tvqbl1lbg" path="res://assets/geopixel.ttf" id="4_r6c1a"]
+
+[node name="ChoiceButton" type="TextureButton"]
+texture_filter = 1
+offset_right = 341.0
+offset_bottom = 95.0
+texture_normal = ExtResource("1_mm34c")
+texture_pressed = ExtResource("2_2gcjf")
+texture_hover = ExtResource("3_xwayv")
+stretch_mode = 4
+
+[node name="Choice" type="Label" parent="."]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 17.0
+offset_right = 312.0
+offset_bottom = 81.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_r6c1a")
+theme_override_font_sizes/font_size = 20
+text = "A:"
+
+[node name="Answer" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 19.0
+offset_right = 271.0
+offset_bottom = 83.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_r6c1a")
+theme_override_font_sizes/normal_font_size = 20
+text = "es aris swori pasuxi"
+scroll_active = false

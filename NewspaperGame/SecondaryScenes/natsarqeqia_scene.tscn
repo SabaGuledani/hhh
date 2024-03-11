@@ -1,0 +1,87 @@
+[gd_scene load_steps=12 format=3 uid="uid://wbsso4waqvoc"]
+
+[ext_resource type="Texture2D" uid="uid://diiig38c0n4gg" path="res://assets/forestSprites_ v1.2/satyr_.png" id="1_ywuo5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_utxc0"]
+atlas = ExtResource("1_ywuo5")
+region = Rect2(0, 0, 24, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m4aiq"]
+atlas = ExtResource("1_ywuo5")
+region = Rect2(24, 0, 24, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6g5il"]
+atlas = ExtResource("1_ywuo5")
+region = Rect2(48, 0, 24, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_287r1"]
+atlas = ExtResource("1_ywuo5")
+region = Rect2(72, 0, 24, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pdkfu"]
+atlas = ExtResource("1_ywuo5")
+region = Rect2(0, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ychf"]
+atlas = ExtResource("1_ywuo5")
+region = Rect2(24, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vnnu"]
+atlas = ExtResource("1_ywuo5")
+region = Rect2(48, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r0q8v"]
+atlas = ExtResource("1_ywuo5")
+region = Rect2(72, 48, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4fn8g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_utxc0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m4aiq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6g5il")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_287r1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pdkfu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ychf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vnnu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r0q8v")
+}],
+"loop": true,
+"name": &"move",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1pkbe"]
+size = Vector2(12, 19)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_4fn8g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 16.5)
+scale = Vector2(5, 5)
+shape = SubResource("RectangleShape2D_1pkbe")

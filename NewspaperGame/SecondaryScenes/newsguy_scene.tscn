@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://bkrxu1uosc8y4"]
+
+[ext_resource type="Texture2D" uid="uid://dghqgxrjkpncq" path="res://assets/playerSprites_ [version 1.0]/fPlayer_ [human].png" id="1_07iv7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihi6i"]
+atlas = ExtResource("1_07iv7")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wgdm4"]
+atlas = ExtResource("1_07iv7")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ew0n"]
+atlas = ExtResource("1_07iv7")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvdj0"]
+atlas = ExtResource("1_07iv7")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4fn8g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ihi6i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wgdm4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ew0n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cvdj0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+texture_filter = 1
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_4fn8g")
+autoplay = "default"
+frame_progress = 0.149138
+flip_h = true
