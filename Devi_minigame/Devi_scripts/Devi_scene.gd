@@ -2,11 +2,14 @@ extends Node2D
 
 @onready var speed = 0.25
 @onready var anim = get_node("Path2D/PathFollow2D/Natsarqeqia/AnimationPlayer")
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Signals.meomrebi_encountered.connect(_on_meomrebi_encountered)
 	Signals.devi_sign_noticed.connect(_on_devi_sign_noticed)
 	Signals.devi_encountered.connect(_on_devi_encountered)
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

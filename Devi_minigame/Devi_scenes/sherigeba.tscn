@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b6cplnvs6mmka"]
+[gd_scene load_steps=17 format=3 uid="uid://b6cplnvs6mmka"]
 
 [ext_resource type="Script" path="res://Devi_minigame/Devi_scripts/sherigeba.gd" id="1_0x0k8"]
 [ext_resource type="TileSet" uid="uid://cempg0o0arlab" path="res://world_second_tileset.tres" id="2_mjn4s"]
@@ -6,7 +6,15 @@
 [ext_resource type="PackedScene" uid="uid://c6s2m3cp7vyth" path="res://Devi_minigame/Devi_characters/Devi.tscn" id="4_peltr"]
 [ext_resource type="Script" path="res://Player/MainCharacterNatsarqeqia.gd" id="5_8nsg7"]
 [ext_resource type="SpriteFrames" uid="uid://81uxeps53gyh" path="res://assets/nacarqeqia_sprite.tres" id="6_fdlvo"]
-[ext_resource type="PackedScene" uid="uid://cwr272xswm8ih" path="res://actionable.tscn" id="7_ngeqc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ifh70"]
+radius = 25.0
+
+[sub_resource type="Curve2D" id="Curve2D_0b8k3"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 14.2292, -76.1551, 0, 0, 0, 0, 17.2292, -22.1551, 0, 0, 0, 0, 16.2292, 14.8449, 0, 0, 0, 0, 0.229187, 107.845, 0, 0, 0, 0, -21.7708, 60.8449, 0, 0, 0, 0, -5.77081, -49.1551)
+}
+point_count = 6
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0nu0n"]
 size = Vector2(7.63372, 5.74607)
@@ -91,8 +99,16 @@ _data = {
 "Run": SubResource("Animation_yj4h3")
 }
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_6rmfo"]
-radius = 17.0294
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ep3kg"]
+size = Vector2(79, 36)
+
+[sub_resource type="Curve2D" id="Curve2D_4qypn"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -31.8308, 16.7236, 0, 0, 0, 0, -4.83081, -8.27637, 0, 0, 0, 0, 15.1692, -25.2764, 0, 0, 0, 0, 86.1692, -36.2764, 0, 0, 0, 0, 86.1692, -119.276)
+}
+point_count = 5
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xp0gi"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_0x0k8")
@@ -116,91 +132,132 @@ layer_2/modulate = Color(1, 1, 1, 1)
 layer_2/y_sort_enabled = false
 layer_2/y_sort_origin = 0
 layer_2/z_index = 0
-layer_2/tile_data = PackedInt32Array(458708, 196614, 1, 655316, 196614, 1, 589781, 196614, 1, 458711, 196614, 1, 524247, 196614, 1, 589783, 196614, 1, 655319, 196614, 1, 458712, 196614, 1, 524249, 196614, 1, 589785, 196614, 1, 589787, 196614, 1, 393172, 196614, 1, 524244, 196614, 1, 327637, 196614, 1, 393173, 196614, 1, 458709, 196614, 1, 524245, 196614, 1, 458710, 196614, 1, 524246, 196614, 1, 655318, 196614, 1, 262103, 196614, 1, 327639, 196614, 1, 393175, 196614, 1, 262105, 196614, 1, 327641, 196614, 1, 458713, 196614, 1, 655321, 196614, 1, 262106, 196614, 1, 589786, 196614, 1, 327643, 196614, 1, 524251, 196614, 1, 262108, 196614, 1, 655324, 196614, 1, 393181, 196614, 1, 458717, 196614, 1, 589790, 196614, 1, 1048536, 196614, 1, 1114072, 196614, 1, 1179608, 196614, 1, 1310680, 196614, 1, 983001, 196614, 1, 1048537, 196614, 1, 1376217, 196614, 1, 983002, 196614, 1, 1245146, 196614, 1, 1245147, 196614, 1, 1376219, 196614, 1, 1114076, 196614, 1, 1179612, 196614, 1, 1310684, 196614, 1, 1376220, 196614, 1, 720853, 196614, 1, 786389, 196614, 1, 851926, 196614, 1, 720855, 196614, 1, 851927, 196614, 1, 720856, 196614, 1, 786392, 196614, 1, 851928, 196614, 1, 917464, 196614, 1, 983000, 196614, 1, 851929, 196614, 1, 917466, 196614, 1, 720859, 196614, 1, 786395, 196614, 1, 917467, 196614, 1, 1048540, 196614, 1, 720861, 196614, 1, 786397, 196614, 1, 720862, 196614, 1, 786398, 196614, 1, 851934, 196614, 1, 983006, 196614, 1, 1441752, 196614, 1, 1507288, 196614, 1, 1572824, 196614, 1, 1638360, 196614, 1, 1769432, 196614, 1, 1507289, 196614, 1, 1572825, 196614, 1, 1507290, 196614, 1, 1572826, 196614, 1, 1834970, 196614, 1, 1507291, 196614, 1, 1638363, 196614, 1, 1703899, 196614, 1, 1769435, 196614, 1, 1441756, 196614, 1, 1507292, 196614, 1, 1703900, 196614, 1, 1441757, 196614, 1, 1507293, 196614, 1, 1703901, 196614, 1, 262079, 196614, 1, 393151, 196614, 1, 524223, 196614, 1, 262080, 196614, 1, 458688, 196614, 1, 589760, 196614, 1, 327617, 196614, 1, 524225, 196614, 1, 262082, 196614, 1, 262083, 196614, 1, 327619, 196614, 1, 393155, 196614, 1, 458691, 196614, 1, 589763, 196614, 1, 262084, 196614, 1, 327620, 196614, 1, 393156, 196614, 1, 458692, 196614, 1, 524228, 196614, 1, 262085, 196614, 1, 327621, 196614, 1, 393157, 196614, 1, 458693, 196614, 1, 524229, 196614, 1, 589765, 196614, 1, 327622, 196614, 1, 458694, 196614, 1, 524230, 196614, 1, 589766, 196614, 1, 262087, 196614, 1, 327623, 196614, 1, 393159, 196614, 1, 524231, 196614, 1, 393160, 196614, 1, 327627, 196614, 1, 458699, 196614, 1, 524238, 196614, 1, 458703, 196614, 1, 589759, 196614, 1, 327616, 196614, 1, 524224, 196614, 1, 393153, 196614, 1, 458690, 196614, 1, 524226, 196614, 1, 393158, 196614, 1, 589767, 196614, 1, 262088, 196614, 1, 524233, 196614, 1, 262090, 196614, 1, 262091, 196614, 1, 524236, 196614, 1, 393165, 196614, 1, 393166, 196614, 1, 262095, 196614, 1, 327631, 196614, 1, 524239, 196614, 1, 1048511, 196614, 1, 1638335, 196614, 1, 1703871, 196614, 1, 1048512, 196614, 1, 1114048, 196614, 1, 1441728, 196614, 1, 982977, 196614, 1, 1376193, 196614, 1, 1441729, 196614, 1, 982978, 196614, 1, 1048514, 196614, 1, 1179587, 196614, 1, 1245123, 196614, 1, 1310659, 196614, 1, 982980, 196614, 1, 1048516, 196614, 1, 1114052, 196614, 1, 1310660, 196614, 1, 1376196, 196614, 1, 1441732, 196614, 1, 1048517, 196614, 1, 1114053, 196614, 1, 1179589, 196614, 1, 1245125, 196614, 1, 1703877, 196614, 1, 1769413, 196614, 1, 1376198, 196614, 1, 1441734, 196614, 1, 1507270, 196614, 1, 1572806, 196614, 1, 1638344, 196614, 1, 1703880, 196614, 1, 1572809, 196614, 1, 1441738, 196614, 1, 1507274, 196614, 1, 1572810, 196614, 1, 1507275, 196614, 1, 1507276, 196614, 1, 1638349, 196614, 1, 1703885, 196614, 1, 1441742, 196614, 1, 1441743, 196614, 1, 1441746, 196614, 1, 1703891, 196614, 1, 1769427, 196614, 1, 1441748, 196614, 1, 1507284, 196614, 1, 1572820, 196614, 1, 1376214, 196614, 1, 1638358, 196614, 1, 1703894, 196614, 1, 982999, 196614, 1, 1048535, 196614, 1, 1572823, 196614, 1, 982975, 196614, 1, 1441727, 196614, 1, 1572799, 196614, 1, 1834943, 196614, 1, 982976, 196614, 1, 1245120, 196614, 1, 1376192, 196614, 1, 1638336, 196614, 1, 917441, 196614, 1, 1310657, 196614, 1, 1638337, 196614, 1, 917442, 196614, 1, 1179586, 196614, 1, 917443, 196614, 1, 1114051, 196614, 1, 1572803, 196614, 1, 1834947, 196614, 1, 917444, 196614, 1, 1245124, 196614, 1, 1572804, 196614, 1, 982981, 196614, 1, 1441733, 196614, 1, 1638341, 196614, 1, 1114054, 196614, 1, 1310662, 196614, 1, 1769414, 196614, 1, 1376199, 196614, 1, 1572807, 196614, 1, 1376200, 196614, 1, 1572808, 196614, 1, 1834952, 196614, 1, 1507273, 196614, 1, 1834953, 196614, 1, 1376202, 196614, 1, 1703882, 196614, 1, 1441739, 196614, 1, 1441740, 196614, 1, 1769420, 196614, 1, 1441741, 196614, 1, 1572813, 196614, 1, 1834957, 196614, 1, 1376206, 196614, 1, 1638350, 196614, 1, 1048527, 458758, 7, 1376207, 196614, 1, 1638351, 196614, 1, 1572817, 196614, 1, 1834961, 196614, 1, 1376210, 196614, 1, 1572818, 196614, 1, 1441747, 196614, 1, 1638355, 196614, 1, 1376212, 196614, 1, 1769428, 196614, 1, 1376213, 196614, 1, 1572821, 196614, 1, 917462, 196614, 1, 1310678, 196614, 1, 1572822, 196614, 1, 1834966, 196614, 1, 917463, 196614, 1, 1507287, 196614, 1, 1834967, 196614, 1)
+layer_2/tile_data = PackedInt32Array(458711, 196614, 1, 524247, 196614, 1, 589783, 196614, 1, 655319, 196614, 1, 458712, 196614, 1, 524249, 196614, 1, 589785, 196614, 1, 589787, 196614, 1, 458710, 196614, 1, 524246, 196614, 1, 655318, 196614, 1, 262103, 196614, 1, 327639, 196614, 1, 393175, 196614, 1, 262105, 196614, 1, 327641, 196614, 1, 458713, 196614, 1, 655321, 196614, 1, 262106, 196614, 1, 589786, 196614, 1, 327643, 196614, 1, 524251, 196614, 1, 262108, 196614, 1, 655324, 196614, 1, 393181, 196614, 1, 458717, 196614, 1, 589790, 196614, 1, 1048536, 196614, 1, 1114072, 196614, 1, 1179608, 196614, 1, 1310680, 196614, 1, 983001, 196614, 1, 1048537, 196614, 1, 1376217, 196614, 1, 983002, 196614, 1, 1245146, 196614, 1, 1245147, 196614, 1, 1376219, 196614, 1, 1114076, 196614, 1, 1179612, 196614, 1, 1310684, 196614, 1, 1376220, 196614, 1, 851926, 196614, 1, 720855, 196614, 1, 851927, 196614, 1, 720856, 196614, 1, 786392, 196614, 1, 851928, 196614, 1, 917464, 196614, 1, 983000, 196614, 1, 851929, 196614, 1, 917466, 196614, 1, 720859, 196614, 1, 786395, 196614, 1, 917467, 196614, 1, 1048540, 196614, 1, 720861, 196614, 1, 786397, 196614, 1, 720862, 196614, 1, 786398, 196614, 1, 851934, 196614, 1, 983006, 196614, 1, 1441752, 196614, 1, 1507288, 196614, 1, 1572824, 196614, 1, 1638360, 196614, 1, 1769432, 196614, 1, 1507289, 196614, 1, 1572825, 196614, 1, 1507290, 196614, 1, 1572826, 196614, 1, 1834970, 196614, 1, 1507291, 196614, 1, 1638363, 196614, 1, 1703899, 196614, 1, 1769435, 196614, 1, 1441756, 196614, 1, 1507292, 196614, 1, 1703900, 196614, 1, 1441757, 196614, 1, 1507293, 196614, 1, 1703901, 196614, 1, 262079, 196614, 1, 393151, 196614, 1, 524223, 196614, 1, 262080, 196614, 1, 458688, 196614, 1, 589760, 196614, 1, 327617, 196614, 1, 524225, 196614, 1, 262082, 196614, 1, 262083, 196614, 1, 327619, 196614, 1, 393155, 196614, 1, 458691, 196614, 1, 589763, 196614, 1, 262084, 196614, 1, 327620, 196614, 1, 393156, 196614, 1, 458692, 196614, 1, 524228, 196614, 1, 262085, 196614, 1, 327621, 196614, 1, 393157, 196614, 1, 458693, 196614, 1, 524229, 196614, 1, 589765, 196614, 1, 327622, 196614, 1, 458694, 196614, 1, 524230, 196614, 1, 589766, 196614, 1, 262087, 196614, 1, 327623, 196614, 1, 393159, 196614, 1, 524231, 196614, 1, 393160, 196614, 1, 327627, 196614, 1, 458699, 196614, 1, 524238, 196614, 1, 458703, 196614, 1, 589759, 196614, 1, 327616, 196614, 1, 524224, 196614, 1, 393153, 196614, 1, 458690, 196614, 1, 524226, 196614, 1, 393158, 196614, 1, 589767, 196614, 1, 262088, 196614, 1, 524233, 196614, 1, 262090, 196614, 1, 262091, 196614, 1, 524236, 196614, 1, 393165, 196614, 1, 393166, 196614, 1, 262095, 196614, 1, 327631, 196614, 1, 524239, 196614, 1, 1048511, 196614, 1, 1638335, 196614, 1, 1703871, 196614, 1, 1048512, 196614, 1, 1114048, 196614, 1, 1441728, 196614, 1, 982977, 196614, 1, 1376193, 196614, 1, 1441729, 196614, 1, 982978, 196614, 1, 1048514, 196614, 1, 1179587, 196614, 1, 1245123, 196614, 1, 1310659, 196614, 1, 982980, 196614, 1, 1048516, 196614, 1, 1114052, 196614, 1, 1310660, 196614, 1, 1376196, 196614, 1, 1441732, 196614, 1, 1048517, 196614, 1, 1114053, 196614, 1, 1179589, 196614, 1, 1245125, 196614, 1, 1703877, 196614, 1, 1769413, 196614, 1, 1376198, 196614, 1, 1441734, 196614, 1, 1507270, 196614, 1, 1572806, 196614, 1, 1638344, 196614, 1, 1703880, 196614, 1, 1572809, 196614, 1, 1441738, 196614, 1, 1507274, 196614, 1, 1572810, 196614, 1, 1507275, 196614, 1, 1507276, 196614, 1, 1638349, 196614, 1, 1703885, 196614, 1, 1441742, 196614, 1, 1441743, 196614, 1, 1441746, 196614, 1, 1703891, 196614, 1, 1769427, 196614, 1, 1441748, 196614, 1, 1507284, 196614, 1, 1572820, 196614, 1, 1376214, 196614, 1, 1638358, 196614, 1, 1703894, 196614, 1, 982999, 196614, 1, 1048535, 196614, 1, 1572823, 196614, 1, 982975, 196614, 1, 1441727, 196614, 1, 1572799, 196614, 1, 1834943, 196614, 1, 982976, 196614, 1, 1245120, 196614, 1, 1376192, 196614, 1, 1638336, 196614, 1, 917441, 196614, 1, 1310657, 196614, 1, 1638337, 196614, 1, 917442, 196614, 1, 1179586, 196614, 1, 917443, 196614, 1, 1114051, 196614, 1, 1572803, 196614, 1, 1834947, 196614, 1, 917444, 196614, 1, 1245124, 196614, 1, 1572804, 196614, 1, 982981, 196614, 1, 1441733, 196614, 1, 1638341, 196614, 1, 1114054, 196614, 1, 1310662, 196614, 1, 1769414, 196614, 1, 1376199, 196614, 1, 1572807, 196614, 1, 1376200, 196614, 1, 1572808, 196614, 1, 1834952, 196614, 1, 1507273, 196614, 1, 1834953, 196614, 1, 1376202, 196614, 1, 1703882, 196614, 1, 1441739, 196614, 1, 1441740, 196614, 1, 1769420, 196614, 1, 1441741, 196614, 1, 1572813, 196614, 1, 1834957, 196614, 1, 1376206, 196614, 1, 1638350, 196614, 1, 1048527, 458758, 7, 1376207, 196614, 1, 1638351, 196614, 1, 1572817, 196614, 1, 1834961, 196614, 1, 1376210, 196614, 1, 1572818, 196614, 1, 1441747, 196614, 1, 1638355, 196614, 1, 1376212, 196614, 1, 1769428, 196614, 1, 1376213, 196614, 1, 1572821, 196614, 1, 917462, 196614, 1, 1310678, 196614, 1, 1572822, 196614, 1, 1834966, 196614, 1, 917463, 196614, 1, 1507287, 196614, 1, 1834967, 196614, 1)
 
-[node name="Meomrebi" type="Node" parent="."]
+[node name="DialogStart" type="Area2D" parent="."]
+position = Vector2(-741.428, 241.77)
+rotation = 1.65127
 
-[node name="Meomari" parent="Meomrebi" instance=ExtResource("3_w65xd")]
-position = Vector2(-681, 238)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DialogStart"]
+position = Vector2(-73.0516, -0.558105)
+shape = SubResource("CircleShape2D_ifh70")
 
-[node name="AnimatedSprite2D" parent="Meomrebi/Meomari" index="0"]
-position = Vector2(-149, -1)
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2(-744.229, 137.155)
+curve = SubResource("Curve2D_0b8k3")
 
-[node name="Meomari1" parent="Meomrebi" instance=ExtResource("3_w65xd")]
-position = Vector2(-849, 228)
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(14.2292, -76.1551)
+rotation = 1.65127
+rotates = false
+loop = false
 
-[node name="Meomari2" parent="Meomrebi" instance=ExtResource("3_w65xd")]
-position = Vector2(-850, 240)
-
-[node name="Meomari3" parent="Meomrebi" instance=ExtResource("3_w65xd")]
-position = Vector2(-864, 218)
-
-[node name="Meomari4" parent="Meomrebi" instance=ExtResource("3_w65xd")]
-position = Vector2(-866, 228)
-
-[node name="Meomari5" parent="Meomrebi" instance=ExtResource("3_w65xd")]
-position = Vector2(-751, 230)
-
-[node name="AnimatedSprite2D" parent="Meomrebi/Meomari5" index="0"]
-position = Vector2(-99, 21)
-
-[node name="Meomari6" parent="Meomrebi" instance=ExtResource("3_w65xd")]
-position = Vector2(-819, 247)
-
-[node name="AnimatedSprite2D" parent="Meomrebi/Meomari6" index="0"]
-position = Vector2(-47, -9)
-
-[node name="Meomari7" parent="Meomrebi" instance=ExtResource("3_w65xd")]
-position = Vector2(-803, 270)
-
-[node name="AnimatedSprite2D" parent="Meomrebi/Meomari7" index="0"]
-position = Vector2(-65, -23)
-
-[node name="Devi" parent="." instance=ExtResource("4_peltr")]
+[node name="Devi" parent="Path2D/PathFollow2D" instance=ExtResource("4_peltr")]
 z_index = 1
 y_sort_enabled = true
 texture_filter = 1
-position = Vector2(-716, 208)
+position = Vector2(-35.0635, -24.2599)
+rotation = -1.65127
 scale = Vector2(3, 3)
 
-[node name="Natsarqeqia" type="CharacterBody2D" parent="."]
+[node name="Natsarqeqia" type="CharacterBody2D" parent="Path2D/PathFollow2D"]
 texture_filter = 1
-position = Vector2(-752, 247)
+position = Vector2(-15.064, 12.2505)
+rotation = -1.65127
 script = ExtResource("5_8nsg7")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Natsarqeqia"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Natsarqeqia"]
 position = Vector2(-2.16707e-07, 6)
 rotation = -3.14159
 scale = Vector2(1.30998, -1.04419)
 shape = SubResource("RectangleShape2D_0nu0n")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Natsarqeqia"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Path2D/PathFollow2D/Natsarqeqia"]
 position = Vector2(0, -1)
 scale = Vector2(1.00324, 1.00447)
 sprite_frames = ExtResource("6_fdlvo")
 animation = &"Idle"
 frame = 1
 
-[node name="Camera2D" type="Camera2D" parent="Natsarqeqia"]
-position = Vector2(0, -1)
-zoom = Vector2(3.525, 3.525)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Natsarqeqia"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Path2D/PathFollow2D/Natsarqeqia"]
 autoplay = "Idle"
 libraries = {
 "": SubResource("AnimationLibrary_jce7m")
 }
 
-[node name="actionable" parent="Natsarqeqia" instance=ExtResource("7_ngeqc")]
-collision_layer = 0
-collision_mask = 16
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-752, 232)
+zoom = Vector2(2.8, 2.8)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Natsarqeqia/actionable"]
-position = Vector2(0, -1)
-rotation = 1.5708
-shape = SubResource("CircleShape2D_6rmfo")
+[node name="SceneFinishArea" type="Area2D" parent="."]
+position = Vector2(-739.692, 83.7647)
 
-[editable path="Meomrebi/Meomari"]
-[editable path="Meomrebi/Meomari5"]
-[editable path="Meomrebi/Meomari6"]
-[editable path="Meomrebi/Meomari7"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SceneFinishArea"]
+position = Vector2(7.69171, 20.2353)
+shape = SubResource("RectangleShape2D_ep3kg")
+
+[node name="Path2DMeomrebi" type="Path2D" parent="."]
+position = Vector2(-786.169, 224.276)
+curve = SubResource("Curve2D_4qypn")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2DMeomrebi"]
+position = Vector2(-31.8308, 16.7236)
+rotation = -0.746956
+rotates = false
+loop = false
+
+[node name="Meomari" parent="Path2DMeomrebi/PathFollow2D" instance=ExtResource("3_w65xd")]
+position = Vector2(96.8519, 90.8776)
+rotation = 0.746956
+
+[node name="AnimatedSprite2D" parent="Path2DMeomrebi/PathFollow2D/Meomari" index="0"]
+position = Vector2(-149, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2DMeomrebi/PathFollow2D/Meomari"]
+position = Vector2(-148.809, 4.11952)
+shape = SubResource("CircleShape2D_xp0gi")
+
+[node name="Meomari1" parent="Path2DMeomrebi/PathFollow2D" instance=ExtResource("3_w65xd")]
+position = Vector2(-13.9142, -30.6006)
+rotation = 0.746956
+
+[node name="Meomari2" parent="Path2DMeomrebi/PathFollow2D" instance=ExtResource("3_w65xd")]
+position = Vector2(-22.8009, -22.4749)
+rotation = 0.746956
+
+[node name="Meomari3" parent="Path2DMeomrebi/PathFollow2D" instance=ExtResource("3_w65xd")]
+position = Vector2(-18.1266, -48.1292)
+rotation = 0.746956
+
+[node name="Meomari4" parent="Path2DMeomrebi/PathFollow2D" instance=ExtResource("3_w65xd")]
+position = Vector2(-26.3882, -42.1505)
+rotation = 0.746956
+
+[node name="Meomari6" parent="Path2DMeomrebi/PathFollow2D" instance=ExtResource("3_w65xd")]
+position = Vector2(-4.81018, 3.72311)
+rotation = 0.746956
+
+[node name="AnimatedSprite2D" parent="Path2DMeomrebi/PathFollow2D/Meomari6" index="0"]
+position = Vector2(-47, -9)
+
+[node name="Meomari5" parent="Path2DMeomrebi/PathFollow2D" instance=ExtResource("3_w65xd")]
+position = Vector2(56.6354, 37.4489)
+rotation = 0.746956
+
+[node name="AnimatedSprite2D" parent="Path2DMeomrebi/PathFollow2D/Meomari5" index="0"]
+position = Vector2(-99, 21)
+
+[node name="Meomari7" parent="Path2DMeomrebi/PathFollow2D" instance=ExtResource("3_w65xd")]
+position = Vector2(-8.69641, 31.4702)
+rotation = 0.746956
+
+[node name="AnimatedSprite2D" parent="Path2DMeomrebi/PathFollow2D/Meomari7" index="0"]
+position = Vector2(-65, -23)
+
+[connection signal="body_entered" from="DialogStart" to="." method="_on_dialog_start_body_entered"]
+[connection signal="body_entered" from="SceneFinishArea" to="." method="_on_scene_finish_area_body_entered"]
+
+[editable path="Path2DMeomrebi/PathFollow2D/Meomari"]
+[editable path="Path2DMeomrebi/PathFollow2D/Meomari6"]
+[editable path="Path2DMeomrebi/PathFollow2D/Meomari5"]
+[editable path="Path2DMeomrebi/PathFollow2D/Meomari7"]

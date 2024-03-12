@@ -63,7 +63,7 @@ devi: SevadaroT
 - mgoni marTla Sen xar.
 	devi: kargad SevxedoT aba.
 	=> photo_appear
-- naxe rogor gansxvavdeba Seni fotosgan! ucnauri rakursi, proporciebi, xelebi da ferebi! imwamsve etyoba jadoqruli magia!
+- naxe rogor gansxvavdeba Seni fotosgan! ucnauri rakursi, \n proporciebi, xelebi da ferebi! imwamsve etyoba jadoqruli magia!
 - mgoni SeuZlebelia gavarCioT, namdvilia Tu ara es foto.
 	devi: raRac unda mianiSnebdes sinamdvileze.
 	=> photo_appear
@@ -77,7 +77,7 @@ devi: ki! gazeTSi ewera, rom adamianebi Cven dagvcinian da borotad mogvixseniebe
 - adamianebs devebi sZulT da magitom dagcinian.
 	devi: Sen xom ar gZulvar da sxvebs ratom unda vZuldeT?
 	=> newspaper
-- sadme darTulia mtkicebuleba, rom adamianebi marTla dagcinian? da ratomaa erTi rasa meoreze ukeTesi? 
+- sadme darTulia mtkicebuleba, rom adamianebi marTla dagcinian? \n da ratomaa erTi rasa meoreze ukeTesi? 
 	devi: mtkicebuleba araa da me sulac ar vfiqrob rom ukeTesebi varT, ubralod aq ase ewera.
 nacarqeqia:  imitom, rom es boroti da cru informaciiT gaJRenTili gazeTia da Sens emociebze TamaSoben, maT SenSi brazis gamowveviT undaT, rom dagapirispiron devebi adamianebTan.
 devi: ra martivad wamovege emociebis ankesze!
@@ -95,16 +95,16 @@ devi: werili movida da iq ewera SeavseT Tqveni monacemebiTo da Sevavse yvelaferi
 - ra unda daSavdes?
 	devi: gamocdili xar Sen da Sen ufro gecodineba. 
 	=> blanki	
--cudia, es Seni personaluri monacemebia da ucxos ar unda uziarebde.
+- cudia, es Seni personaluri monacemebia da ucxos ar unda uziarebde.
 
 
 nacarqeqia: ucxos arasdros gaando Seni monacemebi, aravin icis ra borotuli miznebisTvis SeiZleba gamoiyenos.
 ~ deda
 devi: ucxo araa. aq weria, rom dedas nacnobi varo da mWirdebao, sando Cans.
--deda Tu icnobs maSin gagzavne
+- deda Tu icnobs maSin gagzavne
 	devi: magram dedas arasdros uxsenebia es pirovneba.
 	=> deda
--dafiqrdi, dedis nacnobs ratom unda sWirdebodes Seni monacemebi?
+- dafiqrdi, dedis nacnobs ratom unda sWirdebodes Seni monacemebi?
 
 nacarqeqia: dedis nacnobs rom undodes rame, piradad getyoda an daadasturebda,rom namdvilad is gwers. nebismieri mogatyuebs imiT, rom dedas nacnobia. aucileblad gadaamowme, vin gTxovs monacemebs da Tu eWvi gepareba, ar gagzavno.
 devi: aqamde ratom ar vfiqrobdi aseT detalebze? 
@@ -112,10 +112,10 @@ nacarqeqia: arauSavs, mTavaria dReidan daakvirdebi da usafrTxod iqnebi.
 nacarqeqia: mixaria rom Segxvdi, sawyali meomrebi SiSisgan gaqvavebulan, am dros kidev Sen sulac ar yofilxar saSiSi.
 ~ finish
 devi: meomrebi sul damviwyebia! rogor moviqceT, megobaro?
--TavisiT gaerkvevian, araa saWiro Cveni Careva.
+- TavisiT gaerkvevian, araa saWiro Cveni Careva.
 	devi: Tavs cudad vigrZnob. me maT bodiSi unda movuxado. 
 	=> finish
--mgoni unda mivideT da vuTxraT yvelaferi.
+- mgoni unda mivideT da vuTxraT yvelaferi.
 
 do Signals.finish_campfire_dialogue.emit("true")
 
@@ -127,12 +127,12 @@ nacarqeqia: nu geSiniaT, is Cveni megobaria!
 devi: diax me da nacarqeqia dReidan megobrebi varT.
 ~ stereotipebi
 meomrebi: Sen xom boroti devi xar! devebma ar ician megobroba.
--Tqven stereotipebiT msjelobT da amitom ggoniaT, rom devi borotia. 
-nacarqeqia: sinamdvileSi is Zalian keTilia
--Tqvenc borotebi xarT!
+- Tqven stereotipebiT msjelobT da amitom ggoniaT, rom devi borotia. 
+	nacarqeqia: sinamdvileSi is Zalian keTilia
+- Tqvenc borotebi xarT!
 	meomrebi: devic borotia!
 	=> stereotipebi
--Tqven TviTon gaerkvieT.
+- Tqven TviTon gaerkvieT.
 	devi: mgoni Sen ukeT SeZleb axsnas, megobaro.
 	=> stereotipebi 
 nacarqeqia: Tqven erTmaneTze Seusabamo warmodgenebi gaqvT imitom, rom ase dagajeres.
@@ -147,7 +147,7 @@ do Signals.finish_sherigeba.emit("true")
 => END  
 
 
-~ sufris_mere
+~ final
 nacarqeqia: damRleli dRe iyo, magram mgonia rom Cveni kritikuli azrovnebiTa da unarebiT romelic dRes SeviZineT, bevris Secvlas SevZlebT!
 devi: marTali xar, ramdenime devma da meomarma gadavwyviteT gaverTiandeT, raTa gavrcelebul dezinformaciasa da siZulvils vebrZoloT.
 devi: Senc xom ar SemogvierTdebodi megobaro?
@@ -156,4 +156,5 @@ devi: rogor Tu saxli ar gaqvs? didi saxli maqvs Cem megobars adgils rogor ver ga
 nacarqeqia: mediawignierebas. am saqmianobas mediawignierebas eZaxian.
 devi: SemogvierTdi mediawignierebis ganviTarebis saqmeSi.
 nacarqeqia: ratomac ara?! erTad ganvaviTaroT mediawigniereba!
+do Signals.finished_final.emit("true")
 => END 

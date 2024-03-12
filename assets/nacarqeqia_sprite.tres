@@ -1,6 +1,7 @@
-[gd_resource type="SpriteFrames" load_steps=10 format=3 uid="uid://81uxeps53gyh"]
+[gd_resource type="SpriteFrames" load_steps=13 format=3 uid="uid://81uxeps53gyh"]
 
 [ext_resource type="Texture2D" uid="uid://diiig38c0n4gg" path="res://assets/forestSprites_ v1.2/satyr_.png" id="1_susda"]
+[ext_resource type="Texture2D" uid="uid://bgn1vmjm5meuk" path="res://assets/forestSprites_ v1.2-20231130T180505Z-001/forestSprites_ v1.2/satyr_.png" id="2_u6hew"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x3m7j"]
 atlas = ExtResource("1_susda")
@@ -17,6 +18,14 @@ region = Rect2(48, 0, 24, 24)
 [sub_resource type="AtlasTexture" id="AtlasTexture_8gdo3"]
 atlas = ExtResource("1_susda")
 region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_htj7x"]
+atlas = ExtResource("2_u6hew")
+region = Rect2(24, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y4ap5"]
+atlas = ExtResource("2_u6hew")
+region = Rect2(48, 24, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6ydau"]
 atlas = ExtResource("1_susda")
@@ -52,6 +61,17 @@ animations = [{
 "loop": true,
 "name": &"Idle",
 "speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_htj7x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y4ap5")
+}],
+"loop": false,
+"name": &"Jump",
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
