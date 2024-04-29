@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://cesxgwa8wiior"]
+
+[ext_resource type="Theme" uid="uid://cerh3ct3q1x55" path="res://Menu/ButtonTheme.tres" id="1_t4e4t"]
+
+[node name="DefaultButton" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Button" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -53.0
+offset_top = -22.0
+offset_right = 61.0
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_t4e4t")
+text = "dawyeba"

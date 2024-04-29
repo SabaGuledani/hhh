@@ -1,0 +1,70 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://cerh3ct3q1x55"]
+
+[ext_resource type="FontFile" uid="uid://c3dqb46s0gcvc" path="res://geopixel.ttf" id="1_gjgs7"]
+[ext_resource type="Texture2D" uid="uid://bqvymwtao1l68" path="res://assets/UI assets pack 2/UI books & more.png" id="2_wf6is"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kll4e"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.1, 0.1, 0.3)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kj0bd"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 0.74902)
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tlpgf"]
+texture = ExtResource("2_wf6is")
+region_rect = Rect2(16, 272, 32, 16)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o66ir"]
+texture = ExtResource("2_wf6is")
+region_rect = Rect2(16, 272, 32, 16)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2svg"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[resource]
+Button/colors/font_color = Color(0.184314, 0.160784, 0.129412, 1)
+Button/constants/h_separation = 2
+Button/constants/icon_max_width = 0
+Button/constants/outline_size = 0
+Button/font_sizes/font_size = 20
+Button/fonts/font = ExtResource("1_gjgs7")
+Button/styles/disabled = SubResource("StyleBoxFlat_kll4e")
+Button/styles/focus = SubResource("StyleBoxFlat_kj0bd")
+Button/styles/hover = SubResource("StyleBoxTexture_tlpgf")
+Button/styles/normal = SubResource("StyleBoxTexture_o66ir")
+Button/styles/pressed = SubResource("StyleBoxFlat_x2svg")
