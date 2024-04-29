@@ -10,8 +10,6 @@ func _ready():
 		var player = get_node("Natsarqeqia")
 		player.position = Vector2(2335,-143)
 		state.goblin_scene_final  = false
-	if State.gamogdebuli == false:
-		DialogueManager.show_example_dialogue_balloon(load("res://dialogues/main.dialogue"),"gamestart")
 	if global.i == 1:
 		print("true")
 func load_state():
@@ -40,12 +38,6 @@ func _on_gnome_area_body_entered(body):
 		global.state = state
 
 
-func _on_area_2d_body_entered(body):
-	if body.name == "Natsarqeqia" and global.goblins_met == false:
-		var state = save_state()
-		get_tree().change_scene_to_file("res://meoreManager.tscn")
-		global.state = state
-		global.goblins_met = true
 
 
 func _on_courrier_encounter_body_entered(body):
@@ -80,9 +72,9 @@ func _on_lady_callable_body_entered(body):
 		DialogueManager.show_dialogue_balloon(load("res://dialogues/main.dialogue"),"start")
 
 
-func _on_bias_game_start_body_entered(body):
-	if body.name == "Natsarqeqia" and global.bias_met == false:
-		var state = save_state()
-		global.state = state
-		global.bias_met = true
-		get_tree().change_scene_to_file("res://bias_mini_game.tscn")
+
+
+func _on_dzmastan_dialogi_body_entered(body):
+	if State.gamogdebuli == false:
+		DialogueManager.show_example_dialogue_balloon(load("res://dialogues/main.dialogue"),"gamestart")
+	
