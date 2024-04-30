@@ -175,6 +175,7 @@ rotation = 1.5708
 shape = SubResource("CircleShape2D_5kmk4")
 
 [node name="Start" type="Control" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -245,6 +246,7 @@ offset_bottom = 31.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("5_1wyw6")
+theme_override_font_sizes/font_size = 10
 text = "siuJeturi
 reJimi"
 
@@ -259,13 +261,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -85.0
+offset_left = -81.0
 offset_top = -24.0
-offset_right = 81.0
-offset_bottom = 34.0
+offset_right = 82.0
+offset_bottom = 32.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("5_1wyw6")
+theme_override_font_sizes/font_size = 10
 text = "mini TamaSis
 arCeva"
 
