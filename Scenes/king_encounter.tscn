@@ -546,7 +546,7 @@ tracks/9/keys = {
 "times": PackedFloat32Array(0, 8.5, 11.5, 15.5, 19.5, 23.5, 26.5),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": ["mogesalmebi, nacarqeqia!", "Seni daxmareba mWirdeba!", "gasaWirSi var!", "borot grZneuls vemalebi, Cems Sikriks unda gadasce werili.", "oRond aucilebelia, rom es werili boroti grZneulis xelSi ar Cavardes! ", "Seni jadosnuri fraza gamoiyene, raTa ver SeZlos wakiTxva.", "damexmarebi?"]
+"values": ["mogesalmebi, nacarqeqia!", "Seni daxmareba mWirdeba!", "gasaWirSi var!", "borot grZneuls vemalebi, Cems Sikriks unda gadasce werili.", "aucilebelia, rom es werili boroti grZneulis xelSi ar Cavardes! ", "Seni jadosnuri fraza gamoiyene, raTa ver SeZlos wakiTxva.", "damexmarebi?"]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
