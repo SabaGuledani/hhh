@@ -12,5 +12,5 @@ func _process(_delta):
 	pass
 
 func finish_handler():
-	await get_tree().create_timer(5.0).timeout
+	await get_tree().create_timer(2.0).timeout
 	get_tree().change_scene_to_file("res://world.tscn")

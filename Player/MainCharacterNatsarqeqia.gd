@@ -1,11 +1,11 @@
 extends CharacterBody2D
 
 
-@export var speed = 150
+#@export var speed = 150
 
-@onready var anim = get_node("AnimationPlayer")
-@onready var actionable_finder: Area2D = $actionable
-@onready var  global = get_node("/root/Global")
+#@onready var anim = get_node("AnimationPlayer")
+#@onready var actionable_finder: Area2D = $actionable
+#@onready var  global = get_node("/root/Global")
 #func get_input():
 #	if Input.is_action_just_pressed("speed_increase"):
 #		speed+=100
@@ -36,7 +36,7 @@ extends CharacterBody2D
 func _physics_process(delta):
 #	get_input()
 	move_and_slide()
-	anim.play("Idle")
+#	anim.play("Idle")
 
 
 

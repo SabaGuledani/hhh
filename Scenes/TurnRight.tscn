@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://buwrjgc8leb4q"]
+
+[sub_resource type="GDScript" id="GDScript_k65ry"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+func _on_area_2d_body_entered(body):
+	var natsarqeqia = get_node(\"NatsarqeqiaPath/PathFollow2D/Natsarqeqia/AnimatedSprite2D\")
+	natsarqeqia.flip_h = true
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2hwya"]
+
+[node name="TurnRight" type="Node2D"]
+script = SubResource("GDScript_k65ry")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_2hwya")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

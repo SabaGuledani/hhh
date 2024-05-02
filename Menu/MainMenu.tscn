@@ -1,8 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://y8dkyt2d6kkb"]
+[gd_scene load_steps=13 format=3 uid="uid://y8dkyt2d6kkb"]
 
 [ext_resource type="Script" path="res://Menu/mainGame.gd" id="1_0h2et"]
 [ext_resource type="TileSet" uid="uid://57rtsefdx6lu" path="res://main_world_tileset.tres" id="2_a4m2v"]
-[ext_resource type="Script" path="res://world.gd" id="3_sp6qk"]
 [ext_resource type="Script" path="res://Player/MainCharacterNatsarqeqia.gd" id="4_s2grg"]
 [ext_resource type="SpriteFrames" uid="uid://81uxeps53gyh" path="res://assets/nacarqeqia_sprite.tres" id="4_u7fau"]
 [ext_resource type="Theme" uid="uid://cerh3ct3q1x55" path="res://Menu/ButtonTheme.tres" id="5_1wyw6"]
@@ -134,7 +133,6 @@ layer_3/y_sort_enabled = false
 layer_3/y_sort_origin = 0
 layer_3/z_index = 0
 layer_3/tile_data = PackedInt32Array(1638408, 589826, 4, 2097163, 262146, 3, 2228235, 262146, 3, 2162700, 262146, 3)
-script = ExtResource("3_sp6qk")
 
 [node name="Natsarqeqia" type="CharacterBody2D" parent="TileMap"]
 y_sort_enabled = true
@@ -181,10 +179,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -2.0
-offset_top = -5.0
-offset_right = -2.0
-offset_bottom = -5.0
+offset_left = -25.0
+offset_top = 22.0
+offset_right = -21.0
+offset_bottom = 22.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -196,15 +194,17 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -84.0
-offset_top = -46.0
+offset_left = -36.0
+offset_top = -17.0
 offset_right = 62.0
-offset_bottom = 14.0
+offset_bottom = 26.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.772071, 0.759843)
 theme = ExtResource("5_1wyw6")
 theme_override_colors/font_color = Color(0.160784, 0.105882, 0.0627451, 1)
 theme_override_colors/font_hover_color = Color(0.0941176, 0.0392157, 0.0196078, 1)
+theme_override_font_sizes/font_size = 10
 text = "dawyeba"
 
 [node name="ModeChoose" type="Control" parent="."]

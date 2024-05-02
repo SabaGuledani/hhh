@@ -14,7 +14,8 @@ func _process(delta):
 	else:
 		$Path2D/PathFollow2D/Natsarqeqia/AnimatedSprite2D.animation = "move"
 	if $Path2D/PathFollow2D.progress_ratio == 1:
-		get_tree().quit()
+		
+		get_tree().change_scene_to_file("res://world.tscn")
 		
 
 

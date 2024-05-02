@@ -1,4 +1,4 @@
-~ start
+~ Woodlady
 ucnobi qalbatoni: gamarjoba, mogzauro
 natsarqeqia: gagimarjos! xom ar daikarge am uRran tyeSi?
 ucnobi qalbatoni: ara, Seni gafrTxileba mindoda mogzauro
@@ -6,13 +6,14 @@ natsarqeqia: Cemi? kimagram raze?
 ucnobi qalbatoni: Sen TavgadasavalSi bevri xifaTi Segxvdeba, magram ar SueuSinde
 ucnobi qalbatoni: yvelafers miudeqi gonebiT da kritikulad, yvelaferi gadaamowme da ar gasce Seni saudomloebani
 ucnobi qalbatoni: warmatebebs gisurveb, axla ki unda dagemSvidobo
+do Signals.finish_woodlady.emit()
 => END
-~ gamestart
+~ BrotherDialogue
 nacarqeqias Zma: kaco, sul rom nacars uzixar, an Wama ar ginda, an sma?!
 nacarqeqias Zma: adeqi, gaisarje, iqeT mideq, aqeT modeq da ojaxSi rame Semoitane, Torem icode, Cven Seni rCenis Tavi aRara gvaqvs da saxlidan gagagdebT
 nacarqeqia: SemeSviT nacris qeqva gana saqme araa?
 nacarqeqias Zma: ......
 nacarqeqias Zma: am Cveni qveynis farglebs gaSordi, aq ar dagiguloT, Torem cocxals ar gagiSvebT!!!
 nacarqeqia: kargiT,vecdebi, rac SeiZleba Sors wavide
-set gamogdebuli = true
+do Signals.finish_brother_dialogue.emit()
 => END

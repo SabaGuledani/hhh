@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://c844erwgsjkq3"]
+
+[ext_resource type="Texture2D" uid="uid://bc0oqudxgtaai" path="res://assets/forestSprites_ v1.2/mFairy_.png" id="1_pbyj0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ox2qy"]
+atlas = ExtResource("1_pbyj0")
+region = Rect2(96, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u3jhq"]
+atlas = ExtResource("1_pbyj0")
+region = Rect2(120, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qj2or"]
+atlas = ExtResource("1_pbyj0")
+region = Rect2(144, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ewuds"]
+atlas = ExtResource("1_pbyj0")
+region = Rect2(168, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j0qln"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ox2qy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u3jhq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qj2or")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ewuds")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="VillageCharacterFairy" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_j0qln")
+autoplay = "default"

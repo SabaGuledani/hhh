@@ -1,10 +1,11 @@
 extends Node
 
 
-#devi signals
-signal finish_campfire_dialogue
-signal finish_sherigeba
-signal meomrebi_encountered
-signal devi_sign_noticed
-signal devi_encountered
-signal finished_final
+
+#main world signals
+signal finish_brother_dialogue
+signal finish_gnome
+signal finish_woodlady
+signal finish_king_encounter
+signal finish_newspaper
+signal finish_lady_of_the_lake

@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://bbrdvn0uxqvye"]
+
+[ext_resource type="Texture2D" uid="uid://cjpswnh6djsg3" path="res://assets/desertSprites_ [version 1.0]/bandit_.png" id="1_iaw00"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_utovv"]
+atlas = ExtResource("1_iaw00")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ysbpn"]
+atlas = ExtResource("1_iaw00")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rfm7h"]
+atlas = ExtResource("1_iaw00")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ea4u"]
+atlas = ExtResource("1_iaw00")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rxfvi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_utovv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ysbpn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rfm7h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ea4u")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_rxfvi")
+autoplay = "default"
+frame_progress = 0.239626

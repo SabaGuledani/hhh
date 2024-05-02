@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://b2fgx2250230s"]
+
+[ext_resource type="Texture2D" uid="uid://ft4bwfmnhfgj" path="res://assets/forestSprites_ v1.2/fungant_.png" id="1_dbi36"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ctpjb"]
+atlas = ExtResource("1_dbi36")
+region = Rect2(168, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6084"]
+atlas = ExtResource("1_dbi36")
+region = Rect2(144, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_48bd0"]
+atlas = ExtResource("1_dbi36")
+region = Rect2(120, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j470g"]
+atlas = ExtResource("1_dbi36")
+region = Rect2(96, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ebjfk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ctpjb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6084")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_48bd0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j470g")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_ebjfk")
+autoplay = "default"

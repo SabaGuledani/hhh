@@ -2,18 +2,16 @@ extends Node
 
 var i = 0
 var state
-var goblinStoryChapter = 1
-var excalibur_taken = false
-var running = 0
-var excalibur_taken_end = false
+
 var king_met = false
 var courier_met = false
-var goblins_met = false
+
 var is_secure
 var feria_met = false
-var bias_met = false
-var lady_met = false
 
+var lady_met = false
+var newsguy_met = false
+var gnome_met = false
 
 
 
