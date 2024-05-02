@@ -106,6 +106,7 @@ position = Vector2(0, -1)
 scale = Vector2(1.00324, 1.00447)
 sprite_frames = ExtResource("2_titdn")
 animation = &"Idle"
+frame = 1
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3.5, 3.5)
