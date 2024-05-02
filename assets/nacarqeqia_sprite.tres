@@ -1,6 +1,7 @@
-[gd_resource type="SpriteFrames" load_steps=13 format=3 uid="uid://81uxeps53gyh"]
+[gd_resource type="SpriteFrames" load_steps=14 format=3 uid="uid://81uxeps53gyh"]
 
 [ext_resource type="Texture2D" uid="uid://diiig38c0n4gg" path="res://assets/forestSprites_ v1.2/satyr_.png" id="1_susda"]
+[ext_resource type="Texture2D" uid="uid://bp2fxpreag65f" path="res://I (3).jpg" id="2_0srw4"]
 [ext_resource type="Texture2D" uid="uid://bgn1vmjm5meuk" path="res://assets/forestSprites_ v1.2-20231130T180505Z-001/forestSprites_ v1.2/satyr_.png" id="2_u6hew"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x3m7j"]
@@ -57,6 +58,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8gdo3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0srw4")
 }],
 "loop": true,
 "name": &"Idle",

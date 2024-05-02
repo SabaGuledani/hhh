@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=3 uid="uid://dbmewaxr1fdgy"]
+[gd_scene load_steps=70 format=3 uid="uid://dbmewaxr1fdgy"]
 
 [ext_resource type="TileSet" uid="uid://57rtsefdx6lu" path="res://main_world_tileset.tres" id="1_8rugn"]
 [ext_resource type="Script" path="res://world.gd" id="5_m881h"]
@@ -1727,6 +1727,12 @@ size = Vector2(101.25, 46.75)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c6qru"]
 size = Vector2(40, 61.5)
 
+[sub_resource type="Curve2D" id="Curve2D_wy3pp"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 804, 1135, 0, 0, 0, 0, 807, 1153, 0, 0, 0, 0, 811, 1168, 0, 0, 0, 0, 815, 1177, 0, 0, 0, 0, 822, 1183, 0, 0, 0, 0, 835, 1183, 0, 0, 0, 0, 863, 1184, 0, 0, 0, 0, 905, 1182, 0, 0, 0, 0, 954, 1182, 0, 0, 0, 0, 1009, 1174, 0, 0, 0, 0, 1047, 1137, 0, 0, 0, 0, 1067, 1095, 0, 0, 0, 0, 1091, 1056, 0, 0, 0, 0, 1112, 1029, 0, 0, 0, 0, 1129, 1005, 0, 0, 0, 0, 1175, 952, 0, 0, 0, 0, 1206, 926, 0, 0, 0, 0, 1270, 920, 0, 0, 0, 0, 1315, 920, 0, 0, 0, 0, 1351, 922, 0, 0, 0, 0, 1406, 919, 0, 0, 0, 0, 1458, 919, 0, 0, 0, 0, 1511, 918, 0, 0, 0, 0, 1584, 917, 0, 0, 0, 0, 1634, 917, 0, 0, 0, 0, 1663, 919, 0, 0, 0, 0, 1718, 918, 0, 0, 0, 0, 1769, 918, 0, 0, 0, 0, 1800, 928, 0, 0, 0, 0, 1813, 953, 0, 0, 0, 0, 1825, 979, 0, 0, 0, 0, 1828, 1016, 0, 0, 0, 0, 1831, 1045, 0, 0, 0, 0, 1841, 1055, 0, 0, 0, 0, 1862, 1055, 0, 0, 0, 0, 1878, 1055, 0, 0, 0, 0, 1863, 1049, 0, 0, 0, 0, 1849, 1046, 0, 0, 0, 0, 1842, 1036, 0, 0, 0, 0, 1839, 1015, 0, 0, 0, 0, 1840, 984, 0, 0, 0, 0, 1831, 957, 0, 0, 0, 0, 1824, 940, 0, 0, 0, 0, 1819, 900, 0, 0, 0, 0, 1834, 870, 0, 0, 0, 0, 1871, 856, 0, 0, 0, 0, 1912, 853, 0, 0, 0, 0, 1953, 858, 0, 0, 0, 0, 2004, 858, 0, 0, 0, 0, 2052, 836, 0, 0, 0, 0, 2117, 818, 0, 0, 0, 0, 2160, 820, 0, 0, 0, 0, 2243, 820, 0, 0, 0, 0, 2268, 791, 0, 0, 0, 0, 2274, 738, 0, 0, 0, 0, 2275, 707, 0, 0, 0, 0, 2247, 647, 0, 0, 0, 0, 2231, 624, 0, 0, 0, 0, 2203, 590, 0, 0, 0, 0, 2156, 566, 0, 0, 0, 0, 2116, 538, 0, 0, 0, 0, 2084, 522, 0, 0, 0, 0, 2062, 511, 0, 0, 0, 0, 2032, 495, 0, 0, 0, 0, 1985, 485, 0, 0, 0, 0, 1966, 485, 0, 0, 0, 0, 1955, 471, 0, 0, 0, 0, 1970, 467, 0, 0, 0, 0, 1973, 478, 0, 0, 0, 0, 1973, 501, 0, 0, 0, 0, 1955, 517, 0, 0, 0, 0, 1927, 521, 0, 0, 0, 0, 1895, 521, 0, 0, 0, 0, 1862, 521, 0, 0, 0, 0, 1815, 518, 0, 0, 0, 0, 1560, 519, 0, 0, 0, 0, 1472, 491, 0, 0, 0, 0, 1457, 474, 0, 0, 0, 0, 1449, 461, 0, 0, 0, 0, 1349, 452, 0, 0, 0, 0, 1317, 438, 0, 0, 0, 0, 1290, 436, 0, 0, 0, 0, 1262, 437, 0, 0, 0, 0, 1237, 432, 0, 0, 0, 0, 1194, 435, 0, 0, 0, 0, 1163, 436, 0, 0, 0, 0, 1165, 429, 0, 0, 0, 0, 1183, 428, 0, 0, 0, 0, 1203, 426, 0, 0, 0, 0, 1221, 423, 0, 0, 0, 0, 1222, 410, 0, 0, 0, 0, 1216, 399, 0, 0, 0, 0, 1203, 390, 0, 0, 0, 0, 1194, 382, 0, 0, 0, 0, 1189, 376, 0, 0, 0, 0, 1141, 329, 0, 0, 0, 0, 1111, 299, 0, 0, 0, 0, 1083, 280, 0, 0, 0, 0, 1054, 248, 0, 0, 0, 0, 1040, 216, 0, 0, 0, 0, 1050, 182, 0, 0, 0, 0, 1063, 165, 0, 0, 0, 0, 1084, 148, 0, 0, 0, 0, 1104, 126, 0, 0, 0, 0, 1121, 109, 0, 0, 0, 0, 1144, 106, 0, 0, 0, 0, 1170, 105, 0, 0, 0, 0, 1183, 93, 0, 0, 0, 0, 1227, 89)
+}
+point_count = 109
+
 [node name="TileMap" type="TileMap"]
 z_as_relative = false
 texture_filter = 1
@@ -1794,9 +1800,6 @@ position = Vector2(839.41, 1182.04)
 position = Vector2(-3.41003, 1.96289)
 shape = SubResource("CircleShape2D_xwic3")
 
-[node name="Natsarqeqia" parent="." instance=ExtResource("11_vclxs")]
-position = Vector2(805, 1124)
-
 [node name="Lady" parent="." instance=ExtResource("40_ooie7")]
 position = Vector2(1151, 1009)
 script = ExtResource("41_t1pvh")
@@ -1854,6 +1857,17 @@ shape = SubResource("RectangleShape2D_c6qru")
 [node name="dzma" parent="." instance=ExtResource("33_0vi6a")]
 position = Vector2(790, 1178)
 script = ExtResource("34_piatb")
+
+[node name="NatsarqeqiaPath" type="Path2D" parent="."]
+position = Vector2(0, 1)
+curve = SubResource("Curve2D_wy3pp")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="NatsarqeqiaPath"]
+position = Vector2(804, 1135)
+rotation = 1.40565
+
+[node name="Natsarqeqia" parent="NatsarqeqiaPath/PathFollow2D" instance=ExtResource("11_vclxs")]
+position = Vector2(805, 1124)
 
 [connection signal="body_entered" from="TileMap/courrierEncounter" to="." method="_on_courrier_encounter_body_entered"]
 [connection signal="body_entered" from="DzmastanDialogi" to="." method="_on_dzmastan_dialogi_body_entered"]

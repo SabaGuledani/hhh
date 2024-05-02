@@ -36,6 +36,7 @@ extends CharacterBody2D
 func _physics_process(delta):
 #	get_input()
 	move_and_slide()
+	anim.play("Idle")
 
 
 
