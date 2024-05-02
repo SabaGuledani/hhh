@@ -2,13 +2,17 @@
 
 [ext_resource type="TileSet" uid="uid://57rtsefdx6lu" path="res://main_world_tileset.tres" id="1_04cgq"]
 [ext_resource type="Script" path="res://NewspaperGame/newspaperGame.gd" id="1_tffyi"]
-[ext_resource type="Texture2D" uid="uid://cab3iwvk4cdpx" path="res://NewspaperGame/Images/quest_1_1.png" id="2_kriam"]
 [ext_resource type="PackedScene" uid="uid://wbsso4waqvoc" path="res://NewspaperGame/SecondaryScenes/natsarqeqia_scene.tscn" id="2_nhdko"]
 [ext_resource type="PackedScene" uid="uid://bkrxu1uosc8y4" path="res://NewspaperGame/SecondaryScenes/newsguy_scene.tscn" id="3_atmp5"]
-[ext_resource type="Texture2D" uid="uid://dhieo2oira6ew" path="res://NewspaperGame/Images/quest_1_2.png" id="3_lrwyy"]
 [ext_resource type="Script" path="res://NewspaperGame/natsarqeqia_scene.gd" id="5_k11aw"]
 [ext_resource type="Resource" uid="uid://dfrdgkngj8gx5" path="res://NewspaperGame/Dialogue/newspaperDialogue.dialogue" id="6_d6jth"]
 [ext_resource type="AudioStream" uid="uid://bb4418r8a2hqi" path="res://NewspaperGame/Audio/Newspaper Music (Horsemen Approach).mp3" id="7_0cdak"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cbnbn"]
+load_path = "res://.godot/imported/quest_1_1.png-3afb6857b2394c3c46035044bb6aabd1.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cr23j"]
+load_path = "res://.godot/imported/quest_1_2.png-8a77af53dd67df9e4e69fa6cd50a9d1c.ctex"
 
 [sub_resource type="Curve2D" id="Curve2D_eenkk"]
 _data = {
@@ -33,7 +37,7 @@ offset_top = 35.0
 offset_right = 1134.0
 offset_bottom = 1059.0
 scale = Vector2(0.4, 0.4)
-texture = ExtResource("2_kriam")
+texture = SubResource("CompressedTexture2D_cbnbn")
 expand_mode = 1
 
 [node name="TextureRect2" type="TextureRect" parent="ImageContainer"]
@@ -43,7 +47,7 @@ offset_top = 35.0
 offset_right = 1674.0
 offset_bottom = 1059.0
 scale = Vector2(0.4, 0.4)
-texture = ExtResource("3_lrwyy")
+texture = SubResource("CompressedTexture2D_cr23j")
 expand_mode = 1
 
 [node name="TileMap" type="TileMap" parent="."]
