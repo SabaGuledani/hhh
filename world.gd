@@ -3,7 +3,7 @@ extends TileMap
 
 @onready var  global = get_node("/root/Global")
 @onready var  state = get_node("/root/State")
-@onready var speed_value = 0.01
+@onready var speed_value = 0.014
 @onready var speed = speed_value
 @onready var anim = get_node("NatsarqeqiaPath/PathFollow2D/Natsarqeqia/AnimationPlayer")
 @onready var natsarqeqia = get_node("NatsarqeqiaPath/PathFollow2D/Natsarqeqia/AnimatedSprite2D")
