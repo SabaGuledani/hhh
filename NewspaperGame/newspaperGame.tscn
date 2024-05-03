@@ -16,7 +16,7 @@ load_path = "res://.godot/imported/quest_1_2.png-8a77af53dd67df9e4e69fa6cd50a9d1
 
 [sub_resource type="Curve2D" id="Curve2D_eenkk"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -256, 586, -2.82843, 1.41421, 2.82843, -1.41421, 367, 577, -11.3137, 11.3137, 11.3137, -11.3137, 621, 564, -41.0122, 73.5391, 41.0122, -73.5391, 722, 429, -92.0693, -49.2094, 92.0693, 49.2094, 821, 576, 0, 0, 0, 0, 986, 607, 0, 0, 0, 0, 1216, 606)
+"points": PackedVector2Array(0, 0, 0, 0, 1472.92, 622, -2.82843, 1.41421, 2.82843, -1.41421, 1231.45, 555, 66.8814, 43.0617, -66.8814, -43.0617, 1079.81, 434, 27.9835, -50.2782, -27.9835, 50.2782, 807.433, 575, 127.184, -4.76217, -127.184, 4.76217, 414.32, 558, 0, 0, 0, 0, 215.349, 583, 0, 0, 0, 0, -142.026, 606)
 }
 point_count = 7
 
@@ -67,13 +67,16 @@ layer_1/tile_data = PackedInt32Array(0, 655368, 8, 131077, 65544, 3, 65548, 6555
 
 [node name="NewsGuy" parent="." instance=ExtResource("3_atmp5")]
 position = Vector2(913, 344)
+frame = 2
+frame_progress = 0.777755
 
 [node name="Path2D" type="Path2D" parent="."]
-position = Vector2(3, 3)
+position = Vector2(12.0435, 2.99985)
+scale = Vector2(1.03533, 1)
 curve = SubResource("Curve2D_eenkk")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2(-256, 586)
+position = Vector2(1472.92, 622)
 rotation = 0.025582
 rotates = false
 loop = false
