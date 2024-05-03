@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://t51hbct52fav"]
+[gd_scene load_steps=58 format=3 uid="uid://t51hbct52fav"]
 
 [ext_resource type="Texture2D" uid="uid://fg182tv5mbxl" path="res://assets/tundra_ [version 1.0]/tundra_.png" id="1_7hfwf"]
 [ext_resource type="Script" path="res://Scripts/courier_encounter.gd" id="1_vbrmj"]
@@ -17,6 +17,7 @@
 [ext_resource type="AudioStream" uid="uid://blebjkldipdgs" path="res://assets/music/correct.mp3" id="14_mvy67"]
 [ext_resource type="Texture2D" uid="uid://d2r0knwiyk0we" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Lock_01a1.png" id="16_wv6mt"]
 [ext_resource type="AudioStream" uid="uid://dx0cheukvrlsl" path="res://assets/music/courier_encounter_theme.mp3" id="17_23kaw"]
+[ext_resource type="PackedScene" uid="uid://dxpagsi5hpg5g" path="res://Menu/TransitionScreen.tscn" id="18_t41vw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d285w"]
 texture = ExtResource("1_7hfwf")
@@ -1573,4 +1574,11 @@ libraries = {
 stream = ExtResource("17_23kaw")
 volume_db = -10.0
 
+[node name="TransitionScreen" parent="." instance=ExtResource("18_t41vw")]
+
+[node name="ColorRect" parent="TransitionScreen" index="0"]
+mouse_filter = 2
+
 [connection signal="pressed" from="SpellTextureRect/TextureButton" to="." method="_on_texture_button_pressed"]
+
+[editable path="TransitionScreen"]

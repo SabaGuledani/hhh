@@ -41,4 +41,4 @@ func _on_menu_scene_game_pressed(game):
 	print(game)
 	scenes[-1] = game
 	print(scenes)
-	$TransitionScreen.transition()
+	$TransitionScreen.transition("gamestart")
