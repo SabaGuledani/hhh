@@ -1879,9 +1879,8 @@ position = Vector2(0, 1)
 curve = SubResource("Curve2D_wy3pp")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="NatsarqeqiaPath"]
-position = Vector2(1738.01, 522.49)
+position = Vector2(804, 1135)
 rotation = 0.0356991
-progress = 2784.36
 rotates = false
 loop = false
 
@@ -1895,14 +1894,14 @@ rotation = -0.0356991
 position = Vector2(1929, 405)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TurnAreas/TurnLeftNewspaper"]
-position = Vector2(104, 90)
+position = Vector2(114, 92)
 shape = SubResource("RectangleShape2D_1miwm")
 
 [node name="TurnLeft" type="Area2D" parent="TurnAreas"]
 position = Vector2(477, 128)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TurnAreas/TurnLeft"]
-position = Vector2(1383, 919)
+position = Vector2(1390, 919)
 shape = SubResource("RectangleShape2D_1miwm")
 
 [node name="TurnLeft2" type="Area2D" parent="TurnAreas"]
@@ -1921,7 +1920,7 @@ shape = SubResource("RectangleShape2D_0omv5")
 [node name="TurnRightGnome" type="Area2D" parent="TurnAreas"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TurnAreas/TurnRightGnome"]
-position = Vector2(1171, 434)
+position = Vector2(1172, 428)
 shape = SubResource("RectangleShape2D_0omv5")
 
 [node name="TurnLeftGnome" type="Area2D" parent="TurnAreas"]
@@ -1941,7 +1940,7 @@ shape = SubResource("RectangleShape2D_0omv5")
 position = Vector2(1124.34, 318.087)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TurnAreas/TurnLeftKing"]
-position = Vector2(53.6588, 46.9131)
+position = Vector2(58.6588, 52.9131)
 shape = SubResource("RectangleShape2D_1miwm")
 
 [node name="AnimatedSprite2D" parent="." instance=ExtResource("31_fux88")]

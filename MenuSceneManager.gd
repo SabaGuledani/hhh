@@ -1,14 +1,44 @@
 extends Node2D
 
-const SceneTwo = preload("res://Menu/GameChoose.tscn")
+#const SceneTwo = preload("res://Menu/GameChoose.tscn")
+#const SceneWorld = preload("res://world.tscn")
+var scenes = ["dummy"]
+var scenePreload = preload("res://Menu/GameChoose.tscn")
 
+func _ready():
+	Global.loaded_from_world = true
 func _process(delta):
-	if Input.is_action_just_pressed("ui_accept"):
-		$TransitionScreen.transition()
+	pass
+	
+		
 
 
 
 func _on_transition_screen_transitioned():
-	$CurrentScene.get_child(0).queue_free()
-	$CurrentScene.add_child(SceneTwo.instance())
+	print(scenes)
+	if scenes[-1] == "story":
+		
+		scenePreload = preload("res://world.tscn")
+	else:
+		Global.loaded_from_world = false
+		if scenes[-1] == "tba":
+			scenePreload = preload("res://feria.tscn")
+		elif scenes[-1] == "gnome":
+			scenePreload = preload("res://GnomeGame/gnome_encounter.tscn")
+		elif scenes[-1] == "newspaper":
+			scenePreload = preload("res://NewspaperGame/newspaperGame.tscn")
+		elif scenes[-1] == "king":
+			scenePreload = preload("res://Scenes/king_encounter.tscn")
+		else:
+			scenePreload = preload("res://world.tscn")
+		
+	$Scenes.get_child(0).queue_free()
+	$Scenes.add_child(scenePreload.instantiate())
 	
+
+
+func _on_menu_scene_game_pressed(game):
+	print(game)
+	scenes[-1] = game
+	print(scenes)
+	$TransitionScreen.transition()

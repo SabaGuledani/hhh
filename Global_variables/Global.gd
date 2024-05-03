@@ -13,7 +13,7 @@ var lady_met = false
 var newsguy_met = false
 var gnome_met = false
 
-
+var loaded_from_world = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
