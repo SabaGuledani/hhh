@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cn7bna0y23f12"]
+
+[ext_resource type="Theme" uid="uid://cerh3ct3q1x55" path="res://Menu/ButtonTheme.tres" id="1_82s8k"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+texture_filter = 1
+offset_right = 112.0
+offset_bottom = 38.0
+theme = ExtResource("1_82s8k")
+theme_override_font_sizes/font_size = 20
+text = " ukan "
