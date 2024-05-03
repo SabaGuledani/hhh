@@ -835,6 +835,7 @@ stream = ExtResource("14_5ald4")
 
 [node name="CutsceneAnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "cutscene"
+speed_scale = 0.5
 libraries = {
 "": SubResource("AnimationLibrary_28psk")
 }

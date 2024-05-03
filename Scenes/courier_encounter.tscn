@@ -1470,6 +1470,7 @@ visible_characters = 0
 visible_ratio = 0.0
 
 [node name="CutsceneAnimationPlayer" type="AnimationPlayer" parent="."]
+speed_scale = 0.5
 libraries = {
 "": SubResource("AnimationLibrary_3j464")
 }
@@ -1573,6 +1574,7 @@ libraries = {
 [node name="MusicAudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("17_23kaw")
 volume_db = -10.0
+stream_paused = true
 
 [node name="TransitionScreen" parent="." instance=ExtResource("18_t41vw")]
 
