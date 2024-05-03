@@ -44,4 +44,3 @@ scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_4fn8g")
 autoplay = "default"
 frame_progress = 0.149138
-flip_h = true
