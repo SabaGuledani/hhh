@@ -1879,8 +1879,9 @@ position = Vector2(0, 1)
 curve = SubResource("Curve2D_wy3pp")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="NatsarqeqiaPath"]
-position = Vector2(804, 1135)
+position = Vector2(1738.01, 522.49)
 rotation = 0.0356991
+progress = 2784.36
 rotates = false
 loop = false
 
@@ -1894,7 +1895,7 @@ rotation = -0.0356991
 position = Vector2(1929, 405)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TurnAreas/TurnLeftNewspaper"]
-position = Vector2(78.0001, 93)
+position = Vector2(104, 90)
 shape = SubResource("RectangleShape2D_1miwm")
 
 [node name="TurnLeft" type="Area2D" parent="TurnAreas"]
@@ -1935,6 +1936,13 @@ shape = SubResource("RectangleShape2D_1miwm")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TurnAreas/TurnRightKing"]
 position = Vector2(1041, 216)
 shape = SubResource("RectangleShape2D_0omv5")
+
+[node name="TurnLeftKing" type="Area2D" parent="TurnAreas"]
+position = Vector2(1124.34, 318.087)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TurnAreas/TurnLeftKing"]
+position = Vector2(53.6588, 46.9131)
+shape = SubResource("RectangleShape2D_1miwm")
 
 [node name="AnimatedSprite2D" parent="." instance=ExtResource("31_fux88")]
 position = Vector2(2015, 453)
@@ -1991,4 +1999,5 @@ position = Vector2(1637, 438)
 [connection signal="body_entered" from="TurnAreas/TurnRightGnome" to="." method="_on_turn_right_body_entered"]
 [connection signal="body_entered" from="TurnAreas/TurnLeftGnome" to="." method="_on_turn_left_body_entered"]
 [connection signal="body_entered" from="TurnAreas/TurnRightKing" to="." method="_on_turn_right_body_entered"]
+[connection signal="body_entered" from="TurnAreas/TurnLeftKing" to="." method="_on_turn_left_body_entered"]
 [connection signal="body_entered" from="NewspaperStart" to="." method="_on_newspaper_start_body_entered"]
