@@ -4,7 +4,7 @@ extends Control
 @onready var start_control = $Start
 @onready var miniGameChooseMenu = $MiniGameChooseMenu
 @onready var backButton = $BackButton
-@onready var creditsNode = $CreditsNode
+
 signal gamePressed(gameName)
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -58,11 +58,8 @@ func _on_button_pressed():
 	elif miniGameChooseMenu.visible == true:
 		miniGameChooseMenu.visible = false
 		mode_btn_control.visible = true
-	elif creditsNode.visible == true:
-		start_control.visible = true
-		creditsNode.visible = false
 
-func _on_credits_button_pressed():
-	start_control.visible = false
-	creditsNode.visible = true
-	backButton.visible = true
+
+
+
+

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://y8dkyt2d6kkb"]
+[gd_scene load_steps=14 format=3 uid="uid://y8dkyt2d6kkb"]
 
 [ext_resource type="Script" path="res://Menu/mainGame.gd" id="1_0h2et"]
 [ext_resource type="TileSet" uid="uid://57rtsefdx6lu" path="res://main_world_tileset.tres" id="2_a4m2v"]
@@ -7,7 +7,6 @@
 [ext_resource type="Theme" uid="uid://cerh3ct3q1x55" path="res://Menu/ButtonTheme.tres" id="5_1wyw6"]
 [ext_resource type="PackedScene" uid="uid://cwr272xswm8ih" path="res://actionable.tscn" id="5_qtbie"]
 [ext_resource type="PackedScene" uid="uid://cn7bna0y23f12" path="res://Menu/backButton.tscn" id="6_40g5o"]
-[ext_resource type="Texture2D" uid="uid://bqvymwtao1l68" path="res://assets/UI assets pack 2/UI books & more.png" id="8_mvef5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qie8j"]
 size = Vector2(7.63372, 5.74607)
@@ -94,13 +93,6 @@ _data = {
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5kmk4"]
 radius = 17.0294
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ru167"]
-texture = ExtResource("8_mvef5")
-region_rect = Rect2(560, 80, 48, 64)
-
-[sub_resource type="Theme" id="Theme_3syfj"]
-Panel/styles/panel = SubResource("StyleBoxTexture_ru167")
 
 [node name="Node2D" type="Control"]
 layout_mode = 3
@@ -208,81 +200,15 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -36.0
-offset_top = -64.0
+offset_top = -53.0
 offset_right = 64.0
-offset_bottom = -21.0
+offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.772071, 0.759843)
 theme = ExtResource("5_1wyw6")
 theme_override_font_sizes/font_size = 10
 text = "dawyeba"
-
-[node name="Credits" type="Control" parent="Start"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -1.0
-offset_top = 39.0
-offset_right = 3.0
-offset_bottom = 39.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="CreditsButton" type="Button" parent="Start/Credits"]
-texture_filter = 1
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -37.0
-offset_top = -63.0
-offset_right = 63.0
-offset_bottom = -20.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.772071, 0.759843)
-theme = ExtResource("5_1wyw6")
-theme_override_font_sizes/font_size = 10
-text = "avtorebi"
-
-[node name="Quit" type="Control" parent="Start"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -0.946899
-offset_top = 30.9809
-offset_right = 3.0531
-offset_bottom = 30.9809
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="QuitButton" type="Button" parent="Start/Quit"]
-texture_filter = 1
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -37.0
-offset_top = -15.0
-offset_right = 64.0
-offset_bottom = 28.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.772071, 0.759843)
-theme = ExtResource("5_1wyw6")
-theme_override_font_sizes/font_size = 10
-text = " gamosvla"
 
 [node name="ModeChoose" type="Control" parent="."]
 visible = false
@@ -456,21 +382,8 @@ theme = ExtResource("5_1wyw6")
 theme_override_font_sizes/font_size = 10
 text = "dakarguli mefe"
 
-[node name="CreditsNode" type="Node2D" parent="."]
-visible = false
-
-[node name="CreditsPanel" type="Panel" parent="CreditsNode"]
-texture_filter = 1
-offset_left = -86.0
-offset_top = -70.0
-offset_right = 45.0
-offset_bottom = 106.0
-theme = SubResource("Theme_3syfj")
-
 [connection signal="pressed" from="BackButton/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Start/StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="Start/Credits/CreditsButton" to="." method="_on_credits_button_pressed"]
-[connection signal="pressed" from="Start/Quit/QuitButton" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="ModeChoose/GridContainer/StoryMode/StoryModeButton" to="." method="_on_story_mode_button_pressed"]
 [connection signal="pressed" from="ModeChoose/GridContainer/ChooseGame/ChooseGameButton" to="." method="_on_choose_game_button_pressed"]
 [connection signal="pressed" from="MiniGameChooseMenu/TyisFeria/TyisFeriaButton" to="." method="_on_tyis_feria_button_pressed"]
