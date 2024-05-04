@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://t51hbct52fav"]
+[gd_scene load_steps=59 format=3 uid="uid://t51hbct52fav"]
 
 [ext_resource type="Texture2D" uid="uid://fg182tv5mbxl" path="res://assets/tundra_ [version 1.0]/tundra_.png" id="1_7hfwf"]
 [ext_resource type="Script" path="res://Scripts/courier_encounter.gd" id="1_vbrmj"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://bckf2xodbek70" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Banner_02_Downward.png" id="9_r637f"]
 [ext_resource type="Texture2D" uid="uid://cmlkfmipsbu6o" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a1.png" id="10_oq12q"]
 [ext_resource type="Texture2D" uid="uid://cwxipthyndc4k" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a3.png" id="11_b43cq"]
+[ext_resource type="FontFile" uid="uid://dpfwmlus4wwdm" path="res://assets/FFFFORWA.TTF" id="11_rs5p1"]
 [ext_resource type="Texture2D" uid="uid://cly1w1k0tfgd8" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a2.png" id="12_h1tpm"]
 [ext_resource type="Texture2D" uid="uid://mcwvkdam4rro" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Checkmark_Small.png" id="13_jvsk7"]
 [ext_resource type="AudioStream" uid="uid://blebjkldipdgs" path="res://assets/music/correct.mp3" id="14_mvy67"]
@@ -1199,7 +1200,8 @@ tracks/11/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
 "values": ["rogorc iqna! gipove!
-me var namdvili Sikriki!", "imis gamo, rom daculi jadosnuri fraza SearCie, Cveni mefe usafrTxodaa!", "yoCaR! daculi jadosnuri frazebis damsaxurebiT, Cvens informacias ver moiparaven!", "axla gaviqcevi, da mefis informacias mivitan Tavis adgilze.", "madloba da naxvamdis, nacarqeqia!"]
+me var namdvili Sikriki!", "imis gamo, rom daculi jadosnuri fraza SearCie, Cveni mefe usafrTxodaa!", "yoCaR! Cvens informacias veRar moiparaven!
+", "axla gaviqcevi, da mefis informacias mivitan Tavis adgilze.", "madloba da naxvamdis, nacarqeqia!"]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
@@ -1470,6 +1472,7 @@ visible_characters = 0
 visible_ratio = 0.0
 
 [node name="CutsceneAnimationPlayer" type="AnimationPlayer" parent="."]
+speed_scale = 0.5
 libraries = {
 "": SubResource("AnimationLibrary_3j464")
 }
@@ -1490,9 +1493,9 @@ offset_top = 213.0
 offset_right = 863.0
 offset_bottom = 270.0
 theme_override_colors/font_color = Color(1, 0.772549, 0.47451, 1)
-theme_override_fonts/font = ExtResource("8_lm225")
-theme_override_font_sizes/font_size = 50
-placeholder_text = "..............................................................
+theme_override_fonts/font = ExtResource("11_rs5p1")
+theme_override_font_sizes/font_size = 32
+placeholder_text = ".................................................
 "
 editable = false
 
