@@ -39,25 +39,22 @@ expand_margin_bottom = 2.0
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tlpgf"]
 texture = ExtResource("2_wf6is")
 region_rect = Rect2(16, 272, 32, 16)
+modulate_color = Color(0.894118, 0.898039, 0.862745, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o66ir"]
 texture = ExtResource("2_wf6is")
 region_rect = Rect2(16, 272, 32, 16)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2svg"]
-content_margin_left = 4.0
-content_margin_top = 4.0
-content_margin_right = 4.0
-content_margin_bottom = 4.0
-bg_color = Color(0, 0, 0, 0.6)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0nl5m"]
+texture = ExtResource("2_wf6is")
+region_rect = Rect2(16, 272, 32, 16)
 
 [resource]
-Button/colors/font_color = Color(0.184314, 0.160784, 0.129412, 1)
+Button/colors/font_color = Color(0.12549, 0.109804, 0.0862745, 1)
+Button/colors/font_hover_color = Color(0.164706, 0.145098, 0.117647, 1)
+Button/colors/font_pressed_color = Color(0.164706, 0.145098, 0.117647, 1)
+Button/colors/icon_focus_color = Color(0.164706, 0.145098, 0.117647, 1)
+Button/colors/icon_pressed_color = Color(0.164706, 0.145098, 0.117647, 1)
 Button/constants/h_separation = 2
 Button/constants/icon_max_width = 0
 Button/constants/outline_size = 0
@@ -67,4 +64,4 @@ Button/styles/disabled = SubResource("StyleBoxFlat_kll4e")
 Button/styles/focus = SubResource("StyleBoxFlat_kj0bd")
 Button/styles/hover = SubResource("StyleBoxTexture_tlpgf")
 Button/styles/normal = SubResource("StyleBoxTexture_o66ir")
-Button/styles/pressed = SubResource("StyleBoxFlat_x2svg")
+Button/styles/pressed = SubResource("StyleBoxTexture_0nl5m")
