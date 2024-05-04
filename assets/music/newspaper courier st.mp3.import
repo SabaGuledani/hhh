@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cy8los20up03g"
+path="res://.godot/imported/newspaper courier st.mp3-87dea55bcc2931855b733eacce869578.mp3str"
+
+[deps]
+
+source_file="res://assets/music/newspaper courier st.mp3"
+dest_files=["res://.godot/imported/newspaper courier st.mp3-87dea55bcc2931855b733eacce869578.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

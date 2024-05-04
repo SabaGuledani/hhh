@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=3 uid="uid://1ongfj1fivhp"]
+[gd_scene load_steps=60 format=3 uid="uid://1ongfj1fivhp"]
 
 [ext_resource type="Texture2D" uid="uid://bvg5vmdyi8leg" path="res://assets/fantasy_ [version 2.0]/forest_/forestPath_.png" id="1_0bs15"]
 [ext_resource type="Texture2D" uid="uid://bfat6ov6xhxjw" path="res://assets/fantasy_ [version 2.0]/forest_/forest_.png" id="2_ivedg"]
@@ -27,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://bvcu8hv2sxmpp" path="res://assets/forestVillage_ [version 2.0]/tableObjects_.png" id="25_wq0va"]
 [ext_resource type="Texture2D" uid="uid://d212bywtw36xd" path="res://assets/forestVillage_ [version 2.0]/forestVillageStructures_ [stallsWatchtower].png" id="26_scyxu"]
 [ext_resource type="Script" path="res://feria.gd" id="27_ma01c"]
+[ext_resource type="AudioStream" uid="uid://c2tcmtjlrkywh" path="res://assets/music/world fairy st.mp3" id="30_mdkxa"]
 [ext_resource type="PackedScene" uid="uid://8g6g1yk15lsx" path="res://Player/MainCharacterNatsarqeqia.tscn" id="39_u0011"]
 [ext_resource type="PackedScene" uid="uid://j6ikmibc31kg" path="res://Characters/lady_of_the_lake.tscn" id="40_du31h"]
 
@@ -6218,3 +6219,8 @@ shape = SubResource("RectangleShape2D_kw8as")
 
 [node name="CharacterBody2D" parent="Area2D" instance=ExtResource("39_u0011")]
 position = Vector2(2722, 959)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("30_mdkxa")
+volume_db = -10.0
+autoplay = true

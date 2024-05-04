@@ -17,8 +17,8 @@
 [ext_resource type="Texture2D" uid="uid://mcwvkdam4rro" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Checkmark_Small.png" id="13_jvsk7"]
 [ext_resource type="AudioStream" uid="uid://blebjkldipdgs" path="res://assets/music/correct.mp3" id="14_mvy67"]
 [ext_resource type="Texture2D" uid="uid://d2r0knwiyk0we" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Lock_01a1.png" id="16_wv6mt"]
-[ext_resource type="AudioStream" uid="uid://dx0cheukvrlsl" path="res://assets/music/courier_encounter_theme.mp3" id="17_23kaw"]
 [ext_resource type="PackedScene" uid="uid://dxpagsi5hpg5g" path="res://Menu/TransitionScreen.tscn" id="18_t41vw"]
+[ext_resource type="AudioStream" uid="uid://cy8los20up03g" path="res://assets/music/newspaper courier st.mp3" id="18_wdo65"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d285w"]
 texture = ExtResource("1_7hfwf")
@@ -1574,7 +1574,7 @@ libraries = {
 }
 
 [node name="MusicAudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("17_23kaw")
+stream = ExtResource("18_wdo65")
 volume_db = -10.0
 
 [node name="TransitionScreen" parent="." instance=ExtResource("18_t41vw")]
