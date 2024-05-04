@@ -16,7 +16,11 @@ func _on_texture_button_pressed():
 	check_security(password)
 	await $CutsceneAnimationPlayer.animation_finished
 	Global.king_met = true
-	get_tree().change_scene_to_file("res://world.tscn")
+	if Global.loaded_from_world == false:
+		get_tree().change_scene_to_file("res://Scenes/courier_encounter.tscn")
+	else:
+		get_tree().change_scene_to_file("res://world.tscn")
+	
 	
 
 

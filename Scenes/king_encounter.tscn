@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://dsx8btyh1ed5j"]
+[gd_scene load_steps=37 format=3 uid="uid://dsx8btyh1ed5j"]
 
 [ext_resource type="Script" path="res://Scripts/king_encounter.gd" id="1_5g8ke"]
 [ext_resource type="Texture2D" uid="uid://bq7s6kqjm25h7" path="res://assets/taiga_ [version 1.0]/taiga_.png" id="1_o66xq"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://bckf2xodbek70" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Banner_02_Downward.png" id="8_158cs"]
 [ext_resource type="Texture2D" uid="uid://cmlkfmipsbu6o" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a1.png" id="9_i6jvk"]
 [ext_resource type="Texture2D" uid="uid://cwxipthyndc4k" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a3.png" id="10_iv0bb"]
+[ext_resource type="FontFile" uid="uid://dpfwmlus4wwdm" path="res://assets/FFFFORWA.TTF" id="10_y0u4e"]
 [ext_resource type="Texture2D" uid="uid://cly1w1k0tfgd8" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Button_Large_Press_01a2.png" id="11_tv75b"]
 [ext_resource type="Texture2D" uid="uid://mcwvkdam4rro" path="res://assets/ui/01_Flat_Theme/Sprites/UI_Flat_Checkmark_Small.png" id="12_7qrd0"]
 [ext_resource type="AudioStream" uid="uid://blebjkldipdgs" path="res://assets/music/correct.mp3" id="14_5ald4"]
@@ -780,9 +781,9 @@ offset_top = 213.0
 offset_right = 863.0
 offset_bottom = 270.0
 theme_override_colors/font_color = Color(1, 0.772549, 0.47451, 1)
-theme_override_fonts/font = ExtResource("6_v6qmo")
-theme_override_font_sizes/font_size = 50
-placeholder_text = "..............................................................
+theme_override_fonts/font = ExtResource("10_y0u4e")
+theme_override_font_sizes/font_size = 32
+placeholder_text = "..............................................
 "
 editable = false
 
@@ -835,6 +836,7 @@ stream = ExtResource("14_5ald4")
 
 [node name="CutsceneAnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "cutscene"
+speed_scale = 0.5
 libraries = {
 "": SubResource("AnimationLibrary_28psk")
 }

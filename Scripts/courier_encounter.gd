@@ -31,7 +31,9 @@ func _on_texture_button_pressed():
 		$TipsTextureRect/TipsAnimationPlayer.play_backwards("fade")
 		$CutsceneAnimationPlayer.play("cutscene_2")
 		await $CutsceneAnimationPlayer.animation_finished
-		get_tree().quit()
+		$TransitionScreen.transition('gameEnd')
+		await $TransitionScreen/AnimationPlayer.animation_finished
+		get_tree().change_scene_to_file("res://MenuSceneManager.tscn")
 
 
 func check_security(password):
