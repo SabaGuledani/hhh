@@ -7,6 +7,10 @@ var scenePreload = preload("res://Menu/GameChoose.tscn")
 
 func _ready():
 	Global.loaded_from_world = true
+	Global.courier_met = false
+	Global.king_met = false
+	Global.feria_met = false
+	Global.gnome_met = false
 func _process(delta):
 	pass
 	

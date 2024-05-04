@@ -7,7 +7,9 @@ func _ready():
 		$CutsceneAnimationPlayer.play("cutscene_alternative")
 		await $CutsceneAnimationPlayer.animation_finished
 		Global.courier_met = true
-		get_tree().change_scene_to_file("res://world.tscn")
+		$TransitionScreen.transition('gameEnd')
+		await $TransitionScreen/AnimationPlayer.animation_finished
+		get_tree().change_scene_to_file("res://Menu/MenuSceneManager.tscn")
 	else:
 		$CutsceneAnimationPlayer.play("cutscene_1")
 
@@ -33,7 +35,8 @@ func _on_texture_button_pressed():
 		await $CutsceneAnimationPlayer.animation_finished
 		$TransitionScreen.transition('gameEnd')
 		await $TransitionScreen/AnimationPlayer.animation_finished
-		get_tree().change_scene_to_file("res://MenuSceneManager.tscn")
+		get_tree().change_scene_to_file("res://Menu/MenuSceneManager.tscn")
+		
 
 
 func check_security(password):
