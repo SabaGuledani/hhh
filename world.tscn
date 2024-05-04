@@ -15,7 +15,9 @@
 [ext_resource type="Texture2D" uid="uid://cr2dae7b4uo5" path="res://assets/taiga_ [version 1.0]/taiga_ [bridgeVertical].png" id="31_hlvfk"]
 [ext_resource type="Texture2D" uid="uid://bjsrbhi7mtbwl" path="res://assets/camelot_ [version 1.0]/camelot_ [version 1.0]/arthurPendragon_.png" id="31_wd02k"]
 [ext_resource type="PackedScene" uid="uid://jd0mi714enhr" path="res://Characters/VillageCharacter.tscn" id="32_80d3k"]
+
 [ext_resource type="PackedScene" uid="uid://j6ikmibc31kg" path="res://Characters/lady_of_the_lake.tscn" id="32_g6tdl"]
+
 [ext_resource type="Texture2D" uid="uid://cntemacg1fgto" path="res://assets/fantasy_ [version 2.0]/taiga_/taiga_ [bridgeHorizontal].png" id="32_qwxfa"]
 [ext_resource type="PackedScene" uid="uid://b3eubpx76ylgw" path="res://Characters/nacarqeqias dzma.tscn" id="33_0vi6a"]
 [ext_resource type="Texture2D" uid="uid://kfbqtk7gujdj" path="res://assets/fantasy_ [version 2.0]/taiga_/taiga_ [bridgeVertical].png" id="33_fox70"]
