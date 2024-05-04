@@ -14,10 +14,11 @@ func _process(delta):
 	else:
 		$Path2D/PathFollow2D/Natsarqeqia/AnimatedSprite2D.animation = "move"
 	if $Path2D/PathFollow2D.progress_ratio == 1:
-		
-		get_tree().change_scene_to_file("res://world.tscn")
-		
-
+		if Global.loaded_from_world == false:
+			get_tree().change_scene_to_file("res://Menu/MenuSceneManager.tscn")
+		else: 
+			
+			get_tree().change_scene_to_file("res://world.tscn")
 
 func on_question_image_show(questionNumber):
 	if questionNumber == 0:

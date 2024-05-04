@@ -13,4 +13,7 @@ func _process(_delta):
 
 func finish_handler():
 	await get_tree().create_timer(2.0).timeout
-	get_tree().change_scene_to_file("res://world.tscn")
+	if Global.loaded_from_world == false:
+		get_tree().change_scene_to_file("res://Menu/MenuSceneManager.tscn")
+	else:
+		get_tree().change_scene_to_file("res://world.tscn")
