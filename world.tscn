@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=3 uid="uid://dbmewaxr1fdgy"]
+[gd_scene load_steps=81 format=3 uid="uid://dbmewaxr1fdgy"]
 
 [ext_resource type="TileSet" uid="uid://57rtsefdx6lu" path="res://main_world_tileset.tres" id="1_8rugn"]
 [ext_resource type="Script" path="res://world.gd" id="5_m881h"]
@@ -14,22 +14,23 @@
 [ext_resource type="PackedScene" uid="uid://bkrxu1uosc8y4" path="res://NewspaperGame/SecondaryScenes/newsguy_scene.tscn" id="31_fux88"]
 [ext_resource type="Texture2D" uid="uid://cr2dae7b4uo5" path="res://assets/taiga_ [version 1.0]/taiga_ [bridgeVertical].png" id="31_hlvfk"]
 [ext_resource type="Texture2D" uid="uid://bjsrbhi7mtbwl" path="res://assets/camelot_ [version 1.0]/camelot_ [version 1.0]/arthurPendragon_.png" id="31_wd02k"]
-[ext_resource type="PackedScene" uid="uid://jd0mi714enhr" path="res://Characters/VillageCharacter.tscn" id="32_80d3k"]
+[ext_resource type="PackedScene" path="res://Characters/VillageCharacter.tscn" id="32_80d3k"]
 [ext_resource type="PackedScene" uid="uid://j6ikmibc31kg" path="res://Characters/lady_of_the_lake.tscn" id="32_g6tdl"]
 [ext_resource type="Texture2D" uid="uid://cntemacg1fgto" path="res://assets/fantasy_ [version 2.0]/taiga_/taiga_ [bridgeHorizontal].png" id="32_qwxfa"]
 [ext_resource type="PackedScene" uid="uid://b3eubpx76ylgw" path="res://Characters/nacarqeqias dzma.tscn" id="33_0vi6a"]
 [ext_resource type="Texture2D" uid="uid://kfbqtk7gujdj" path="res://assets/fantasy_ [version 2.0]/taiga_/taiga_ [bridgeVertical].png" id="33_fox70"]
-[ext_resource type="PackedScene" uid="uid://b2fgx2250230s" path="res://Characters/VillageCharacterFung.tscn" id="33_pvxr0"]
+[ext_resource type="PackedScene" path="res://Characters/VillageCharacterFung.tscn" id="33_pvxr0"]
 [ext_resource type="Script" path="res://Characters/nacarqeqias dzma.gd" id="34_piatb"]
-[ext_resource type="PackedScene" uid="uid://b73k7oo7yibve" path="res://Characters/VillageCharacterMhero.tscn" id="34_wmb7k"]
+[ext_resource type="PackedScene" path="res://Characters/VillageCharacterMhero.tscn" id="34_wmb7k"]
 [ext_resource type="Texture2D" uid="uid://bxk8y7q1an1it" path="res://assets/fantasy_ [version 2.0]/taiga_/taiga_ [fencesAndWalls].png" id="34_yt6rq"]
 [ext_resource type="Texture2D" uid="uid://bmtshw41t4s0e" path="res://assets/fantasy_ [version 2.0]/taiga_/taiga_ [fountain].png" id="35_dtit7"]
-[ext_resource type="PackedScene" uid="uid://c844erwgsjkq3" path="res://Characters/VillageCharacterFairy.tscn" id="35_ml50f"]
-[ext_resource type="PackedScene" uid="uid://bbrdvn0uxqvye" path="res://Characters/VillageCharacterThief.tscn" id="36_03bda"]
+[ext_resource type="PackedScene" path="res://Characters/VillageCharacterFairy.tscn" id="35_ml50f"]
+[ext_resource type="PackedScene" path="res://Characters/VillageCharacterThief.tscn" id="36_03bda"]
 [ext_resource type="Texture2D" uid="uid://d1sbmok61ggkv" path="res://assets/fantasy_ [version 2.0]/taiga_/taiga_ [resources].png" id="36_ba6ya"]
 [ext_resource type="Texture2D" uid="uid://c3o20cr4ndk7" path="res://assets/fantasy_ [version 2.0]/taiga_/taiga_.png" id="37_kqq3v"]
-[ext_resource type="PackedScene" uid="uid://q56l858px611" path="res://Characters/VillageCharacterNecro.tscn" id="37_o7c64"]
+[ext_resource type="PackedScene" path="res://Characters/VillageCharacterNecro.tscn" id="37_o7c64"]
 [ext_resource type="Texture2D" uid="uid://ctsdhnt1riqxq" path="res://assets/taiga_ [version 1.0]/taiga_ [bridgeAnimatedTiles].png" id="38_qbcvh"]
+[ext_resource type="AudioStream" uid="uid://c2tcmtjlrkywh" path="res://assets/music/world fairy st.mp3" id="38_wq1ob"]
 [ext_resource type="Texture2D" uid="uid://44eqfp5vlfes" path="res://assets/taiga_ [version 1.0]/taiga_ [bridgeHorizontal].png" id="39_lic1m"]
 [ext_resource type="PackedScene" uid="uid://bfpkfvgkmir65" path="res://Characters/lady.tscn" id="40_ooie7"]
 [ext_resource type="Script" path="res://Characters/lady.gd" id="41_t1pvh"]
@@ -1991,6 +1992,11 @@ scale = Vector2(0.8, 0.8)
 
 [node name="Necro" parent="VillageCharacters" instance=ExtResource("37_o7c64")]
 position = Vector2(1637, 438)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("38_wq1ob")
+volume_db = -10.0
+autoplay = true
 
 [connection signal="body_entered" from="TileMap/courrierEncounter" to="." method="_on_courrier_encounter_body_entered"]
 [connection signal="body_entered" from="DzmastanDialogi" to="." method="_on_dzmastan_dialogi_body_entered"]

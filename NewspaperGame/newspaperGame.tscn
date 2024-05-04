@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bkrxu1uosc8y4" path="res://NewspaperGame/SecondaryScenes/newsguy_scene.tscn" id="3_atmp5"]
 [ext_resource type="Script" path="res://NewspaperGame/natsarqeqia_scene.gd" id="5_k11aw"]
 [ext_resource type="Resource" uid="uid://dfrdgkngj8gx5" path="res://NewspaperGame/Dialogue/newspaperDialogue.dialogue" id="6_d6jth"]
-[ext_resource type="AudioStream" uid="uid://bb4418r8a2hqi" path="res://NewspaperGame/Audio/Newspaper Music (Horsemen Approach).mp3" id="7_0cdak"]
+[ext_resource type="AudioStream" uid="uid://cy8los20up03g" path="res://assets/music/newspaper courier st.mp3" id="7_xd1qa"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cbnbn"]
 load_path = "res://.godot/imported/quest_1_1.png-3afb6857b2394c3c46035044bb6aabd1.ctex"
@@ -95,7 +95,7 @@ position = Vector2(11, -75)
 shape = SubResource("CircleShape2D_0b7fw")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("7_0cdak")
+stream = ExtResource("7_xd1qa")
 volume_db = -15.0
 autoplay = true
 

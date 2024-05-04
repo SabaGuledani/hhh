@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/king_encounter.gd" id="1_5g8ke"]
 [ext_resource type="Texture2D" uid="uid://bq7s6kqjm25h7" path="res://assets/taiga_ [version 1.0]/taiga_.png" id="1_o66xq"]
-[ext_resource type="AudioStream" uid="uid://bu126ssfh1vja" path="res://assets/music/king_encounter_theme.mp3" id="2_2onoh"]
+[ext_resource type="AudioStream" uid="uid://d2liqb6rfpdxb" path="res://assets/music/king st.mp3" id="2_lvivo"]
 [ext_resource type="Texture2D" uid="uid://bykijlqd3q64h" path="res://assets/swamp_ [version 1.0]/swampObjects_.png" id="2_oelmt"]
 [ext_resource type="Texture2D" uid="uid://bjsrbhi7mtbwl" path="res://assets/camelot_ [version 1.0]/camelot_ [version 1.0]/arthurPendragon_.png" id="3_eqq7s"]
 [ext_resource type="Texture2D" uid="uid://diiig38c0n4gg" path="res://assets/forestSprites_ v1.2/satyr_.png" id="4_xjc06"]
@@ -600,7 +600,7 @@ tracks/13/keys = {
 
 [sub_resource type="Animation" id="Animation_n7ryd"]
 resource_name = "cutscene_2"
-length = 10.0
+length = 3.5
 step = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -686,7 +686,7 @@ _data = {
 script = ExtResource("1_5g8ke")
 
 [node name="MusicAudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_2onoh")
+stream = ExtResource("2_lvivo")
 volume_db = -10.0
 
 [node name="TileMap" type="TileMap" parent="."]
