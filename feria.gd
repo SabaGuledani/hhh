@@ -9,8 +9,10 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if State.feria_ended == true:
-		get_tree().change_scene_to_file("res://world.tscn")
+	pass
 
 func _on_finished_lady_of_the_lake():
-	pass
+	if Global.loaded_from_world == false:
+		get_tree().change_scene_to_file("res://Menu/MenuSceneManager.tscn")
+	else:
+		get_tree().change_scene_to_file("res://world.tscn")	

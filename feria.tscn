@@ -28,9 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://d212bywtw36xd" path="res://assets/forestVillage_ [version 2.0]/forestVillageStructures_ [stallsWatchtower].png" id="26_scyxu"]
 [ext_resource type="Script" path="res://feria.gd" id="27_ma01c"]
 [ext_resource type="PackedScene" uid="uid://8g6g1yk15lsx" path="res://Player/MainCharacterNatsarqeqia.tscn" id="39_u0011"]
-
 [ext_resource type="PackedScene" uid="uid://j6ikmibc31kg" path="res://Characters/lady_of_the_lake.tscn" id="40_du31h"]
-
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_0ntgm"]
 

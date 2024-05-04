@@ -63,6 +63,6 @@ tbis feria: rogor moiqcevi?
 	
 tbis feria: yoCaR nacarqeqia, Sen yvela kiTxvas warmatebiT gaeci pasuxi. amitom gasaCuqreb sigeliT.
 
-set feria_ended = true
+do Signals.finish_lady_of_the_lake.emit()
 
 => END
