@@ -3,8 +3,8 @@ extends TileMap
 
 @onready var  global = get_node("/root/Global")
 @onready var  state = get_node("/root/State")
-@onready var speed_value = 0.014
-@onready var speed = speed_value
+@onready var speed_value = 0.0165
+@onready var speed = 0.014
 @onready var anim = get_node("NatsarqeqiaPath/PathFollow2D/Natsarqeqia/AnimationPlayer")
 @onready var natsarqeqia = get_node("NatsarqeqiaPath/PathFollow2D/Natsarqeqia/AnimatedSprite2D")
 @onready var hero = get_node("VillageCharacters/Hero/AnimatedSprite2D")
@@ -111,7 +111,7 @@ func _on_finished_brother_dialogue():
 	speed = speed_value
 
 func _on_finished_woodlady():
-	speed = speed_value
+	speed = speed_value+0.005
 
 
 func _on_turn_left_body_entered(body):
