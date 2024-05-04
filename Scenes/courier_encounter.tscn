@@ -937,7 +937,7 @@ tracks/20/keys = {
 
 [sub_resource type="Animation" id="Animation_wpsqi"]
 resource_name = "cutscene_2"
-length = 18.0
+length = 16.0
 step = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -1050,7 +1050,7 @@ tracks/8/keys = {
 
 [sub_resource type="Animation" id="Animation_dfihq"]
 resource_name = "cutscene_alternative"
-length = 80.0
+length = 77.0
 step = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false

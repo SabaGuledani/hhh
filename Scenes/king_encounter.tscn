@@ -600,7 +600,7 @@ tracks/13/keys = {
 
 [sub_resource type="Animation" id="Animation_n7ryd"]
 resource_name = "cutscene_2"
-length = 10.0
+length = 3.5
 step = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
