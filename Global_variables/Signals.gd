@@ -9,3 +9,4 @@ signal finish_woodlady
 signal finish_king_encounter
 signal finish_newspaper
 signal finish_lady_of_the_lake
+
