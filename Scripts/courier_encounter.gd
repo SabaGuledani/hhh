@@ -3,13 +3,17 @@ extends Node
 
 
 func _ready():
+	$SpellTextureRect/TextEdit.context_menu_enabled = false
 	if Global.is_secure == 1:
 		$CutsceneAnimationPlayer.play("cutscene_alternative")
 		await $CutsceneAnimationPlayer.animation_finished
 		Global.courier_met = true
 		$TransitionScreen.transition('gameEnd')
 		await $TransitionScreen/AnimationPlayer.animation_finished
+		await get_tree().create_timer(5).timeout
 		get_tree().change_scene_to_file("res://Menu/MenuSceneManager.tscn")
+		
+		
 	else:
 		$CutsceneAnimationPlayer.play("cutscene_1")
 
@@ -35,6 +39,7 @@ func _on_texture_button_pressed():
 		await $CutsceneAnimationPlayer.animation_finished
 		$TransitionScreen.transition('gameEnd')
 		await $TransitionScreen/AnimationPlayer.animation_finished
+		await get_tree().create_timer(5).timeout
 		get_tree().change_scene_to_file("res://Menu/MenuSceneManager.tscn")
 		
 
@@ -66,4 +71,6 @@ func check_security(password):
 	elif !res_regex_symbols:
 		return "frazaSi ar gaqvs simboloebi, unda iyos erTi mainc"
 	else: return false
+
+
 

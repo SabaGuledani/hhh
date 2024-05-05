@@ -1582,6 +1582,9 @@ volume_db = -10.0
 [node name="ColorRect" parent="TransitionScreen" index="0"]
 mouse_filter = 2
 
+[node name="RichTextLabel" parent="TransitionScreen" index="2"]
+mouse_filter = 2
+
 [connection signal="pressed" from="SpellTextureRect/TextureButton" to="." method="_on_texture_button_pressed"]
 
 [editable path="TransitionScreen"]
