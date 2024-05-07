@@ -11,9 +11,9 @@ do Signals.finish_woodlady.emit()
 ~ BrotherDialogue
 nacarqeqias Zma: kaco, sul rom nacars uzixar, an Wama ar ginda, an sma?!
 nacarqeqias Zma: adeqi, gaisarje, iqeT mideq, aqeT modeq da ojaxSi rame Semoitane, Torem icode, Cven Seni rCenis Tavi aRara gvaqvs da saxlidan gagagdebT
-nacarqeqia: SemeSviT nacris qeqva gana saqme araa?
+nacarqeqia: SemeSviT, nacris qeqva gana saqme araa?
 nacarqeqias Zma: ......
-nacarqeqias Zma: am Cveni qveynis farglebs gaSordi, aq ar dagiguloT, Torem cocxals ar gagiSvebT!!!
-nacarqeqia: kargiT,vecdebi, rac SeiZleba Sors wavide
+nacarqeqias Zma: Cveni qveynis farglebs gaSordi, aq ar daginaxoT, Torem cocxals ar gagiSvebT!!!
+nacarqeqia: kargiT, vecdebi, rac SeiZleba Sors wavide
 do Signals.finish_brother_dialogue.emit()
 => END

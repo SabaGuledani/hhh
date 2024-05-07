@@ -4,7 +4,7 @@ nacarqeqia: salami!
 redaqtori: gamarjoba, mogzauro! vin brZandebiT?
 nacarqeqia: me nacarqeqias meZaxian, Tavad? ras saqmianobT?
 redaqtori: Cemi saqme gazeTebis beWdva da amisTvis saWiro ambebisa da masalebis Segrovebaa. keTili adamiani Canxar. SegiZlia, damexmaro?
-nacarqeqia: raTqmaunda! ra gagWirvebia?
+nacarqeqia: ra Tqma unda, ra gagWirvebia?
 redaqtori: am kviris gamoSvebisTvis TanamSromelma fotoebi gamomigzavna gazeTis gasaformeblad. samwuxarod, sanam am fotoebis naxvas SevZlebdi, viRacam gayalbebuli fotoebi Seuria maT. mas, albaT, unda, rom Cveni mkiTxveli SecdomaSi Seiyvanos da misTvis xelsayreli, gamogonili informacia daajeros. me Tvali da goneba ise veRar miWris, rogorc axalgazrdobaSi da gayalbebuli fotoebis garCeva realurisgan cotaTi miWirs. Sen ki axalgazrda xar, ar unda gagiWirdes es saqme.
 nacarqeqia: Sevecdebi, mxolod namdvili, gauyalbebeli fotoebi avirCio, raTa mkiTxvelebi SecdomaSi ar SeviyvanoT.
 redaqtori: madloba, nacarqeqia! mzad xar?
@@ -50,7 +50,7 @@ redaqtori: Seni azriT, am fotoebidan romeli SeiZleba iyos damuSavebuli?
 - meore foto
 redaqtori: yoCaR! sworad mixvdi, detalebze dakvirvebiT kargad Cans, rom xeli arabunebrivad grZelia
 do NewspaperState.showQuestionImages.emit(0)
-redaqtori: nacarqeqia, rogorc dRes Cvens mier ganxiluli situaciebidan viswavleT, yoveldRiur cxovrebaSi mniSvnelovania gavarCioT marTali tyuilisgan. amisTvis aucilebelia gamoviyenoT logika da Cvens mier ukve SeZenili codna, romlis simarTleSic ukve darwmunebulebi varT. sasurvelia informaciis sxva, alternatiuli wyaroebis gadamowmebac. mTavaria, rom brmad araferi davijeroT.
+redaqtori: nacarqeqia, rogorc dRes Cvens mier ganxiluli situaciebidan viswavleT, yoveldRiur cxovrebaSi mniSvnelovania gavarCioT marTali tyuilisgan. amisTvis aucilebelia gamoviyenoT logika da Cven mier ukve SeZenili codna, romlis simarTleSic ukve darwmunebulebi varT. sasurvelia informaciis sxva, alternatiuli wyaroebis gadamowmebac. mTavaria, rom brmad araferi davijeroT.
 redaqtori: madloba, nacarqeqiav, rom damexmare. Sen marTlac didi saqme gaakeTe, radgan sazogadoeba daicavi dezinformaciisgan. naxvamdis da warmatebebs gisurveb!
 nacarqeqia: naxvamdis!
 set NewspaperState.moveSpeed = 0.25
