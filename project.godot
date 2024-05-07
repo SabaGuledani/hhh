@@ -45,7 +45,7 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [gui]
 
-theme/custom_font="res://geopixel.ttf"
+theme/custom_font="res://assets/geopixel.ttf"
 
 [input]
 

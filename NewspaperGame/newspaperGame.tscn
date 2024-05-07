@@ -31,7 +31,7 @@ metadata/_edit_vertical_guides_ = [-1111.0]
 visible = false
 
 [node name="TextureRect" type="TextureRect" parent="ImageContainer"]
-texture_filter = 1
+texture_filter = 2
 offset_left = 110.0
 offset_top = 35.0
 offset_right = 1134.0
