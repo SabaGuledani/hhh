@@ -61,7 +61,7 @@ func check_security(password):
 	var res_regex_upletters = regex_upletters.search(password)
 	
 	if !(len(password) >= 8):
-		return "fraza zedmetad moklea, sigrdze unda iyos 8 an meti"
+		return "fraza zedmetad moklea, sigrZe unda iyos 8 an meti"
 	elif !res_regex_lowletters:
 		return "frazaSi ar gaqvs patara asoebi, unda iyos erTi mainc"
 	elif !res_regex_upletters:
