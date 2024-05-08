@@ -10,7 +10,7 @@ func _ready():
 		Global.courier_met = true
 		$TransitionScreen.transition('gameEnd')
 		await $TransitionScreen/AnimationPlayer.animation_finished
-		await get_tree().create_timer(5).timeout
+		await get_tree().create_timer(3).timeout
 		get_tree().change_scene_to_file("res://Menu/MenuSceneManager.tscn")
 		
 		
@@ -39,7 +39,7 @@ func _on_texture_button_pressed():
 		await $CutsceneAnimationPlayer.animation_finished
 		$TransitionScreen.transition('gameEnd')
 		await $TransitionScreen/AnimationPlayer.animation_finished
-		await get_tree().create_timer(5).timeout
+		await get_tree().create_timer(3).timeout
 		get_tree().change_scene_to_file("res://Menu/MenuSceneManager.tscn")
 		
 

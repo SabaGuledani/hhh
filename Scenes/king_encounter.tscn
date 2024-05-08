@@ -523,7 +523,7 @@ tracks/7/keys = {
 "times": PackedFloat32Array(2.5, 30.5, 33.5, 38, 41),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": ["mogesalmebiT, mefeo!", "raTqmaunda, dagexmarebi!", "oRond jer maqsimalurad daculi jadosnuri fraza unda davado werils!", "Semdeg ki egreve Sikrikisken gavemarTebi!", "naxvamdis, mefeo!"]
+"values": ["mogesalmebiT, mefeo!", "ra Tqma unda, dagexmarebi!", "oRond jer maqsimalurad daculi jadosnuri fraza unda davado werils!", "Semdeg ki egreve Sikrikisken gavemarTebi!", "naxvamdis, mefeo!"]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
@@ -840,5 +840,9 @@ speed_scale = 0.5
 libraries = {
 "": SubResource("AnimationLibrary_28psk")
 }
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(603, 361)
+zoom = Vector2(1.785, 1.785)
 
 [connection signal="pressed" from="SpellTextureRect/TextureButton" to="." method="_on_texture_button_pressed"]

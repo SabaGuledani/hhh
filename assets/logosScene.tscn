@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://ck7i34aphmlb5"]
+
+[node name="logosScene" type="Node2D"]
+
+[node name="Logos" type="Sprite2D" parent="."]
+position = Vector2(453, 77)
+scale = Vector2(1.625, 1.625)

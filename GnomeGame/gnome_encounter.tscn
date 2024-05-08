@@ -750,3 +750,7 @@ autoplay = "default"
 stream = ExtResource("2_6dhxj")
 volume_db = -10.0
 autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(621, 350)
+zoom = Vector2(1.54, 1.54)

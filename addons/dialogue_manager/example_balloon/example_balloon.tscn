@@ -57,6 +57,7 @@ corner_radius_bottom_left = 5
 
 [sub_resource type="Theme" id="Theme_qq3yp"]
 default_font_size = 20
+Button/font_sizes/font_size = 20
 Button/styles/disabled = SubResource("StyleBoxFlat_spyqn")
 Button/styles/focus = SubResource("StyleBoxFlat_ri4m3")
 Button/styles/hover = SubResource("StyleBoxFlat_e0njw")
@@ -78,7 +79,7 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 21.0
-offset_top = -183.0
+offset_top = -264.0
 offset_right = -19.0
 offset_bottom = -19.0
 grow_horizontal = 2
@@ -101,6 +102,7 @@ unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 2
 mouse_filter = 1
+theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
 text = "Character"
 fit_content = true
@@ -111,6 +113,7 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/default_color = Color(0.976471, 0.968627, 0.956863, 1)
+theme_override_font_sizes/normal_font_size = 30
 text = "Dialogue..."
 
 [node name="Responses" type="MarginContainer" parent="Balloon"]
@@ -137,6 +140,7 @@ response_template = NodePath("ResponseExample")
 
 [node name="ResponseExample" type="Button" parent="Balloon/Responses/ResponsesMenu"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 30
 text = "Response example"
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
